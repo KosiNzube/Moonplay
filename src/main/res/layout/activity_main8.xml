@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="iceplay.flame.fleming.com.moonplay.Main8Activity">
+
+
+    <TextView
+        android:id="@+id/button7"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="26dp"
+        android:background="#050509"
+        android:paddingLeft="17dp"
+        android:textColor="#fff"
+
+        android:textSize="20sp"
+
+
+        android:textStyle="bold"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_id"
+        android:layout_width="match_parent"
+        android:background="#000"
+
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+
+        >
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <ImageView
+        android:layout_alignParentLeft="true"
+        android:padding="13dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+        android:id="@+id/backkk"
+        />
+
+
+</RelativeLayout>

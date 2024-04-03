@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+
+    android:background="#000"
+
+    >
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/everything"
+            android:layout_width="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical"
+
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/caca"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginTop="20dp"
+
+                android:layout_marginBottom="45dp"
+                android:orientation="vertical"></androidx.recyclerview.widget.RecyclerView>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+    <TextView
+        android:id="@+id/namee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="#114747"
+        android:padding="8.5dp"
+        android:text=" no internet connection "
+        android:textAlignment="center"
+        android:textColor="#d3d3d3"
+        android:textSize="16.5sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/vx"
+
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dp"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+
+        app:cardBackgroundColor="#007080"
+        app:cardCornerRadius="29dp">
+
+        <ImageView
+            android:id="@+id/playy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:src="@drawable/ic_change_history_black_24dp"
+
+            app:tint="#fff" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
+
+

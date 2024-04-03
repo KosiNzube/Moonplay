@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mobile.app.moonplay">
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="com.mobile.app.moonplay.MyApplication"
+        android:appComponentFactory="whateverString"
+        android:icon="@mipmap/x"
+        android:label="Moonplay"
+        android:hardwareAccelerated="true"
+        android:roundIcon="@mipmap/x"
+
+        android:allowClearUserData="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true"
+        tools:replace="android:appComponentFactory,android:label">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <receiver android:name="com.mobile.app.moonplay.MusicService$MediaReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.mobile.app.moonplay.DownloadService"
+            android:exported="false"
+            tools:ignore="Instantiatable">
+            <!-- This is needed for Scheduler -->
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.downloadService.action.RESTART"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <activity
+            android:name="com.mobile.app.moonplay.Main13Activity"
+            android:theme="@style/hihigi"
+            ></activity>
+        <activity android:name="com.mobile.app.moonplay.genact"
+            android:theme="@style/hihigi"
+
+            ></activity>
+        <activity android:name="com.mobile.app.moonplay.genact2quick"
+            android:theme="@style/hihigi"
+
+            ></activity>
+
+        <activity android:name="com.mobile.app.moonplay.more"
+            android:theme="@style/hihigi"
+
+            ></activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+
+            android:value="ca-app-pub-2149611848096918~2083911706"/>
+
+
+        <activity
+            android:name="com.mobile.app.moonplay.signin"
+
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.mobile.app.moonplay.videos" />
+        <activity
+            android:name="com.mobile.app.moonplay.Main12Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.mobile.app.moonplay.Main11Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/hihiggi" />
+        <activity
+            android:name="com.mobile.app.moonplay.splash"
+            android:hardwareAccelerated="true"
+            android:theme="@style/hihiggi" />
+        <activity
+            android:name="com.mobile.app.moonplay.lily2"
+            android:screenOrientation="portrait"
+            android:theme="@style/hihiggi" />
+
+
+        <activity
+            android:name="com.mobile.app.moonplay.userspage"
+            android:hardwareAccelerated="true"
+            android:theme="@style/hihiggi" />
+
+        <activity
+            android:name="com.mobile.app.moonplay.studio"
+            android:hardwareAccelerated="true"
+            android:theme="@style/hihigi" />
+
+
+        <activity
+            android:name="com.mobile.app.moonplay.popo"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/hihii" />
+        <activity
+            android:name="com.mobile.app.moonplay.Maincat"
+            android:screenOrientation="portrait"
+            android:theme="@style/hihii" />
+        <activity
+            android:name="com.mobile.app.moonplay.storyx"
+            android:screenOrientation="portrait"
+            android:theme="@style/hihii" />
+
+        <activity
+            android:name="com.mobile.app.moonplay.Main10Activity"
+            android:screenOrientation="landscape"
+            android:theme="@style/hihii" />
+        <activity
+            android:name="com.mobile.app.moonplay.lily"
+            android:hardwareAccelerated="true"
+            android:theme="@style/hihigi" />
+        <activity
+            android:name="com.mobile.app.moonplay.genact2"
+            android:hardwareAccelerated="true"
+            android:theme="@style/hihigi" />
+
+        <activity
+            android:name="com.mobile.app.moonplay.Main9Activity"
+            android:theme="@style/hihigi" />
+
+        <activity
+            android:name="com.mobile.app.moonplay.Main13Activitytyy"
+            android:theme="@style/hihigi" />
+        <activity
+            android:name="com.mobile.app.moonplay.Main13Activityvvv"
+            android:theme="@style/hihigi" />
+        <activity
+            android:name="com.mobile.app.moonplay.trailers"
+            android:theme="@style/hihigi" />
+
+        <activity
+            android:name="com.mobile.app.moonplay.noti"
+            android:theme="@style/hihigi" />
+        <activity
+            android:name="com.mobile.app.moonplay.notix"
+            android:theme="@style/hihigi" />
+        <activity android:name="com.mobile.app.moonplay.Main8Activity" />
+        <activity
+            android:name="com.mobile.app.moonplay.players"
+            android:screenOrientation="portrait"
+            android:theme="@style/hihii" />
+        <activity
+            android:name="com.mobile.app.moonplay.iceplayerX"
+            android:screenOrientation="portrait"
+            android:theme="@style/hihii" />
+        <activity
+            android:name="com.mobile.app.moonplay.streamplayer"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/hihii" />
+        <activity
+            android:name="com.mobile.app.moonplay.singleplayer"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/hihii" />
+        <activity
+            android:name="com.mobile.app.moonplay.streamplayer4All"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+
+            android:theme="@style/hihii" />
+        <activity
+            android:name="com.mobile.app.moonplay.streamplayer4Allx"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/hihii" />
+        <activity
+            android:name="com.mobile.app.moonplay.streamplayer4Alltrailer"
+            android:screenOrientation="portrait"
+            android:theme="@style/hihii" />
+
+        <activity
+            android:name="com.mobile.app.moonplay.iceplayer"
+            android:theme="@style/hihiggi" />
+        <activity
+            android:name="com.mobile.app.moonplay.kxmusic"
+            android:theme="@style/hihiggi" />
+
+        <activity
+            android:name="com.mobile.app.moonplay.onprogress"
+            android:theme="@style/hihiggi" />
+
+
+        <activity
+            android:name="com.mobile.app.moonplay.result"
+            android:theme="@style/hihiggi" />
+        <activity
+            android:name="com.mobile.app.moonplay.chroniclex"
+            android:theme="@style/hihiggi" />
+
+        <activity
+            android:name="com.mobile.app.moonplay.downpage"
+            android:theme="@style/hihiggi" />
+
+
+        <activity
+            android:name="com.mobile.app.moonplay.locality"
+            android:theme="@style/hihigbi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobile.app.moonplay.localityvideo"
+            android:theme="@style/hihigbi"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.mobile.app.moonplay.localityxxx"
+            android:theme="@style/hihigbi"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.mobile.app.moonplay.story"
+            android:theme="@style/hihigbi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobile.app.moonplay.storyy"
+            android:theme="@style/hihigbi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobile.app.moonplay.chronicley"
+            android:theme="@style/hihigbi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobile.app.moonplay.trzil"
+            android:theme="@style/hihigbi"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.mobile.app.moonplay.xy"
+            android:theme="@style/hihigbi"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.mobile.app.moonplay.storyme"
+            android:theme="@style/hihigbi"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.mobile.app.moonplay.genact23"
+            android:theme="@style/hihigbi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobile.app.moonplay.genact8"
+            android:theme="@style/hihigbi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobile.app.moonplay.genact2latest"
+            android:theme="@style/hihigbi"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.mobile.app.moonplay.genact9"
+            android:theme="@style/hihigbi"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.mobile.app.moonplay.request" />
+        <activity
+            android:name="com.mobile.app.moonplay.comments"
+            android:theme="@style/hihiggi" />
+
+        <activity
+            android:name="com.mobile.app.moonplay.instantplay"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/hihigi" />
+        <activity
+            android:name="com.mobile.app.moonplay.instantplayxxx"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/hihigbi" />
+        <activity
+            android:name="com.mobile.app.moonplay.singlesplayx"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/hihigbi" />
+        <activity
+            android:name="com.mobile.app.moonplay.singlesplayxy"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/hihigbi" />
+
+        <activity
+            android:name="com.mobile.app.moonplay.ux"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/hihigi" />
+        <activity
+            android:name="com.mobile.app.moonplay.uxo"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/hihigi" />
+
+        <activity
+            android:name="com.mobile.app.moonplay.uxx"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/hihigi" />
+        <activity
+            android:name="com.mobile.app.moonplay.uxxq"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/hihigi" />
+
+        <activity
+            android:name="com.mobile.app.moonplay.singlesplay"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/hihigi" />
+        <activity
+            android:name="com.mobile.app.moonplay.oneplay"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/hihigi" />
+
+        <activity
+            android:name="com.mobile.app.moonplay.reels"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/hihigi" />
+
+        <activity
+            android:name="com.mobile.app.moonplay.saver"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/hihigi" />
+        <activity
+            android:name="com.mobile.app.moonplay.sharer"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/hihigi" />
+
+        <activity
+            android:name="com.mobile.app.moonplay.playmovie"
+            android:theme="@style/hihii" />
+        <activity
+            android:name="com.mobile.app.moonplay.signup"
+            android:screenOrientation="portrait"
+            android:theme="@style/hihigi" />
+        <activity
+            android:name="com.mobile.app.moonplay.login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.mobile.app.moonplay.Main3Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/hihii" />
+
+        <activity
+            android:name="com.mobile.app.moonplay.mealbum"
+            android:screenOrientation="portrait"
+            android:theme="@style/hihii" />
+
+
+        <activity
+            android:name="com.mobile.app.moonplay.mealbumxx"
+            android:screenOrientation="portrait"
+            android:theme="@style/hihii" />
+        <activity
+            android:name="com.mobile.app.moonplay.mealbumxxx"
+            android:screenOrientation="portrait"
+            android:theme="@style/hihii" />
+
+
+        <activity
+            android:name="com.mobile.app.moonplay.Main13Activityx"
+            android:screenOrientation="portrait"
+            android:theme="@style/hihii" />
+        <activity
+            android:name="com.mobile.app.moonplay.Main13Activityluno"
+            android:screenOrientation="portrait"
+            android:theme="@style/hihii" />
+
+        <activity
+            android:name="com.mobile.app.moonplay.record"
+            android:screenOrientation="portrait"
+            android:theme="@style/hihigi" />
+        <activity
+            android:name="com.mobile.app.moonplay.Main5Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.mobile.app.moonplay.sub"
+            android:screenOrientation="portrait"
+            android:theme="@style/hihiggi" />
+
+        <activity
+            android:name="com.mobile.app.moonplay.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.mobile.app.moonplay.Main2Activity"
+            android:theme="@style/hihii" />
+        <activity
+            android:name="com.mobile.app.moonplay.splashActivity"
+            android:theme="@style/hihigi" />
+
+        <activity
+            android:name="com.mobile.app.moonplay.NewsDetailActivity"
+            android:theme="@style/hihigi" />
+        <activity
+            android:name="com.mobile.app.moonplay.MainActivityx"
+            android:theme="@style/hihigi" />
+        <activity
+            android:name="com.mobile.app.moonplay.ui.mediapicker.MediaPickerActivity"
+           />
+        <activity
+            android:name="com.mobile.app.moonplay.ui.AppSettingsActivity"
+           />
+        <activity
+            android:name="com.mobile.app.moonplay.ui.PlayerDebugActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.mobile.app.moonplay.ui.CrashScreenActivity"
+            />
+        <activity
+            android:name="com.mobile.app.moonplay.ui.playback.PlaybackActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+            android:screenOrientation="landscape"
+            android:theme="@style/hihii"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true" />
+        <activity
+            android:name="com.mobile.app.moonplay.ui.playback.PlaybackActivity2"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+            android:screenOrientation="portrait"
+            android:theme="@style/hihii"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="*" />
+
+                <!-- any -->
+                <!-- <data android:pathPattern=".*\\.*" /> -->
+
+
+                <!-- mp4 / fmp4 -->
+                <data android:pathPattern=".*\\.mp4" />
+                <data android:pathPattern=".*\\.m4v" />
+                <data android:pathPattern=".*\\.m4a" />
+
+                <!-- mpeg-ts / mpeg-ps -->
+                <data android:pathPattern=".*\\.mpeg" />
+                <data android:pathPattern=".*\\.mpeg1" />
+                <data android:pathPattern=".*\\.mpeg2" />
+                <data android:pathPattern=".*\\.mpeg3" />
+                <data android:pathPattern=".*\\.mpeg4" />
+
+                <!-- webm -->
+                <data android:pathPattern=".*\\.webm" />
+
+                <!-- matroska -->
+                <data android:pathPattern=".*\\.mkv" />
+                <data android:pathPattern=".*\\.mka" />
+
+                <!-- amr -->
+                <data android:pathPattern=".*\\.amr" />
+
+                <!-- adts(aac) -->
+                <data android:pathPattern=".*\\.aac" />
+
+                <!-- ogg -->
+                <data android:pathPattern=".*\\.ogg" />
+                <data android:pathPattern=".*\\.ogv" />
+                <data android:pathPattern=".*\\.oga" />
+
+                <!-- wav -->
+                <data android:pathPattern=".*\\.wav" />
+
+                <!-- mp3 -->
+
+                <!-- flv -->
+                <data android:pathPattern=".*\\.flv" />
+                <data android:pathPattern=".*\\.f4v" />
+
+                <!-- 3gp -->
+                <data android:pathPattern=".*\\.3gp" />
+                <data android:pathPattern=".*\\.3g2" />
+                <data android:pathPattern=".*\\.3gpp" />
+
+                <!-- dash manifests -->
+                <data android:pathPattern=".*\\.mpd" />
+
+                <!-- hls manifests -->
+                <data android:pathPattern=".*\\.m3u8" />
+
+                <!-- smooth streaming manifests -->
+                <data android:pathPattern=".*\\.ismc" />
+            </intent-filter>
+
+            <intent-filter android:label="@string/app_open_with">
+            <action android:name="android.intent.action.SEND" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+
+            <!-- links -->
+            <data android:mimeType="text/plain" />
+
+            <!-- audio + video -->
+            <data android:mimeType="video/*" />
+
+        </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.mobile.app.moonplay.Main7Activity"
+            android:label="Moonplay"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/hihigi.l">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- by file extension -->
+
+            <!-- by mimetype -->
+        </activity>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <service android:name="com.mobile.app.moonplay.MusicService" android:exported="false"/>
+
+        <service android:name="com.mobile.app.moonplay.feature.playback.VideoPlaybackService" />
+
+    </application>
+
+</manifest>

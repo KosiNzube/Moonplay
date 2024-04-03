@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#050509">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Start recording"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:onClick="recordAudio"
+        android:background="@color/green"
+        style="@style/Widget.AppCompat.Button.Borderless"/>
+
+
+    <com.bosphere.fadingedgelayout.FadingEdgeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/fade"
+        app:fel_edge="top|left|bottom|right"
+        app:fel_size_top="10dp"
+        android:layout_alignParentBottom="true"
+
+        android:visibility="gone"
+        app:fel_size_bottom="10dp"
+        app:fel_size_left="10dp"
+        app:fel_size_right="10dp"
+        android:layout_height="wrap_content">
+
+    </com.bosphere.fadingedgelayout.FadingEdgeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/ic_headset_black_24dp"
+
+
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:layout_height="wrap_content"
+        android:text="Plug in a wired headset"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="25dp"
+
+        />
+    <TextView
+        android:layout_width="200dp"
+        android:textAlignment="center"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No Records yet. Why?"
+        android:textStyle="bold"
+        android:textColor="#68FFFFFF"
+        android:textSize="25dp"
+
+        />
+
+</RelativeLayout>

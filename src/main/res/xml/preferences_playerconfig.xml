@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/settings_player_title" />
+
+    <SwitchPreference
+        android:defaultValue="@bool/DEF_AUTO_PLAY"
+        android:key="AUTO_PLAY"
+        android:summaryOff="@string/settings_player_auto_play_off"
+        android:summaryOn="@string/settings_player_auto_play_on"
+        android:title="@string/settings_player_auto_play_title" />
+
+    <SwitchPreference
+        android:defaultValue="@bool/DEF_SCALE_TO_WIDTH"
+        android:key="SCALE_TO_WIDTH"
+        android:summaryOff="@string/settings_player_video_scale_to_width_off"
+        android:summaryOn="@string/settings_player_video_scale_to_width_on"
+        android:title="@string/settings_player_video_scale_to_width_title" />
+
+    <SwitchPreference
+        android:defaultValue="@bool/DEF_CLOSE_WHEN_FINISHED_PLAYING"
+        android:key="CLOSE_WHEN_FINISHED_PLAYING"
+        android:summaryOff="@string/settings_player_auto_close_off"
+        android:summaryOn="@string/settings_player_auto_close_on"
+        android:title="@string/settings_player_auto_close_title" />
+
+    <SwitchPreference
+        android:defaultValue="@bool/DEF_ENTER_PIP_ON_LEAVE"
+        android:key="ENTER_PIP_ON_LEAVE"
+        android:summaryOff="@string/settings_player_auto_pip_off"
+        android:summaryOn="@string/settings_player_auto_pip_on"
+        android:title="@string/settings_player_auto_pip_title" />
+
+    <SwitchPreference
+        android:defaultValue="@bool/DEF_DISABLE_GL_EFFECTS"
+        android:key="DISABLE_GL_EFFECTS"
+        android:summaryOff="@string/settings_player_disable_gl_effects_off"
+        android:summaryOn="@string/settings_player_disable_gl_effects_on"
+        android:title="@string/settings_player_disable_gl_effects_title" />
+
+    <EditTextPreference
+        android:defaultValue="@integer/DEF_SEEK_BUTTON_INCREMENT"
+        android:key="SEEK_BUTTON_INCREMENT"
+        android:summary="@string/settings_player_seek_increment_summary"
+        android:title="@string/settings_player_seek_increment_title" />
+
+</PreferenceScreen>

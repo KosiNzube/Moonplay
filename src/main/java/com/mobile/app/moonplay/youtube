@@ -1,0 +1,259 @@
+            new  YouTubeExtractor(context) {
+                @Override
+                public void onExtractionComplete(SparseArray<YtFile> ytFiles, VideoMeta vMeta) {
+                    if (ytFiles != null) {
+                        int itag = 18;
+                        mediaUrl = ytFiles.get(itag).getUrl();
+                        play.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                Date date1=new Date();
+                                Timestamp timestamp=new Timestamp(date1);
+                                Movie movie=new Movie(mediaObjects.get(targetPosition).getDes(),mediaObjects.get(targetPosition).getX(),mediaObjects.get(targetPosition).getPoster(),mediaObjects.get(targetPosition).getImage(),mediaObjects.get(targetPosition).getThumbnail(),"","",mediaObjects.get(targetPosition).getVideo(),mediaObjects.get(targetPosition).getId(),"",timestamp);
+
+
+                                movie.setTimestamp(timestamp);
+                                Main7Activity.db.collection("subusers").document(Main7Activity.user.getUid()).collection("watchl").add(movie).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                                    @Override
+                                    public void onSuccess(DocumentReference documentReference) {
+
+                                        Toast toast = Toast.makeText(context, movie.getName()+" Added ", Toast.LENGTH_SHORT);
+
+                                        toast.setGravity(Gravity.CENTER, 0, 0);
+                                        toast.show();
+                                    }
+                                });
+                            }
+                        });
+
+
+
+                        download.setOnClickListener(new OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                if (isNetworkAvailable() == true) {
+                                    //    Toast.makeText(this,"Check your internet connection", Toast.LENGTH_LONG).show();
+
+
+                                    if (mediaObjects.get(targetPosition).getDes() != null) {
+                                        downloadx(mediaUrl, mediaObjects.get(targetPosition).getDes());
+                                    } else {
+                                        downloadx(mediaUrl, "No_description");
+                                    }
+
+                                }else {
+                                    Toast.makeText(context,"Check your internet connection",Toast.LENGTH_SHORT).show();
+                                }
+                            }
+
+                        });
+
+
+                        shareBtn.setOnClickListener(new OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+
+                                if (isNetworkAvailable() == true) {
+                                    //    Toast.makeText(this,"Check your internet connection", Toast.LENGTH_LONG).show();
+
+                                    // inter.setVisibility(View.VISIBLE);
+
+
+                                    if (mediaObjects.get(targetPosition).getDes() != null) {
+                                        downloadxa(mediaUrl, mediaObjects.get(targetPosition).getDes());
+                                    } else {
+                                        downloadxa(mediaUrl, "No_description");
+                                    }
+
+                                }else {
+                                    Toast.makeText(context,"Check your internet connection",Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        });
+
+                        repeat.setOnClickListener(new OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+
+                                if (videoPlayer!=null) {
+                                    videoPlayer.seekTo(0);
+                                }
+                            }
+                        });
+
+                        mute.setOnClickListener(new OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                toggleVolumex();
+                            }
+                        });
+
+
+                        /*
+
+                        xy=new instV(mediaUrl,mediaObjects.get(targetPosition).getDes(),mediaObjects.get(targetPosition).getId(),mediaObjects.get(targetPosition).getPoster(),mediaObjects.get(targetPosition).getThumbnail(),mediaObjects.get(targetPosition).getLikes(),mediaObjects.get(targetPosition).getImage(),"",mediaObjects.get(targetPosition).getTimestamp());
+
+
+                        db.collection("subusers").document(firebaseAuth.getUid()).collection("instant").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                            @Override
+                            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                                final List<instV> movies = new ArrayList<>();
+                                for (DocumentSnapshot documentSnapshot : Objects.requireNonNull(task.getResult())) {
+                                    instV gigi = documentSnapshot.toObject(instV.class);
+                                    movies.add(gigi);
+
+                                }
+                                int size = movies.size();
+                                for (int i = size - 1; i >= 0; i--) {
+
+                                    instV movie = movies.get(i);
+                                    xx.add(movie.getVideo());
+                                }
+                                if (!xx.contains(mediaObjects.get(targetPosition).getVideo())) {
+
+                                    final SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss");
+
+                                    Date date = new Date();
+                                    sdf.format(date);
+                                    Timestamp timestamp = new Timestamp(date);
+                                    db.collection("subusers").document(firebaseAuth.getUid()).collection("instant").add(xy);
+                                }
+                            }
+                        });
+
+                         */
+                        cf=new File(context.getExternalCacheDir(),"instantmedia");
+
+
+                        if (ce==null) {
+                            ce = new LeastRecentlyUsedCacheEvictor(90 * 1024 * 1024);
+                        }
+                        ExoDatabaseProvider exoDatabaseProvider=new ExoDatabaseProvider(context);
+
+
+                        if (cac==null) {
+                            cac = new SimpleCache(cf, ce, exoDatabaseProvider);
+                        }
+
+
+                        CacheDataSourceFactory cacheDataSourceFactory =
+                                new CacheDataSourceFactory(cac, dataSourceFactory,
+                                        new FileDataSourceFactory(),
+                                        new CacheDataSinkFactory(cac, CacheDataSink.DEFAULT_FRAGMENT_SIZE),
+                                        0,null,new CacheKeyProvider());
+
+
+
+
+                        //  com.google.android.exoplayer2.MediaItem mediaItem= MediaItem.fromUri(Uri.parse(mediaUrl));
+                        MediaSource mediaSource = x(Uri.parse(mediaUrl),cacheDataSourceFactory);
+
+
+                        tease.setOnClickListener(new OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                if (mediaSource!=null) {
+
+                                    videoPlayer.setMediaSource(mediaSource,true);
+                                    videoPlayer.prepare();
+                                    videoPlayer.setPlayWhenReady(true);
+
+                                    if (videoPlayer.getDuration()>0) {
+                                        thumb.setVisibility(INVISIBLE);
+
+                                    }
+
+                                }
+
+
+                            }
+                        });
+
+
+
+
+
+
+                        if (mediaObjects.get(targetPosition).getVideo().length()<5){
+                            progressBar.setVisibility(INVISIBLE);
+
+
+
+                        }
+
+                    }
+                }
+            }.extract(mediaUrl);
+
+
+
+
+
+
+
+                if (!isShowingTrackSelectionDialog
+                        && TrackSelectionDialog.willHaveContent(trackSelector)) {
+                    isShowingTrackSelectionDialog = true;
+                    TrackSelectionDialog trackSelectionDialog =
+                            TrackSelectionDialog.createForTrackSelector(
+                                    trackSelector,
+                                    /* onDismissListener= */
+                                    dismissedDialog -> isShowingTrackSelectionDialog = false);
+                    trackSelectionDialog.show(getSupportFragmentManager(), /* tag= */ null);
+
+
+
+                    //build the track selection dialog
+
+                    //build dialog and show
+                    //     selectionDialogBuilder.setAllowAdaptiveSelections(true).build().show();
+
+                    //hide player controls
+                    // playerControlView.getPlayerControls().hide();
+
+                    //hide drawers
+                    // quickAccessDrawer.closeDrawers();
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            if (tags!=null){
+                                if (tags.toLowerCase().trim().contains(movie.getName().trim().toLowerCase())) {
+
+                                    others.add(movie);
+                                    xax.add(movie);
+                                }
+                            }

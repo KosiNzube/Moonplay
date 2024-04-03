@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050509"
+
+    tools:context="iceplay.flame.fleming.com.moonplay.Main7Activity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/yiyii"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="43dp"
+        android:nestedScrollingEnabled="false"
+
+        android:layout_marginBottom="78dp"
+
+        android:layout_height="fill_parent"
+        android:overScrollMode="never"></androidx.recyclerview.widget.RecyclerView>
+    <ProgressBar
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:progressTint="#fff"
+        android:id="@+id/prog"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/des"
+        android:layout_margin="20dp"
+
+        />
+
+</RelativeLayout>

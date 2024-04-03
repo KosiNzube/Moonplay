@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    android:paddingBottom="@dimen/dp5"
+
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+
+        android:background="#0E1850"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/card"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:id="@+id/lin"
+
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/hihi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/zzz"
+                    android:scaleType="fitXY"
+
+
+                    android:background="#191919"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="120dp">
+
+                    <ImageView
+                        android:id="@+id/itemImage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:alpha=".05"
+                        android:background="#1A2667" />
+
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/zzz"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="@dimen/dp5"
+
+
+                    android:text="Romance"
+                    android:textAlignment="center"
+                    android:textColor="#d3d3d3"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/type"
+
+                    android:visibility="gone"
+                    android:layout_below="@id/tvTitle"
+
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="5dp"
+
+                    android:textColor="#727272"
+                    android:text="England"/>
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/pausecardy"
+                    android:layout_width="109dp"
+                    android:layout_height="26dp"
+                    android:layout_below="@+id/type"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone"
+
+                    app:strokeColor="#80FFFFFF"
+                    app:strokeWidth="0.8dp"
+                    android:theme="@style/Base.Theme.MaterialComponents.Light"
+                    android:layout_marginBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="15dp"
+
+                    android:paddingRight="10dp"
+                    android:paddingBottom="15dp"
+                    app:cardCornerRadius="11.5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:background="#0F0F0F"
+                        android:layout_gravity="center"
+
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4dp"
+
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:text="    Free    "
+                            android:textColor="#fff"
+
+                            android:textSize="13.5dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

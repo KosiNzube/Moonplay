@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="155dp"
+
+    android:layout_marginBottom="9dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="7dp"
+    android:id="@+id/card"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/lin"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/hihi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_width="155dp"
+                android:id="@+id/zzz"
+                android:scaleType="fitXY"
+
+                app:cardCornerRadius="@dimen/dp5"
+                app:cardBackgroundColor="#1C1C1C"
+
+                android:layout_centerHorizontal="true"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:id="@+id/itemImage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/zzz"
+
+                android:layout_marginStart="5dp"
+
+
+                android:layout_marginTop="5dp"
+
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Euro 2020"
+                android:textAlignment="center"
+                android:textColor="#D6D5D5"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTitle"
+                android:layout_marginStart="5dp"
+
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+
+                android:text="Sports"
+                android:textAlignment="center"
+
+                android:textColor="#979696"
+                android:textSize="14.5sp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

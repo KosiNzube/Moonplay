@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#050509"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/everything"
+        android:layout_width="match_parent"
+
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+
+
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="8dp"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/studio"
+
+            android:background="#00282835"
+            android:drawablePadding="7dp"
+            android:text=" Chronicle"
+
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Story. TV "
+            android:textStyle="bold"
+            android:textColor="#00ACC1"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_marginBottom="99dp"
+            app:cardElevation="2dp"
+
+
+            android:layout_marginTop="10dp"
+            app:strokeColor="#444444"
+            app:strokeWidth="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="textStart"
+            android:theme="@style/Base.Theme.MaterialComponents.Light"
+
+            app:cardBackgroundColor="#0F0F10"
+            app:cardCornerRadius="35dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fifi"
+        android:layout_width="match_parent"
+
+        android:overScrollMode="never"
+        android:paddingBottom="19dp"
+
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="85dp"
+
+        android:layout_centerInParent="true"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+
+
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="60dp"
+
+        android:id="@+id/button3"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="120dp"
+        android:layout_alignParentRight="true"
+        app:cardCornerRadius="29dp"
+
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="#3949AB"
+
+        android:layout_centerVertical="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_add_black_24dp"
+            android:layout_height="wrap_content"
+
+            android:padding="15dp"
+            android:layout_gravity="center"
+            android:id="@+id/playy"
+
+            />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

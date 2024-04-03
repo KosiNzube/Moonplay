@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#454545"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#d3d3d3"
+        android:text="Please find the movie"
+        android:textSize="23sp"
+        android:visibility="invisible"
+        android:textStyle="bold"
+
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/name"
+
+
+        />
+
+
+    <VideoView
+        android:id="@+id/videoview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:backgroundTint="#000" />
+
+    <EditText
+        android:id="@+id/des"
+        android:layout_width="match_parent"
+
+        android:layout_marginBottom="3dp"
+
+        android:layout_above="@id/up"
+        android:layout_margin="10dp"
+        android:layout_height="50dp"
+        android:background="@drawable/editround"
+        android:backgroundTint="#4B4B4B"
+        android:textColor="#fff"
+        android:textColorHint="#45FFFFFF"
+        android:drawablePadding="10dp"
+
+        android:imeOptions="actionGo"
+        android:hint="Video description"
+        android:inputType="text"
+        android:paddingLeft="20dp" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyle"
+        android:layout_centerInParent="true"
+        android:id="@+id/pro"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select video"
+        android:id="@+id/got"
+        android:layout_margin="15dp"
+        android:layout_alignParentRight="true"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload video"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/up"
+
+        android:layout_alignParentRight="true"
+        />
+
+
+</RelativeLayout>

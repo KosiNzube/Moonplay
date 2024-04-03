@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="35dp"
+    android:background="#4D4D4D"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:text="Pick category"
+        android:textColor="#d3d3d3"
+        android:textSize="23sp"
+        android:textStyle="bold"
+
+        />
+    <ListView
+        android:id="@+id/grid"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/playb"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="13dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+
+
+        android:background="#E6050509"
+
+        android:id="@+id/playb"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" My albums"
+            android:layout_alignLeft="@id/bbbb"
+            android:layout_marginLeft="39dp"
+
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/backn"
+
+            android:textAlignment="textStart"
+            android:layout_alignParentLeft="true"
+            android:textColor="#fff"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bbbb"
+            android:layout_marginRight="9dp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="17dp"
+            android:textColor="#D81B60"
+
+            />
+
+        <ImageView
+            android:id="@+id/pl"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_album_black_24dp"
+            android:tint="#fff" />
+
+
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/fix"
+
+        android:visibility="gone"
+        android:layout_above="@+id/playb"
+        android:background="#fff"
+
+        />
+</RelativeLayout>

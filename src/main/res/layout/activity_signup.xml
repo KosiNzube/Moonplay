@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050509"
+    tools:context="iceplay.flame.fleming.com.moonplay.signup">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#F5F5FF"
+        android:text="Prime"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+
+        android:padding="5dp"
+
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+
+        android:layout_centerHorizontal="true"
+        android:id="@+id/koko"
+
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/kimberly"
+        android:layout_marginTop="20dp"
+        android:text="Instant"
+        android:padding="5dp"
+        android:textColor="#4DF5F5FF"
+        android:layout_marginLeft="67dp"
+        android:layout_toRightOf="@id/koko"
+
+        android:textSize="30dp"
+        android:textStyle="bold"
+
+        android:src="@drawable/ic_account_circle_black_24dp"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/ioiio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="18dp"
+        android:layout_marginTop="20dp"
+
+        android:tint="#fff"
+        android:src="@drawable/ic_file_download_black_24dp" />
+
+    <RelativeLayout
+
+
+        android:id="@+id/playbackx"
+        android:layout_below="@+id/koko"
+
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:id="@+id/ioio"
+            android:background="#14D4D4D4"
+
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/ioio"
+            android:layout_marginTop="2.5dp"
+            android:id="@+id/btnxx"
+            android:background="#29D4D4D4"
+
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/btnxx"
+
+            android:layout_marginTop="2.5dp"
+            android:id="@+id/btn3"
+            android:background="#3DD4D4D4"
+
+            />
+
+        <RelativeLayout
+            android:layout_below="@id/btn3"
+
+            android:id="@+id/playback"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/mb"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:background="#00282835"
+                android:drawableLeft="@drawable/ic_filter_list_black_24dp"
+
+                android:layout_toLeftOf="@id/studio"
+                android:textAlignment="textStart"
+
+                android:layout_marginLeft="8dp"
+                android:layout_centerVertical="true"
+                android:drawablePadding="7dp"
+                android:text=" Recommended For You "
+
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                />
+            <ImageView
+                android:id="@+id/studio"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:background="#00282835"
+                android:src="@drawable/ic_filter_drama_black_24dp"
+
+
+                android:layout_centerVertical="true"
+                android:fontFamily="monospace"
+                android:layout_marginRight="8dp"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                />
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/iii"
+            android:layout_width="match_parent"
+
+            android:layout_marginTop="5dp"
+
+
+
+
+            android:layout_height="1dp"
+            android:layout_below="@+id/playback"
+
+            android:background="#26D3D3D3" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/playbackx"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="#CC080A17"
+        android:id="@+id/playb"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Love lead"
+            android:layout_alignLeft="@id/bbbb"
+            android:layout_marginLeft="39dp"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/backn"
+
+            android:textAlignment="textStart"
+            android:layout_alignParentLeft="true"
+            android:textColor="#fff"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.23.0"
+            android:id="@+id/bbbb"
+            android:layout_marginRight="9dp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="19dp"
+            android:textColor="#D81B60"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+            android:id="@+id/pl"
+            android:layout_alignParentLeft="true"
+            android:tint="#fff"
+            android:src="@drawable/ic_play_arrow_black_24dp" />
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/btn2"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="43dp"
+        android:background="#26D3D3D3"
+
+        />
+
+
+</RelativeLayout>

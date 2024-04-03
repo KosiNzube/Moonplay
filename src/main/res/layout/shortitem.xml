@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="3dp"
+    android:layout_marginLeft="3dp"
+
+    android:layout_height="wrap_content">
+    <RelativeLayout
+
+        android:layout_width="142dp"
+
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF444444"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:id="@+id/card"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:id="@+id/lin"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/hihi"
+                android:layout_width="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#FF444444"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/zzz"
+                    android:backgroundTint="#FF444444"
+                    android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:id="@+id/itemImagoe"
+                        app:cardCornerRadius="10dp"
+                        android:layout_below="@id/typee"
+                        android:layout_alignParentLeft="true"
+                        app:cardBackgroundColor="#BF050505"
+                        android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/itemImage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dp"
+                        android:background="#D9141414"
+                        android:scaleType="centerCrop" />
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvTitle"
+                    android:layout_below="@id/zzz"
+                    android:paddingLeft="3dp"
+                    android:textSize="14sp"
+
+                    android:textAlignment="center"
+
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:layout_marginTop="9dp"
+                    android:textColor="#d3d3d3"
+                    android:text="Galavant"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:visibility="gone"
+                    android:id="@+id/type"
+                    android:layout_below="@id/tvTitle"
+                    android:textStyle="bold"
+                    android:paddingLeft="3dp"
+                    android:textAlignment="center"
+
+                    android:textSize="13sp"
+                    android:textColor="#7A7A7A"
+                    android:text="Romance, Action, Horror"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

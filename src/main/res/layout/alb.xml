@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="iceplay.flame.fleming.com.moonplay.iceplayer">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_id"
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+
+        android:layout_above="@+id/btn9"
+        android:layout_below="@+id/btn1"
+
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <View
+        android:id="@+id/fko"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+
+        android:textSize="21dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:padding="15dp"
+
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"
+        android:text="onProgress"
+        android:id="@+id/genre"
+        android:textColor="#fff"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+
+
+        android:textSize="21dp"
+        android:padding="15dp"
+
+        android:layout_height="wrap_content"
+        android:text="Tracks"
+        android:id="@+id/popular"
+        android:textColor="#fff"
+        android:fontFamily="monospace"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:textSize="21dp"
+        android:padding="15dp"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/backln"
+        android:textColor="#fff"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="1dp"
+        android:id="@+id/btn1"
+        android:layout_below="@+id/fko"
+        android:background="#19D3D3D3"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/btn9"
+        android:layout_above="@id/down"
+        android:background="#26D3D3D3"
+
+        />
+
+
+
+
+    <View
+        android:id="@+id/down"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="40dp"
+        android:background="#000" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textStyle="bold"
+        android:id="@+id/backx"
+        android:padding="10dp"
+
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="1dp"
+        android:textSize="20dp"
+
+        android:textColor="#fff"
+
+
+        />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purchase"
+        android:textStyle="bold"
+        android:id="@+id/refresh"
+
+        android:padding="10dp"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="1dp"
+        android:textSize="20dp"
+
+        android:textColor="#fff"
+
+
+        />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+
+        android:layout_centerInParent="true"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+
+
+        />
+
+</RelativeLayout>

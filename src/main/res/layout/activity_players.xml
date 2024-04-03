@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000005"
+    tools:context="iceplay.flame.fleming.com.moonplay.players">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/zzz"
+            android:layout_width="wrap_content"
+
+
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+
+            <com.google.android.exoplayer2.ui.PlayerView
+
+                android:id="@+id/videoviewio"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                app:use_controller="false">
+
+
+            </com.google.android.exoplayer2.ui.PlayerView>
+
+
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+
+
+
+
+            <ImageView
+                android:id="@+id/exo_play"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+
+                android:layout_centerInParent="true"
+
+                android:layout_margin="5dp"
+                android:padding="13dp"
+                android:src="@drawable/ic_pause_black_24dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imagex"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:alpha=".6" />
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+
+            android:layout_height="50dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/editround"
+            android:backgroundTint="#4B4B4B"
+            android:drawableLeft="@drawable/ic_sms_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Type In Message"
+            android:imeOptions="actionGo"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp"
+            android:textColor="#fff"
+            android:textColorHint="#45FFFFFF"
+            android:visibility="gone" />
+
+
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:background="#0F0F11"
+            android:padding="10dp"
+
+
+            android:text="no Internet"
+            android:textColor="#fff"
+
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/pb_playbackRootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    >
+
+        <include layout="@layout/playback_main_layout" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/pb_playerBufferingCont"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        android:layout_centerInParent="true"
+        android:elevation="1000dp"
+        android:visibility="gone">
+
+        <!-- Buffering Progress Wheel, normal mode-->
+        <com.pnikosis.materialishprogress.ProgressWheel
+            android:id="@+id/pb_playerBufferingWheel_normal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            app:matProg_barColor="@color/player_buffering_progress"
+            app:matProg_barWidth="5dp"
+            app:matProg_fillRadius="true"
+            app:matProg_progressIndeterminate="true"/>
+
+        <!-- Buffering Progress Wheel, pip mode-->
+        <com.pnikosis.materialishprogress.ProgressWheel
+            android:id="@+id/pb_playerBufferingWheel_pipmode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            app:matProg_barColor="@color/player_buffering_progress"
+            app:matProg_barWidth="5dp"
+            app:matProg_fillRadius="false"
+            app:matProg_progressIndeterminate="true" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

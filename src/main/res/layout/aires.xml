@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/bibi"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="21dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="25dp"
+        android:id="@+id/save"
+        android:layout_centerHorizontal="true"
+
+
+        android:layout_above="@id/des"
+        app:cardBackgroundColor="#FFFFFF"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="left|center"
+
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+
+                android:paddingRight="15dp"
+                android:layout_centerVertical="true"
+
+                android:paddingLeft="15dp"
+                android:text="    air Vibes    "
+                android:textColor="#00BCD4"
+                android:id="@+id/listqq"
+                android:textSize="25dp"
+                android:textStyle="bold"
+
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <iceplay.flame.fleming.com.iceplayer.ExoPlayerRecyclerView
+        android:layout_width="fill_parent"
+        android:id="@+id/exoPlayerRecyclerView"
+
+
+        android:layout_height="fill_parent">
+
+    </iceplay.flame.fleming.com.iceplayer.ExoPlayerRecyclerView>
+
+</RelativeLayout>

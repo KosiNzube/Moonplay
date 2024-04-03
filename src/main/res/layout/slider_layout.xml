@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/xz"
+    android:layout_height="200dp">
+
+    <!--Image we will display is our slider view-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#2C2C2C"
+
+
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pausecardy"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:visibility="gone"
+
+            app:cardBackgroundColor="#E91E63"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+
+            android:paddingRight="10dp"
+            android:paddingBottom="15dp"
+            app:cardCornerRadius="11.5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text=" FREE "
+                    android:textColor="#fff"
+
+                    android:textSize="13.5dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <ImageView
+            android:id="@+id/myimage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentRight="true"
+
+
+            android:contentDescription="@string/app_name" />
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/dp10"
+
+            android:layout_marginLeft="5dp"
+            android:background="#00282835"
+            android:drawablePadding="7dp"
+            android:text="Luno analysis "
+
+            android:letterSpacing="0.03"
+            android:id="@+id/x"
+
+
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+
+            android:textColor="#fff"
+            android:textSize="16.7dp"
+            android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

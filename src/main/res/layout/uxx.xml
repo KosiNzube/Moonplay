@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050509"
+    android:orientation="vertical"
+
+    tools:context=".result">
+
+
+
+
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:id="@+id/bibi"
+    android:layout_height="match_parent">
+
+
+</FrameLayout>
+
+
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/zz"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:background="#001A1A1A"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+
+            <Button
+                android:id="@+id/up"
+                android:layout_width="match_parent"
+                style="?android:attr/borderlessButtonStyle"
+
+                android:layout_height="@dimen/dp50"
+                android:textStyle="bold
+"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="#00BCD4"
+                android:text="View album" />
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

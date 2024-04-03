@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardview="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="5dp"
+
+    android:layout_marginBottom="7dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:clickable="true"
+
+        android:layout_height="wrap_content">
+        <RelativeLayout
+
+
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/card"
+            android:backgroundTint="#40444444">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height=".3dp"
+                android:id="@+id/btn1"
+                android:layout_below="@+id/lin"
+                android:layout_marginTop="5dp"
+                android:background="#80FFFFFF"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/lin"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+
+                    android:id="@+id/hihi"
+
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+
+                        android:orientation="vertical"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:id="@+id/tvTitle"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/pausecardy"
+                            android:layout_marginBottom="3dp"
+                            android:textSize="18.5sp"
+                            android:layout_alignParentLeft="true"
+
+                            android:textColor="#d3d3d3"
+                            android:text="Game starts 1/2/2021. 4pm"/>
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/type"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@id/tvTitle"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="5dp"
+
+                            android:layout_marginTop="@dimen/dp1"
+                            android:textSize="15sp"
+                            android:textColor="#ffbf00"
+                            android:text="2 odds"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/typee"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@id/type"
+                            android:layout_marginBottom="7dp"
+
+                            android:textSize="15sp"
+
+
+                            android:textColor="#80FFFFFF"
+                            android:text="Available on 1xbet, Sportybet "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/typeex"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@id/type"
+                            android:layout_marginBottom="7dp"
+
+                            android:textSize="15sp"
+
+
+                            android:textColor="#80FFFFFF"
+                            android:text="Teams involved: Liverpool, manutd.. "/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/risk"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@id/type"
+                            android:layout_marginBottom="7dp"
+
+                            android:textSize="15sp"
+
+
+                            android:textColor="#80FFFFFF"
+                            android:text="Risk chance: 22% "/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/staker"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@id/type"
+                            android:layout_marginBottom="7dp"
+
+                            android:textSize="15sp"
+
+
+                            android:textColor="#80FFFFFF"
+                            android:text="Staked by: Black mamba "/>
+
+                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/button"
+                        android:src="@drawable/ic_offline_pin_black_24dp"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="15dp"
+                        android:layout_height="wrap_content"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

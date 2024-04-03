@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+
+
+    tools:context="iceplay.flame.fleming.com.moonplay.iceplayer">
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/airplane"
+        android:layout_marginTop="18dp"
+        android:visibility="gone"
+        android:padding="10dp"
+        android:background="#0B0B0F"
+
+        android:text="No downloads yet"
+        android:textColor="#fff"
+
+        android:textSize="17sp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_id"
+        android:layout_width="match_parent"
+            android:overScrollMode="never"
+
+        android:layout_below="@+id/btn1"
+
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+    <View
+        android:id="@+id/fko"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="24dp"
+        android:background="#fff" />
+
+    <EditText
+        android:id="@+id/name"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_margin="24.8dp"
+        android:layout_height="48dp"
+        android:background="@drawable/editround"
+        android:backgroundTint="#0A0A0E"
+        android:drawableLeft="@drawable/ic_search_black_24dp"
+        android:textColor="#F5F5FF"
+        android:textColorHint="#fff"
+        android:drawablePadding="10dp"
+        android:imeOptions="actionGo"
+        android:hint="Search available movies"
+        android:inputType="text"
+        android:paddingLeft="10dp" />
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

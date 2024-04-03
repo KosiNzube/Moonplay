@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:backgroundTint="#050509"
+
+    app:cardCornerRadius="7dp"
+    android:id="@+id/card"
+
+
+
+    android:layout_height="wrap_content">
+
+  <com.bosphere.fadingedgelayout.FadingEdgeLayout
+      android:layout_width="match_parent"
+      android:id="@+id/fade"
+      app:fel_edge="top|left|bottom|right"
+      app:fel_size_top="200dp"
+      app:fel_size_bottom="200dp"
+      app:fel_size_left="200dp"
+      app:fel_size_right="200dp"
+      android:layout_height="wrap_content">
+
+
+  <ImageView
+      android:layout_width="match_parent"
+      android:alpha="1"
+
+      android:id="@+id/itemImage"
+      android:layout_height="450dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/type"
+        android:layout_below="@id/tvTitle"
+        android:layout_alignParentTop="true"
+        android:textAlignment="textEnd"
+        android:padding="5dp"
+        android:fontFamily="sans-serif-light"
+
+        android:visibility="gone"
+        android:textSize="15dp"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="40dp"
+        android:textColor="#FF9800"
+        android:text="Film"/>
+
+  </com.bosphere.fadingedgelayout.FadingEdgeLayout>
+  <View
+      android:id="@+id/blur"
+      android:layout_width="match_parent"
+      android:layout_alignParentTop="true"
+
+      android:visibility="gone"
+      android:layout_height="500dp"
+      android:background="#40000000"/>
+
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/tvTitle"
+      android:padding="5dp"
+      android:background="#80050509"
+      android:textSize="17dp"
+
+      android:layout_marginTop="393dp"
+
+      android:textColor="#fff"
+      android:fontFamily="sans-serif-thin"
+
+      />
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView >

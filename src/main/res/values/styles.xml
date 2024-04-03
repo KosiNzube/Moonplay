@@ -1,0 +1,227 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#44444E</item>
+        <item name="colorPrimaryDark">#44444E</item>
+        <item name="colorAccent">#40F0F0FF</item>
+        <item name="android:windowBackground">#050509</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <style parent="ThemeOverlay.AppCompat.Dialog.Alert" name="TrackSelectionDialogThemeOverlay">
+
+        <item name="windowNoTitle">false</item>
+
+    </style>
+    <style name="editor_bottom_tab">
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ButtonTheme" parent="Theme.AppCompat">
+        <item name="colorButtonNormal">@color/primaryDarkColor</item>
+        <item name="colorControlHighlight">@color/primaryLightColor</item>
+    </style>
+    <style name="NextBtnStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/bg_next_selector</item>
+        <item name="android:layout_height">27dp</item>
+        <item name="android:layout_width">57dp</item>
+        <item name="android:text">下一步</item>
+    </style>
+    <style name="EdtStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">10</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="BtnStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="TextDlgStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="hihi" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#44444E</item>
+        <item name="android:windowBackground">#050509</item>
+        <item name="colorPrimaryDark">#44444E</item>
+        <item name="colorAccent">#fff</item>
+        <item name="android:typeface">serif</item>
+
+    </style>
+
+    <style name="hihii" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#050509</item>
+
+
+        <item name="android:windowBackground">#050509</item>
+        <item name="colorPrimaryDark">#050509</item>
+        <item name="colorAccent">#00E5FF</item>
+        <item name="android:typeface">serif</item>
+
+    </style>
+    <style name="MyAppBarLayoutTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
+    <style name="hihigi" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#050509</item>
+        <item name="android:windowBackground">#050509</item>
+        <item name="colorPrimaryDark">#050509</item>
+        <item name="colorAccent">#039BE5</item>
+        <item name="android:typeface">serif</item>
+
+    </style>
+    <style name="hihigi.l" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#050509</item>
+        <item name="android:windowBackground">@drawable/btnround</item>
+        <item name="colorPrimaryDark">#050509</item>
+        <item name="colorAccent">#fff</item>
+        <item name="android:typeface">serif</item>
+
+
+
+    </style>
+
+    <style name="hihiggi" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#050509</item>
+
+        <item name="android:windowBackground">#050509</item>
+        <item name="colorPrimaryDark">#050509</item>
+        <item name="colorAccent">#039BE5</item>
+        <item name="android:typeface">serif</item>
+
+    </style>
+    <style name="hihiggia" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#050509</item>
+        <item name="android:windowBackground">#050509</item>
+        <item name="colorPrimaryDark">#050509</item>
+        <item name="colorAccent">#7CB342</item>
+        <item name="android:textColor">#C0CA33</item>
+        <item name="android:textColorPrimary">#7CB342</item>
+        <item name="android:textColorSecondary">#C0CA33</item>
+
+        <item name="android:textColorHint">#858585</item>
+        <item name="android:typeface">serif</item>
+
+    </style>
+
+
+    <style name="hihigbi" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#000</item>
+        <item name="android:windowBackground">#050509</item>
+        <item name="colorPrimaryDark">#000</item>
+        <item name="colorAccent">#fff</item>
+        <item name="android:typeface">serif</item>
+
+    </style>
+
+    <style name="hihigai" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#000</item>
+        <item name="android:windowBackground">#050509</item>
+        <item name="colorPrimaryDark">#000</item>
+        <item name="colorAccent">#FB8C00</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:typeface">serif</item>
+
+    </style>
+
+    <style name="hihigxi" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#000</item>
+        <item name="android:windowBackground">#050509</item>
+        <item name="colorPrimaryDark">#000</item>
+        <item name="colorAccent">#FB8C00</item>
+        <item name="android:typeface">serif</item>
+
+    </style>
+
+    <style name="hihiii" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#fff</item>
+        <item name="android:windowBackground">#050509</item>
+        <item name="colorPrimaryDark">#44444E</item>
+        <item name="colorAccent">#fff</item>
+        <item name="android:typeface">serif</item>
+
+    </style>
+    <style name="PlayerControlButton">
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:tint">@color/player_controls_center_buttons</item>
+    </style>
+
+    <!-- shared style of all screen rotation buttons (in playback controls) -->
+    <style name="ScreenRotationButton">
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:tint">@color/player_controls_screen_rotation_buttons</item>
+    </style>
+
+    <!-- shared style of all Quick Settings buttons -->
+    <style name="QuickSettingsButton">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:onClick">playback_OnClick</item>
+        <item name="iconMinWidth">5dp</item>
+        <item name="backgroundTint">@color/quick_settings_item_background</item>
+        <item name="iconTint">@color/quick_settings_item_tint_default</item>
+        <item name="textColor">@color/quick_settings_item_text</item>
+        <item name="textIconPadding">10dp</item>
+    </style>
+
+    <!-- shared style of all buttons in more songsfragment -->
+    <style name="MoreActionButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:drawablePadding">15dp</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/settings_swipe_title" />
+
+    <SwitchPreference
+        android:defaultValue="@bool/DEF_SWIPE_GESTURES_EN"
+        android:key="SWIPE_GESTURES_EN"
+        android:summaryOff="@string/settings_swipe_enable_off"
+        android:summaryOn="@string/settings_swipe_enable_on"
+        android:title="@string/settings_swipe_enable_title" />
+
+    <SwitchPreference
+        android:defaultValue="@bool/DEF_BRIGHTNESS_HARD_SWIPE_EN"
+        android:dependency="SWIPE_GESTURES_EN"
+        android:key="BRIGHTNESS_HARD_SWIPE_EN"
+        android:summaryOff="@string/settings_swipe_hard_swipe_enable_off"
+        android:summaryOn="@string/settings_swipe_hard_swipe_enable_on"
+        android:title="@string/settings_swipe_hard_swipe_enable_title" />
+
+    <EditTextPreference
+        android:defaultValue="@integer/DEF_INFO_TEXT_DURATION"
+        android:dependency="SWIPE_GESTURES_EN"
+        android:key="INFO_TEXT_DURATION"
+        android:summary="@string/settings_swipe_info_duration_summary"
+        android:title="@string/settings_swipe_info_duration_title" />
+
+    <Preference
+        android:fragment="com.mobile.app.moonplay.ui.AppSettingsActivity$PreferencesSwipeAdvancedFragment"
+        android:title="@string/settings_swipe_adv_title" />
+</PreferenceScreen>

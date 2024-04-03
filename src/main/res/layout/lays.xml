@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+
+    android:layout_centerInParent="true"
+    android:layout_margin="15dp"
+    android:id="@+id/card"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/lin"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/hihi"
+            android:layout_width="fill_parent"
+            android:layout_gravity="center"
+            android:layout_height="match_parent">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:id="@+id/zzz"
+                android:scaleType="fitXY"
+                app:cardElevation="2dp"
+                android:theme="@style/Base.Theme.MaterialComponents.Light"
+
+
+                app:strokeColor="#444444"
+                app:strokeWidth="1.3dp"
+
+                app:cardBackgroundColor="#FF444444"
+                android:layout_centerHorizontal="true"
+                android:layout_height="160dp">
+
+                <ImageView
+                    android:id="@+id/itemImage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/zzz"
+                android:id="@+id/genre"
+
+                android:layout_margin="5dp"
+                android:textSize="16sp"
+
+                android:textAlignment="center"
+
+                android:textColor="#D6D5D5"
+                android:text="Euro 2020"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/genre"
+                android:id="@+id/des"
+
+                android:textAlignment="center"
+
+                android:layout_marginBottom="5dp"
+                android:textSize="14.5sp"
+
+                android:textColor="#8B8B8B"
+                android:text="Sports"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/pausecardy"
+                android:layout_width="109dp"
+                android:layout_height="26dp"
+                android:layout_below="@+id/des"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="@dimen/dp3"
+                app:strokeColor="#80FFFFFF"
+                app:strokeWidth="0.8dp"
+                android:theme="@style/Base.Theme.MaterialComponents.Light"
+                android:layout_marginBottom="15dp"
+                android:layout_toLeftOf="@id/more"
+                android:paddingLeft="13dp"
+                android:paddingTop="15dp"
+
+                android:paddingRight="13dp"
+                android:paddingBottom="15dp"
+                app:cardCornerRadius="11.5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="#0F0F0F"
+                    android:layout_gravity="center"
+
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/listx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4dp"
+
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text=" 8 plays "
+                        android:textColor="#fff"
+
+                        android:textSize="13.5dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

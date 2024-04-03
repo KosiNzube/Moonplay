@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+
+    android:layout_height="wrap_content">
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+
+
+
+        android:layout_width="wrap_content"
+        android:layout_margin="0dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_height="260dp"
+        android:backgroundTint="#FF444444"
+        android:id="@+id/card"
+        >
+
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="170dp"
+                    android:id="@+id/zzz"
+                    android:backgroundTint="#FF444444"
+
+
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:id="@+id/itemImage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#D9141414"
+                        android:alpha=".8"
+
+                        android:scaleType="centerCrop" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_gravity="bottom"
+                        android:paddingLeft="5dp"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvTitle"
+                        android:textStyle="bold"
+                        android:textSize="19dp"
+
+                        android:layout_marginTop="5dp"
+                        android:textColor="#fff"
+                        android:text="BBN Moments"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/type"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_marginBottom="7dp"
+                        android:textColor="#d3d3d3"
+                        android:text="Erica"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

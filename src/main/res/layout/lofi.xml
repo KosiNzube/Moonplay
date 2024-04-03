@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="iceplay.flame.fleming.com.moonplay.Main5Activity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="21dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="25dp"
+        android:id="@+id/save"
+        android:layout_centerHorizontal="true"
+
+
+        android:layout_above="@id/des"
+        app:cardBackgroundColor="#FFFFFF"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+
+
+
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/foryou"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_toRightOf="@+id/xg"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="3dp"
+
+                android:paddingRight="45dp"
+                android:text="afrobeat"
+                android:textColor="#00BCD4"
+
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:tint="#00BCD4"
+                android:id="@+id/xg"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:paddingLeft="35dp"
+                android:layout_marginRight="5dp"
+
+                android:src="@drawable/quantum_ic_keyboard_arrow_down_white_36"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/yiyii"
+        android:visibility="gone"
+        android:nestedScrollingEnabled="false"
+
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"></androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

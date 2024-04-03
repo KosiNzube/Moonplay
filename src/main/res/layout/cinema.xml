@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card"
+    app:cardCornerRadius="7dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#050509"
+
+
+    android:orientation="vertical">
+    <com.bosphere.fadingedgelayout.FadingEdgeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/fade"
+        app:fel_edge="top|left|bottom|right"
+        app:fel_size_top="200dp"
+        app:fel_size_bottom="200dp"
+        app:fel_size_left="200dp"
+        app:fel_size_right="200dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/itemImage"
+            android:layout_width="match_parent"
+
+            android:layout_height="500dp" />
+    </com.bosphere.fadingedgelayout.FadingEdgeLayout>
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="464dp"
+        android:background="#80050509"
+        android:fontFamily="sans-serif-thin"
+
+        android:padding="5dp"
+        android:textColor="#fff"
+        android:textSize="17dp"
+
+        />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:text="NEW IN"
+
+        android:textColor="#FFFFFF"
+        android:textSize="50dp" />
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bibi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050509"
+
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:descendantFocusability="blocksDescendants"
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/everything"
+            android:layout_width="match_parent"
+
+
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+
+                android:layout_marginTop="25dp"
+
+                >
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_above="@id/des"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="10dp"
+
+
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardCornerRadius="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_gravity="left|center">
+
+
+                        <TextView
+                            android:id="@+id/listqq"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+
+                            android:layout_centerHorizontal="true"
+
+
+                            android:layout_centerVertical="true"
+
+                            android:layout_marginTop="3dp"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="5dp"
+                            android:text="      Buramo      "
+                            android:textColor="#00BCD4"
+
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:layout_marginTop="81dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+
+                android:textAlignment="textStart">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:background="#050509"
+                    android:descendantFocusability="blocksDescendants"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:id="@+id/playback"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btn3"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+
+
+                            android:layout_marginLeft="8dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/mb"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@id/studio"
+
+                                android:background="#00282835"
+                                android:drawablePadding="7dp"
+                                android:text=" Fresh Release "
+
+                                android:textAlignment="textStart"
+                                android:textAllCaps="false"
+
+                                android:textColor="#fff"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" For You "
+                                android:textColor="#F4511E"
+
+
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/studio"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:background="#00282835"
+
+                            android:fontFamily="monospace"
+                            android:src="@drawable/ic_effect"
+                            android:textAllCaps="false"
+                            android:textColor="#fff" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+
+                        android:textAlignment="textStart"
+                        android:visibility="gone">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/x"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:layout_marginBottom="10dp"
+
+                            android:nestedScrollingEnabled="false"
+                            android:visibility="gone"
+
+                            ></androidx.recyclerview.widget.RecyclerView>
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginRight="8dp"
+                            android:background="#3DD4D4D4" />
+
+                    </RelativeLayout>
+
+
+                    <com.google.android.material.card.MaterialCardView
+
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="99dp"
+                        app:cardElevation="2dp"
+
+
+                        app:strokeColor="#444444"
+                        app:strokeWidth="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:textAlignment="textStart"
+                        android:theme="@style/Base.Theme.MaterialComponents.Light"
+
+                        app:cardBackgroundColor="#0F0F10"
+                        app:cardCornerRadius="35dp">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#0F0F0F"
+
+                            android:id="@+id/linear"
+                            android:descendantFocusability="blocksDescendants"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="23dp"
+
+                                android:layout_below="@id/btn3"
+                                >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+
+
+                                    android:layout_marginLeft="8dp"
+                                    android:orientation="vertical">
+
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toLeftOf="@id/studio"
+
+                                        android:background="#00282835"
+                                        android:drawablePadding="7dp"
+                                        android:text=" Make your choice "
+
+                                        android:textAlignment="textStart"
+                                        android:textAllCaps="false"
+
+                                        android:textColor="#fff"
+                                        android:textSize="21sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textStyle="bold"
+                                        android:text=" Instant Filter "
+                                        android:textColor="#00ACC1"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#00282835"
+
+                                    android:fontFamily="monospace"
+                                    android:src="@drawable/ic_beauty"
+                                    android:textAllCaps="false"
+                                    android:textColor="#fff" />
+
+                            </RelativeLayout>
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="8dp"
+                                android:background="#1B1B1B" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="1dp"
+
+                                android:textAlignment="textStart"
+                                >
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/yiyii"
+                                    android:layout_width="match_parent"
+
+                                    android:layout_height="match_parent"
+
+                                    android:layout_alignParentStart="true"
+
+                                    android:layout_alignParentTop="true"
+                                    android:nestedScrollingEnabled="false"></androidx.recyclerview.widget.RecyclerView>
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/btn3"
+                               >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+
+
+                                    android:layout_marginLeft="8dp"
+                                    android:orientation="vertical">
+
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toLeftOf="@id/studio"
+
+                                        android:background="#00282835"
+                                        android:drawablePadding="7dp"
+                                        android:text=" Romance "
+
+                                        android:textAlignment="textStart"
+                                        android:textAllCaps="false"
+
+                                        android:textColor="#fff"
+                                        android:textSize="21sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=" Intimacy "
+                                        android:textColor="#00ACC1"
+
+                                        android:textStyle="bold"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:background="#00282835"
+                                    android:id="@+id/romancebut"
+                                    android:padding="15dp"
+
+
+                                    android:fontFamily="monospace"
+                                    android:src="@drawable/ic_skip_next_black_24dp"
+                                    android:textAllCaps="false"
+                                    android:textColor="#fff" />
+
+                            </RelativeLayout>
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="8dp"
+                                android:background="#1B1B1B" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+
+                                android:layout_marginBottom="1dp"
+                                android:textAlignment="textStart">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+
+                                    android:layout_height="match_parent"
+
+                                    android:layout_centerInParent="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:textAlignment="textStart">
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/romance"
+                                        android:layout_width="match_parent"
+
+
+                                        android:layout_height="match_parent"
+
+                                        android:layout_gravity="center"
+
+                                        android:nestedScrollingEnabled="false"
+
+                                        ></androidx.recyclerview.widget.RecyclerView>
+
+
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/btn3">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+
+
+                                    android:layout_marginLeft="8dp"
+                                    android:orientation="vertical">
+
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toLeftOf="@id/studio"
+
+                                        android:background="#00282835"
+                                        android:drawablePadding="7dp"
+                                        android:text=" Tv Series "
+
+                                        android:textAlignment="textStart"
+                                        android:textAllCaps="false"
+
+                                        android:textColor="#fff"
+                                        android:textSize="21sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=" Binge "
+                                        android:textColor="#00ACC1"
+                                        android:textSize="18sp"
+
+                                        android:textStyle="bold"
+                                        />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:background="#00282835"
+                                    android:id="@+id/titii"
+                                    android:padding="15dp"
+
+                                    android:fontFamily="monospace"
+                                    android:src="@drawable/ic_skip_next_black_24dp"
+                                    android:textAllCaps="false"
+                                    android:textColor="#fff" />
+
+                            </RelativeLayout>
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="8dp"
+                                android:background="#1B1B1B" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+
+                                android:layout_marginBottom="1dp"
+                                android:textAlignment="textStart">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+
+                                    android:layout_height="match_parent"
+
+                                    android:layout_centerHorizontal="true"
+                                    android:textAlignment="textStart">
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/anime"
+                                        android:layout_width="match_parent"
+
+                                        android:layout_height="match_parent"
+                                        android:layout_centerVertical="true"
+
+                                        android:layout_gravity="center"
+
+                                        android:nestedScrollingEnabled="false"></androidx.recyclerview.widget.RecyclerView>
+
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+
+
+                                    android:layout_marginLeft="8dp"
+                                    android:orientation="vertical">
+
+                                    <Button
+                                        android:id="@+id/rb"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_toLeftOf="@id/studio"
+                                        android:background="#00282835"
+                                        android:drawablePadding="7dp"
+                                        android:text=" Horror "
+
+                                        android:textAlignment="textStart"
+
+                                        android:textAllCaps="false"
+
+                                        android:textColor="#fff"
+                                        android:textSize="21sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=" Scary film "
+                                        android:textColor="#00ACC1"
+
+                                        android:textStyle="bold"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:padding="15dp"
+                                    android:background="#00282835"
+                                    android:id="@+id/backbutton"
+                                    android:fontFamily="monospace"
+                                    android:src="@drawable/ic_skip_next_black_24dp"
+                                    android:textAllCaps="false"
+                                    android:textColor="#fff" />
+
+                            </RelativeLayout>
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="8dp"
+                                android:background="#272727" />
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+
+                                android:layout_height="match_parent"
+                                android:layout_below="@id/save"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+
+                                android:layout_marginBottom="1dp"
+                                android:textAlignment="textStart">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+
+                                    android:layout_height="match_parent"
+
+                                    android:layout_centerHorizontal="true"
+                                    android:textAlignment="textStart">
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/horror"
+                                        android:layout_width="match_parent"
+
+                                        android:layout_height="match_parent"
+                                        android:layout_centerVertical="true"
+
+                                        android:layout_gravity="center"
+
+                                        android:nestedScrollingEnabled="false"></androidx.recyclerview.widget.RecyclerView>
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/btn3">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+
+
+                                    android:layout_marginLeft="8dp"
+                                    android:orientation="vertical">
+
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toLeftOf="@id/studio"
+
+                                        android:background="#00282835"
+                                        android:drawablePadding="7dp"
+                                        android:text=" Thriller"
+
+                                        android:textAlignment="textStart"
+                                        android:textAllCaps="false"
+
+                                        android:textColor="#fff"
+                                        android:textSize="21sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=" Action and adventure "
+
+                                        android:textStyle="bold"
+                                        android:textColor="#00ACC1"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:background="#00282835"
+
+                                    android:padding="15dp"
+                                    android:id="@+id/nollyx"
+                                    android:fontFamily="monospace"
+                                    android:src="@drawable/ic_skip_next_black_24dp"
+                                    android:textAllCaps="false"
+                                    android:textColor="#fff" />
+
+                            </RelativeLayout>
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="8dp"
+                                android:background="#1B1B1B" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+
+                                android:textAlignment="textStart">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+
+                                    android:layout_height="match_parent"
+
+                                    android:layout_centerHorizontal="true"
+                                    android:textAlignment="textStart">
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/action"
+                                        android:layout_width="match_parent"
+
+                                        android:layout_height="match_parent"
+
+                                        android:layout_centerInParent="true"
+                                        android:nestedScrollingEnabled="false"
+
+                                        ></androidx.recyclerview.widget.RecyclerView>
+                                </RelativeLayout>
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginTop="12dp"
+                                    android:layout_marginRight="8dp"
+                                    android:background="#3DD4D4D4"
+                                    android:visibility="invisible" />
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/btn3">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+
+
+                                    android:layout_marginLeft="8dp"
+                                    android:orientation="vertical">
+
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toLeftOf="@id/studio"
+
+                                        android:background="#00282835"
+                                        android:drawablePadding="7dp"
+                                        android:text=" Have a good laugh"
+
+                                        android:textAlignment="textStart"
+                                        android:textAllCaps="false"
+
+                                        android:textColor="#fff"
+                                        android:textSize="21sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=" Fun and comedy "
+
+                                        android:textStyle="bold"
+                                        android:textColor="#00ACC1"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:background="#00282835"
+
+                                    android:padding="15dp"
+                                    android:id="@+id/funbut"
+                                    android:fontFamily="monospace"
+                                    android:src="@drawable/ic_skip_next_black_24dp"
+                                    android:textAllCaps="false"
+                                    android:textColor="#fff" />
+
+                            </RelativeLayout>
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="8dp"
+                                android:background="#1B1B1B" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+
+                                android:layout_marginBottom="99dp"
+                                android:textAlignment="textStart">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+
+                                    android:layout_height="match_parent"
+
+                                    android:layout_centerHorizontal="true"
+                                    android:textAlignment="textStart">
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/funrecy"
+                                        android:layout_width="match_parent"
+
+                                        android:layout_height="match_parent"
+
+                                        android:layout_centerInParent="true"
+                                        android:nestedScrollingEnabled="false"
+
+                                        ></androidx.recyclerview.widget.RecyclerView>
+                                </RelativeLayout>
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginTop="12dp"
+                                    android:layout_marginRight="8dp"
+                                    android:background="#3DD4D4D4"
+                                    android:visibility="invisible" />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="85dp"
+
+        android:layout_centerInParent="true"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+
+
+        />
+
+</RelativeLayout>

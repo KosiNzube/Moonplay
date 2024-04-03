@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/bibi"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+
+        android:nestedScrollingEnabled="false"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:descendantFocusability="blocksDescendants"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+    <RelativeLayout
+        android:id="@+id/everything"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="21dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="25dp"
+            android:id="@+id/save"
+            android:layout_centerHorizontal="true"
+
+
+            android:layout_above="@id/des"
+            app:cardBackgroundColor="#FFFFFF"
+            android:layout_height="50dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="left|center"
+
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+
+                    android:paddingRight="15dp"
+                    android:layout_centerVertical="true"
+
+                    android:paddingLeft="15dp"
+                    android:text="    air Vibes    "
+                    android:textColor="#00BCD4"
+                    android:id="@+id/listqq"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+
+                    />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="38dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/save"
+
+            app:cardBackgroundColor="#33363636"
+            android:textAlignment="textStart"
+            android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginBottom="20dp"
+
+        android:layout_below="@id/save"
+        android:nestedScrollingEnabled="false"
+        android:id="@+id/recycler_view"
+
+        ></androidx.recyclerview.widget.RecyclerView>
+        </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

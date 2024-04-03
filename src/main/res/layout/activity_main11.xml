@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#0A0A0E"
+    tools:context="iceplay.flame.fleming.com.moonplay.Main11Activity">
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:overScrollMode="never"
+
+      android:scrollbars="none">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0A0A0E"
+
+
+        android:orientation="vertical">
+
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/yiyi"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:overScrollMode="never"
+          android:layout_marginBottom="15dp"
+          android:orientation="vertical">
+      </androidx.recyclerview.widget.RecyclerView>
+      <View
+          android:id="@+id/fkko"
+          android:layout_width="match_parent"
+          android:layout_height="500dp"
+          android:layout_marginBottom="15dp"
+
+          android:background="#80000000"
+
+
+          />
+
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_marginTop="30dp"
+          android:layout_alignParentLeft="true"
+          android:padding="15dp"
+
+          android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+          android:visibility="invisible"
+          android:id="@+id/backln"
+          android:layout_height="wrap_content" />
+
+      <TextView
+          android:id="@+id/mb"
+
+
+
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+
+          android:textAlignment="center"
+          android:visibility="gone"
+
+          android:text="Play a Video"
+          android:layout_margin="5dp"
+          android:layout_below="@id/fkko"
+          android:fontFamily="sans-serif-thin"
+
+
+
+
+          android:textColor="#fff"
+          android:textSize="20sp"
+          />
+      <TextView
+          android:id="@+id/musical"
+
+
+          android:visibility="gone"
+
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+
+          android:textAlignment="center"
+
+          android:text="Musical"
+          android:layout_below="@id/mb"
+          android:fontFamily="sans-serif-thin"
+          android:layout_marginTop="9dp"
+          android:layout_marginLeft="5dp"
+          android:layout_centerHorizontal="true"
+
+
+
+
+          android:textColor="#fff"
+          android:textSize="18sp"
+          />
+
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/trendingRecy"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/mb"
+          android:overScrollMode="never"
+          android:layout_marginTop="5dp"
+          android:orientation="vertical"></androidx.recyclerview.widget.RecyclerView>
+
+
+      <TextView
+          android:id="@+id/romance"
+
+
+
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+
+          android:textAlignment="center"
+          android:layout_marginBottom="5dp"
+
+          android:text="Kim reports"
+          android:layout_below="@id/trendingRecy"
+          android:fontFamily="sans-serif-thin"
+          android:layout_marginTop="3dp"
+          android:layout_marginLeft="5dp"
+
+
+
+          android:visibility="gone"
+
+          android:textColor="#fff"
+          android:textSize="20sp"
+          />
+
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/poop"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/romance"
+
+
+          android:overScrollMode="never"
+          android:visibility="gone"
+
+          android:layout_marginTop="5dp"
+          android:orientation="vertical"></androidx.recyclerview.widget.RecyclerView>
+      <TextView
+          android:id="@+id/thriller"
+
+
+
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+
+          android:textAlignment="center"
+          android:layout_centerHorizontal="true"
+
+          android:text="Thriller"
+          android:layout_below="@id/poop"
+          android:fontFamily="sans-serif-thin"
+          android:layout_marginTop="3dp"
+          android:layout_marginLeft="5dp"
+          android:visibility="gone"
+
+
+
+
+          android:textColor="#fff"
+          android:textSize="18sp"
+          />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/action"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/thriller"
+
+          android:overScrollMode="never"
+          android:visibility="gone"
+
+
+          android:layout_marginTop="5dp"
+          android:orientation="vertical"></androidx.recyclerview.widget.RecyclerView>
+
+
+      <TextView
+          android:id="@+id/random"
+
+
+
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+
+          android:textAlignment="center"
+          android:layout_centerHorizontal="true"
+
+          android:text="Community"
+          android:visibility="gone"
+          android:layout_below="@id/action"
+          android:fontFamily="sans-serif-thin"
+          android:layout_marginTop="3dp"
+          android:layout_marginLeft="5dp"
+
+
+
+
+          android:textColor="#fff"
+          android:textSize="18sp"
+          />
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/randomrecy"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/random"
+
+
+          android:overScrollMode="never"
+          android:layout_marginBottom="25dp"
+          android:visibility="gone"
+
+          android:layout_marginTop="5dp"
+          android:orientation="vertical"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+      <TextView
+          android:id="@+id/cwatch"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignRight="@id/iceplay"
+          android:layout_alignParentRight="true"
+
+          android:layout_marginRight="15dp"
+          android:background="#800F0F14"
+
+
+
+          android:layout_marginTop="56dp"
+          android:fontFamily="sans-serif-thin"
+          android:padding="3dp"
+          android:text="Latest on ICE"
+          android:textColor="#F5F5FF"
+
+          android:textSize="13sp"
+          android:visibility="visible" />
+      <ImageView
+          android:layout_alignParentLeft="true"
+          android:padding="13dp"
+          android:layout_marginTop="42dp"
+          android:layout_width="wrap_content"
+          android:visibility="invisible"
+          android:layout_height="wrap_content"
+
+          android:src="@drawable/ic_cast_black_24dp"
+          android:id="@+id/backkk"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="45dp"
+
+          />
+
+
+    </RelativeLayout>
+  </ScrollView>
+  <View
+      android:id="@+id/fko"
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:background="#80000000" />
+  <ProgressBar
+      android:id="@+id/progressBar"
+      android:layout_width="30dp"
+      android:layout_height="40dp"
+      android:layout_marginTop="190dp"
+
+      android:layout_centerHorizontal="true"
+
+
+      />
+
+</RelativeLayout>

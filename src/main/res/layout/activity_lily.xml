@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#050509"
+    android:paddingLeft="@dimen/dp5"
+
+    android:paddingRight="@dimen/dp5"
+
+    android:layout_height="match_parent"
+    tools:context="iceplay.flame.fleming.com.moonplay.lily">
+
+    <RelativeLayout
+        android:id="@+id/con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="30dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/studio"
+
+                android:id="@+id/searchtxt"
+                android:background="#00282835"
+                android:drawablePadding="7dp"
+                android:letterSpacing="0.01"
+                android:text=" Search "
+
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+
+                android:textColor="#fff"
+                android:textSize="31dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Continue "
+                android:textColor="#8B8B8B"
+                android:textSize="18sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <com.arlib.floatingsearchview.FloatingSearchView
+        android:id="@+id/floating_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/con"
+        android:layout_marginLeft="5dp"
+
+        android:layout_marginTop="1.8dp"
+        android:layout_marginRight="5dp"
+        android:textAlignment="center"
+        app:floatingSearch_backgroundColor="#d3d3d3"
+
+
+        app:floatingSearch_hintTextColor="#454545"
+        app:floatingSearch_searchHint="Smart Anime Recommender "
+        app:floatingSearch_showMenuAction="true"
+        app:floatingSearch_showSearchKey="true"
+        app:floatingSearch_showVoiceInput="true"
+        app:floatingSearch_suggestionsListAnimDuration="250"
+        app:floatingSearch_viewSuggestionItemTextColor="#00ACC1" />
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/floating_search_view"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#80050509"
+        android:divider="#444444"
+        android:dividerHeight="1dp"
+        android:paddingBottom="1dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/dededed"
+        android:layout_below="@id/floating_search_view"
+        android:layout_height="match_parent">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:visibility="gone"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="14dp"
+        android:background="#00282835"
+        android:drawablePadding="7dp"
+
+        android:text=" make your choice "
+        android:textAlignment="textStart"
+
+        android:textAllCaps="false"
+        android:textColor="#d3d3d3"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/yiyii"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="never"></androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+    <TextView
+
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textStyle="bold"
+        android:id="@+id/back"
+        android:padding="8dp"
+
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="1dp"
+        android:textSize="20dp"
+
+        android:textColor="#fff"
+
+
+        />
+
+    <TextView
+
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refresh "
+        android:id="@+id/refresh"
+
+        android:padding="8dp"
+        android:textStyle="bold"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="1dp"
+        android:textSize="20dp"
+
+        android:textColor="#fff"
+
+
+        />
+
+</RelativeLayout>

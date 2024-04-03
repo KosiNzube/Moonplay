@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardview="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:nestedScrollingEnabled="false"
+    android:overScrollMode="never"
+
+    android:scrollbars="none"
+    android:background="#0F0F10"
+
+
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/fix"
+
+        android:layout_marginBottom="@dimen/dp5"
+        android:background="#80E6E5E5"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:clickable="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+
+
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/card"
+            android:backgroundTint="#40444444">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/lin"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+
+                    android:id="@+id/hihi"
+
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+
+
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+
+                        <ImageView
+                            android:id="@+id/button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="15dp"
+                            android:src="@drawable/ic_visibility_black_24dp"
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:id="@+id/za"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:id="@+id/itemImagoe"
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginTop="3dp"
+                                app:cardBackgroundColor="#BF050505"
+
+                                app:cardCornerRadius="10dp"
+                                app:cardElevation="@dimen/dp5">
+
+                                <ImageView
+                                    android:id="@+id/itemImage"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="170dp"
+                                    android:layout_centerInParent="true"
+                                    android:background="#D90A0A0F"
+                                    android:scaleType="centerCrop" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/ic_stars_black_24dp"
+                                    android:visibility="invisible"
+                                    app:tint="#22C8C8FF" />
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginEnd="@dimen/dp5"
+                            android:layout_marginBottom="@dimen/dp5"
+                            android:layout_toRightOf="@id/za">
+
+                            <TextView
+                                android:id="@+id/tvTitle"
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="3dp"
+                                android:text="Once upon a time"
+                                android:textColor="#d3d3d3"
+
+                                android:textSize="18.5sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tvTitle"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginTop="@dimen/dp1"
+                                android:layout_marginRight="5dp"
+
+                                android:layout_marginBottom="5dp"
+                                android:text="Genre"
+                                android:textColor="#FF9800"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/cast"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/type"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginTop="1dp"
+                                android:layout_marginRight="5dp"
+
+
+                                android:layout_marginBottom="5dp"
+                                android:text="Cast"
+                                android:textColor="#4CAF50"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/typee"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/cast"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginBottom="7dp"
+
+                                android:text="Instant play Thaudhcuducudhcdhcdcu hcuhcuuscudbcybdycbdbcydcbdy ydbcc y ycbys Trouble maker"
+
+
+                                android:textColor="#d3d3d3"
+                                android:textSize="13.5sp" />
+
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/pall"
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/play"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+
+                            android:layout_marginRight="@dimen/dp5"
+                            android:theme="@style/Base.Theme.MaterialComponents.Light"
+                            app:cardBackgroundColor="#000F0F10"
+                            app:cardCornerRadius="24.5dp"
+                            app:cardElevation="2dp"
+                            app:strokeColor="#007080"
+                            app:strokeWidth="1dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                android:layout_gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_centerInParent="true"
+                                    android:drawableLeft="@drawable/exo_controls_play"
+                                    android:gravity="center"
+                                    android:paddingLeft="30dp"
+                                    android:paddingRight="30dp"
+                                    android:text=" Play "
+                                    android:textColor="#fff"
+                                    android:textSize="21sp"
+                                    android:textStyle="bold" />
+
+
+                            </RelativeLayout>
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/save"
+
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="@dimen/dp5"
+                            android:theme="@style/Base.Theme.MaterialComponents.Light"
+                            app:cardBackgroundColor="#000F0F10"
+                            app:cardCornerRadius="24.5dp"
+                            app:cardElevation="2dp"
+                            app:strokeColor="#007080"
+                            app:strokeWidth="1dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                android:layout_gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_centerInParent="true"
+                                    android:drawableRight="@drawable/ic_offline_pin_black_24dp"
+                                    android:gravity="center"
+                                    android:paddingLeft="30dp"
+                                    android:paddingRight="30dp"
+                                    android:text=" Save "
+                                    android:textColor="#fff"
+                                    android:textSize="21sp"
+                                    android:textStyle="bold" />
+
+
+                            </RelativeLayout>
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                    </LinearLayout>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+
+                        android:layout_marginTop="15dp"
+                        android:theme="@style/Base.Theme.MaterialComponents.Light"
+                        app:strokeColor="#007080"
+                        app:strokeWidth="1dp"
+                        app:cardCornerRadius="24.5dp"
+                        app:cardBackgroundColor="#0003A9F4"
+                        android:id="@+id/sub"
+                        app:cardElevation="2dp"
+                        android:visibility="gone"
+                        android:layout_height="50dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center"
+
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+
+                                android:drawablePadding="7dp"
+                                android:drawableLeft="@drawable/ic_baseline_dry_24"
+                                android:layout_height="wrap_content"
+
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:paddingLeft="30dp"
+                                android:paddingRight="30dp"
+                                android:text="Unavailable "
+                                android:textColor="#fff"
+                                android:textSize="21sp"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </RelativeLayout>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Base.Theme.MaterialComponents.Light"
+                    app:strokeColor="#01675D"
+                    app:strokeWidth="1dp"
+                    app:cardCornerRadius="24.5dp"
+                    app:cardBackgroundColor="#0003A9F4"
+                    android:id="@+id/fave"
+                    app:cardElevation="2dp"
+                    android:layout_height="50dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp"
+                            android:text=" ADD TO WATCHLIST "
+                            android:textColor="#fff"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Base.Theme.MaterialComponents.Light"
+
+                    app:strokeColor="#3F51B5"
+                    app:strokeWidth="1dp"
+                    app:cardCornerRadius="24.5dp"
+                    app:cardBackgroundColor="#0003A9F4"
+                    android:id="@+id/similar"
+                    app:cardElevation="2dp"
+                    android:layout_height="50dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp"
+                            android:text=" WATCH TRAILER "
+                            android:textColor="#fff"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

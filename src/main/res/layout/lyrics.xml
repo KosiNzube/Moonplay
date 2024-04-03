@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050509"
+    tools:context="iceplay.flame.fleming.com.moonplay.signup">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:descendantFocusability="blocksDescendants"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:descendantFocusability="blocksDescendants"
+
+            android:layout_width="match_parent"
+            android:id="@+id/everything"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentTop="true"
+                android:id="@+id/relative"
+                android:layout_centerHorizontal="true"
+
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/pro"
+                    android:textAlignment="textStart"
+                    android:layout_width="295dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+
+                    android:textColor="#fff"
+                    android:text="Real Time Generation"
+
+
+                    android:textSize="18dp"
+
+                    />
+
+
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fifi"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+
+                android:layout_below="@+id/relative"
+
+                android:overScrollMode="never"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

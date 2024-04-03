@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/audio_item"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+
+    android:layout_marginBottom="7dp"
+
+
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/z"
+        android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:id="@+id/v"
+        app:cardCornerRadius="29dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/music_img"
+
+        />
+    </androidx.cardview.widget.CardView>
+        <ImageView
+            android:id="@+id/searchy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_sentiment_satisfied_black_24dp"
+            android:drawablePadding="8dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="Maestro "
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:layout_centerVertical="true"
+
+            android:textSize="20dp"
+
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/v"
+            android:layout_toLeftOf="@id/searchy"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17.5sp"
+        android:text="Starboy"
+
+        android:layout_centerVertical="true"
+        android:textColor="#d3d3d3"
+        android:id="@+id/music_file_name"
+
+
+        />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Starboy"
+                android:layout_marginTop="5dp"
+
+                android:layout_centerVertical="true"
+                android:textColor="#868686"
+                android:id="@+id/album"
+
+
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/btnx"
+        android:layout_marginLeft="70dp"
+        android:background="#3DD4D4D4"
+        android:layout_marginTop="12dp"
+        />
+
+</LinearLayout>

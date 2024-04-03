@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050507"
+
+    tools:context="iceplay.flame.fleming.com.moonplay.Main7Activity">
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:descendantFocusability="blocksDescendants"
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+
+        <RelativeLayout
+            android:id="@+id/everything"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.card.MaterialCardView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+
+
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="99dp"
+                android:textAlignment="textStart"
+                android:theme="@style/Base.Theme.MaterialComponents.Light"
+                app:cardBackgroundColor="#000F0F10"
+                app:cardCornerRadius="35dp"
+                app:cardElevation="2dp"
+
+                app:strokeColor="#00444444"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:background="#000F0F10"
+                    android:descendantFocusability="blocksDescendants"
+                    android:orientation="vertical">
+
+
+
+
+]
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btn3"
+
+                       >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+
+
+                            android:layout_marginLeft="8dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@id/studio"
+
+                                android:textStyle="bold"
+                                android:background="#00282835"
+                                android:drawablePadding="7dp"
+                                android:text=" Your Pinned "
+
+                                android:textAlignment="textStart"
+                                android:textAllCaps="false"
+
+                                android:textColor="#fff"
+                                android:textSize="21sp"
+                              />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Channels "
+                                android:textColor="#8B8B8B"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="#00282835"
+                            android:layout_marginRight="@dimen/dp5"
+
+                            android:padding="@dimen/dp10"
+                            android:fontFamily="monospace"
+                            android:src="@drawable/ic_beauty"
+                            android:textAllCaps="false"
+                            android:textColor="#fff" />
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+                        android:background="#2F2F2F" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/yiyii"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="30dp"
+
+                        android:paddingLeft="8dp"
+
+                        android:nestedScrollingEnabled="false"
+                        android:overScrollMode="never"></androidx.recyclerview.widget.RecyclerView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btn3"
+                        android:visibility="gone"
+
+                        android:layout_marginTop="13dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+
+
+                            android:layout_marginLeft="8dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@id/studio"
+
+                                android:background="#00282835"
+                                android:drawablePadding="7dp"
+                                android:text=" more channels "
+
+                                android:textAlignment="textStart"
+                                android:textAllCaps="false"
+
+                                android:textColor="#fff"
+                                android:textSize="21sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" For You "
+                                android:textColor="#8B8B8B"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/cam"
+
+                            android:padding="@dimen/dp10"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:background="#00282835"
+
+                            android:fontFamily="monospace"
+                            android:src="@drawable/ic_beauty"
+                            android:textAllCaps="false"
+                            android:textColor="#fff" />
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+                        android:background="#2F2F2F"
+                        android:visibility="invisible" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/first"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:visibility="gone"
+                        android:nestedScrollingEnabled="false"
+                        android:layout_marginBottom="30dp"
+
+                        android:overScrollMode="never"
+                        ></androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="200dp"
+                android:visibility="invisible"
+
+
+                />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="60dp"
+
+        android:visibility="gone"
+        android:id="@+id/vx"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="109dp"
+        android:layout_alignParentRight="true"
+        app:cardCornerRadius="29dp"
+
+        android:layout_alignParentBottom="true"
+
+        app:cardBackgroundColor="#3949AB"
+
+        android:layout_centerVertical="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_offline_pin_black_24dp"
+            android:layout_height="wrap_content"
+
+            android:padding="15dp"
+            android:layout_gravity="center"
+            android:id="@+id/playy"
+
+            />
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="350dp"
+        android:textAlignment="textStart"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/mus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:text="Short clip channels from users  "
+        android:textStyle="bold"
+        android:textColor="#68FFFFFF"
+        android:textSize="33dp"
+        />
+
+</RelativeLayout>

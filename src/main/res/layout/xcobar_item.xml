@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/audio_item"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="7dp"
+    android:layout_marginTop="10dp"
+
+    android:layout_marginBottom="7dp"
+
+
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/v"
+            android:layout_centerVertical="true"
+
+            android:layout_height="wrap_content">
+            <ImageView
+
+                android:src="@drawable/ic_play_arrow_black_24dp"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="22dp"
+                android:scaleType="centerCrop" />
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:id="@+id/vx"
+            android:layout_marginLeft="5dp"
+            app:cardCornerRadius="29dp"
+
+            app:cardBackgroundColor="#33505050"
+            android:layout_centerVertical="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:visibility="invisible"
+                android:id="@+id/music_img"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="95dp"
+            android:layout_toLeftOf="@id/more"
+            android:paddingLeft="15dp"
+            android:paddingRight="8dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            app:cardCornerRadius="10dp"
+            android:id="@+id/pausecardy"
+            android:layout_marginRight="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:cardBackgroundColor="#FFFFFF"
+            android:layout_height="23dp">
+
+            <TextView
+                android:id="@+id/list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+
+
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:text="Read"
+                android:textColor="#000"
+                android:textSize="12.5dp"
+                android:textStyle="bold"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_more_vert_black_24dp"
+            android:tint="#fff"
+            android:drawablePadding="8dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="Maestro "
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:layout_centerVertical="true"
+
+            android:textSize="20dp"
+
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/v"
+            android:layout_toLeftOf="@id/pausecardy"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:text="Starboy "
+
+        android:layout_centerVertical="true"
+        android:textColor="#d3d3d3"
+        android:id="@+id/music_file_name"
+
+
+        />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Xcobar "
+                android:layout_marginTop="5dp"
+
+                android:layout_centerVertical="true"
+                android:textColor="#868686"
+                android:id="@+id/pro"
+
+
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/btnx"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="15dp"
+        android:background="#3DD4D4D4"
+        android:layout_marginTop="12dp"
+        />
+
+</LinearLayout>

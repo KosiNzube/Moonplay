@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="iceplay.flame.fleming.com.moonplay.iceplayer">
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+        android:layout_below="@id/btn2"
+        android:layout_marginTop="1dp"
+        android:id="@+id/viewp"
+        android:layout_height="match_parent">
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <TextView
+        android:id="@+id/pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btn2"
+        android:textColor="#fff"
+        android:text="Beta Development"
+
+        android:visibility="gone"
+        android:textSize="16dp"
+
+        />
+
+    <View
+        android:id="@+id/fkoo"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#59000000" />
+
+    <TextView
+        android:id="@+id/magic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+
+        android:text=" local videos "
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/btn2"
+        android:layout_below="@+id/fkoo"
+        android:background="#40D3D3D3"
+
+        />
+
+
+    <View
+        android:id="@+id/fko"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#8C000000" />
+    <ImageView
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="2dp"
+        android:tint="#fff"
+        android:src="@drawable/ic_refresh_black_24dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/backln"
+        android:textColor="#fff"
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Re-"
+        android:textStyle="bold"
+        android:id="@+id/playlist"
+
+        android:padding="10dp"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="1dp"
+        android:textSize="20dp"
+
+        android:textColor="#FF0000"
+
+
+        />
+
+    <TextView
+        android:id="@+id/backx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+
+        android:textStyle="bold"
+        android:textColor="#FF9800"
+        android:text=" BETA "
+        android:layout_marginLeft="0dp"
+        android:padding="7dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/btn1"
+        android:layout_alignTop="@+id/fko"
+        android:background="#4DD3D3D3"
+
+        />
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/audio_item"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="7dp"
+    android:layout_marginTop="10dp"
+
+    android:layout_marginBottom="7dp"
+
+
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pausecardy"
+            android:layout_width="95dp"
+            android:layout_height="23dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/more"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="15dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+
+
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:text="Curate"
+                android:textColor="#000"
+                android:textSize="12.5dp"
+                android:textStyle="bold"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_more_vert_black_24dp"
+            android:tint="#fff"
+            android:drawablePadding="8dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="Maestro "
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:layout_centerVertical="true"
+
+            android:textSize="20dp"
+
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="13dp"
+            android:layout_toLeftOf="@id/pausecardy"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/music_file_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+
+                android:text="Starboy "
+                android:textColor="#d3d3d3"
+                android:textSize="19sp"
+
+
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/btnx"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#3DD4D4D4"
+        android:layout_marginTop="12dp"
+        />
+
+</LinearLayout>

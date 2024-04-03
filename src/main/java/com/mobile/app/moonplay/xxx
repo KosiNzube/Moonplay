@@ -1,0 +1,43 @@
+        series.orderBy("timestamp", Query.Direction.ASCENDING).get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                if (task.isSuccessful()) {
+                    //gigi.setVisibility(View.VISIBLE);
+
+                    final List<Movie> movies = new ArrayList<>();
+                    for (DocumentSnapshot documentSnapshot : Objects.requireNonNull(task.getResult())) {
+                        Movie gigi = documentSnapshot.toObject(Movie.class);
+                        gigi.setVideo(documentSnapshot.getId());
+                        gigi.setUploader(series.getId());
+
+                        movies.add(gigi);
+                    }
+                    int size = movies.size();
+                    ArrayList<Movie> movieArrayList = new ArrayList<>();
+                    for (int i = size - 1; i >= 0; i--) {
+                        int rand = new Random().nextInt(size);
+                        Movie movie = movies.get(i);
+                        if (!movieArrayList.contains(movie))
+                            movieArrayList.add(movie);
+
+                        /*
+                       if (movie.getType().contains("3")){
+                           movieArrayList.remove(movie);
+                       }
+                       */
+                    }
+
+                    if (movieArrayList.size() > 0) {
+                        RecyclerView gigi=view.findViewById(R.id.yiyii);
+                        gigi.setHasFixedSize(true);
+                        gigi.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
+                        gigi.setItemAnimator(new DefaultItemAnimator());
+                        popularr adapter5 = new popularr(getActivity(), movieArrayList);
+                        gigi.setAdapter(adapter5);
+                    }
+                }
+                if (!task.isSuccessful()) {
+                    Toast.makeText(getActivity(), "Could not connect", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });

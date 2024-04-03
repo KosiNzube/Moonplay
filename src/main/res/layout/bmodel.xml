@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="3dp"
+    android:background="#000"
+
+    android:layout_height="wrap_content">
+    <RelativeLayout
+
+
+        android:layout_width="match_parent"
+
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/card"
+        android:backgroundTint="#FF444444">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:id="@+id/lin"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_below="@+id/relative"
+
+                android:id="@+id/playbackx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/ioio"
+                    android:background="#14D4D4D4"
+
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/ioio"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/btn2"
+                    android:background="#29D4D4D4"
+                    android:visibility="gone"
+
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/btn2"
+
+                    android:visibility="invisible"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/btn3"
+                    android:background="#0DFFFFFF"
+
+                    />
+
+                <RelativeLayout
+                    android:layout_below="@id/btn3"
+
+                    android:id="@+id/playback"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/mb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="#00282835"
+
+                        android:drawableLeft="@drawable/ic_filter_vintage_black_24dp"
+                        android:drawableTint="#FFD600"
+                        android:layout_toLeftOf="@id/studio"
+                        android:textAlignment="textStart"
+
+                        android:layout_marginLeft="8dp"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="7dp"
+                        android:text=" Jota "
+
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="18dp"
+                        />
+                    <ImageView
+                        android:id="@+id/studio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:background="#00282835"
+                        android:src="@drawable/ic_filter_drama_black_24dp"
+
+                        android:visibility="gone"
+
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="7dp"
+                        android:fontFamily="monospace"
+                        android:layout_marginRight="8dp"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        />
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/playback"
+                    android:id="@+id/des"
+
+                    android:paddingRight="10dp"
+                    android:paddingLeft="8dp"
+                    android:layout_margin="10dp"
+                    android:textSize="17dp"
+
+                    android:textColor="#B3B3B3"
+                    android:text="Liverpool season could be svaed by the return of Diogo Jota"/>
+                <Button
+                    android:id="@+id/iii"
+                    android:layout_width="match_parent"
+
+                    android:layout_marginTop="5dp"
+
+                    android:visibility="invisible"
+
+
+
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/playback"
+
+                    android:background="#26D3D3D3" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/hihi"
+                android:layout_width="fill_parent"
+                android:layout_margin="10dp"
+                android:layout_height="fill_parent">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="200dp"
+                    android:id="@+id/zzz"
+                    android:backgroundTint="#BF050505"
+                    app:cardCornerRadius="5dp"
+                    android:layout_height="258dp">
+                <ImageView
+                    android:id="@+id/itemImage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#D9141414"
+                    android:scaleType="centerCrop" />
+                </androidx.cardview.widget.CardView>
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/zzz"
+                    android:id="@+id/genre"
+
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:textSize="15dp"
+
+                    android:textColor="#FB8C00"
+                    android:text="Moon Q"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/zzz"
+                    android:id="@+id/time"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:textSize="15dp"
+
+                    android:textColor="#757575"
+                    android:text="2 days ago"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:visibility="gone"
+                    android:layout_toRightOf="@id/zzz"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="15dp"
+                    android:textSize="17dp"
+
+                    android:textColor="#B3B3B3"
+                    android:text="Nixie: A must watch Classic comedy movie"/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

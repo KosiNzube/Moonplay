@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#050509"
+
+    android:layout_height="match_parent"
+    tools:context="iceplay.flame.fleming.com.moonplay.lily">
+
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_marginTop="25dp"
+
+        android:layout_width="match_parent"
+        android:layout_marginBottom="59dp"
+        app:cardElevation="2dp"
+        app:strokeColor="#444444"
+        app:strokeWidth="1dp"
+        app:cardBackgroundColor="#0F0F10"
+        app:cardCornerRadius="35dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="textStart"
+        android:theme="@style/Base.Theme.MaterialComponents.Light"
+
+       >
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:id="@+id/z"
+        android:layout_height="wrap_content">
+        <com.arlib.floatingsearchview.FloatingSearchView
+            android:id="@+id/floating_search_view"
+            android:layout_width="match_parent"
+
+
+
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="40dp"
+
+            android:backgroundTint="#000F0F10"
+            android:background="#000F0F10"
+
+            app:floatingSearch_backgroundColor="#2B2A2A"
+            app:floatingSearch_close_search_on_keyboard_dismiss="true"
+            app:floatingSearch_searchHint="Search videos "
+            app:floatingSearch_showSearchKey="true"
+            app:floatingSearch_suggestionsListAnimDuration="250"
+            app:floatingSearch_viewSuggestionItemTextColor="#0000ACC1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text=" For You "
+            android:textSize="23dp"
+
+
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/g"
+            android:textColor="#fff"
+
+            android:layout_height="wrap_content" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/yiyii"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="25dp"
+
+            android:layout_marginTop="@dimen/dp5"
+            android:visibility="gone"
+
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/floating_search_view"
+            android:layout_marginRight="5dp"
+            android:id="@+id/listView"
+
+
+
+
+            android:nestedScrollingEnabled="false"
+
+            android:layout_marginBottom="25dp"
+            android:orientation="vertical"
+            android:dividerHeight="1dp" />
+
+    </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+        </RelativeLayout>

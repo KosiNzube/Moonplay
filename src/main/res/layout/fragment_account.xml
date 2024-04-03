@@ -1,0 +1,1237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050509"
+    tools:context="iceplay.flame.fleming.com.moonplay.Main6Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:descendantFocusability="blocksDescendants"
+
+        android:scrollbars="none"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:descendantFocusability="blocksDescendants"
+
+            android:id="@+id/everything"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/fk"
+                android:layout_width="wrap_content"
+                android:layout_alignParentTop="true"
+
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/fkko"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:visibility="gone"
+                    android:layout_height="200dp"
+                    android:background="#E6000007"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/yiyii"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    android:layout_marginBottom="15dp"
+                    >
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <View
+                    android:id="@+id/blur"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentTop="true"
+
+                    android:layout_height="500dp"
+                    android:background="#40000000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:id="@+id/type"
+                    android:layout_below="@id/tvTitle"
+                    android:textStyle="bold"
+
+                    android:background="#3800031D"
+                    android:layout_marginLeft="5dp"
+                    android:padding="3dp"
+                    android:textSize="20dp"
+                    android:visibility="gone"
+
+                    android:textColor="#fff"
+                    android:text="Must Watch"/>
+
+
+                <ImageView
+                    android:id="@+id/playon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_play_arrow_black_24dp"
+                    android:visibility="gone"
+                    android:tint="#fff"/>
+
+                <TextView
+                    android:id="@+id/tvTitllle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:padding="7dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="#80181818"
+                    android:fontFamily="sans-serif-thin"
+
+                    android:visibility="invisible"
+                    android:paddingLeft="5dp"
+                    android:text="Today"
+                    android:textColor="#fff"
+                    android:textSize="22dp"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/cwatch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#800F0F14"
+                    android:padding="10dp"
+                    android:text="Continue watching"
+
+                    android:textColor="#F5F5FF"
+                    android:textSize="13sp"
+                    android:visibility="invisible"/>
+
+                <ProgressBar
+                    android:id="@+id/progressBar3"
+                    style="?android:attr/progressBarStyleHorizontal"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:progressTint="#fff"
+
+                    android:visibility="invisible"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+
+                android:layout_height="1dp"
+                android:layout_below="@+id/fk"
+                android:layout_marginTop="1dp"
+                android:background="#48D500F9"
+                android:visibility="invisible"
+
+                />
+
+            <RelativeLayout
+
+                android:id="@+id/host"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fk">
+
+                <TextView
+                    android:id="@+id/foryou"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+
+                    android:fontFamily="sans-serif-thin"
+                    android:text="Popular now"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    />
+                <Button
+                    android:id="@+id/hostbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="#00282835"
+                    android:drawableLeft="@drawable/ic_stars_black_24dp"
+                    android:layout_marginRight="5dp"
+
+                    android:drawablePadding="7dp"
+                    android:paddingLeft="10dp"
+                    android:text=". . ."
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fifi"
+                android:layout_width="match_parent"
+                android:overScrollMode="never"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/host"
+                android:layout_marginTop="3dp"
+                android:orientation="vertical">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+            <Button
+                android:id="@+id/titii"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/fifi"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:background="#00282835"
+
+                android:drawableLeft="@drawable/ic_stars_black_24dp"
+                android:drawablePadding="7dp"
+
+                android:paddingLeft="10dp"
+
+                android:text=". . ."
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/thriller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fifi"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Thriller"
+                android:textAllCaps="false"
+                android:textColor="#F0F0FF"
+                android:textSize="20sp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/gigii"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+
+                android:layout_below="@+id/thriller"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="match_parent"
+
+                android:layout_height="1dp"
+                android:layout_below="@+id/gigii"
+                android:layout_marginBottom="4dp"
+
+                android:background="#121214"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/yiyiix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toprated"
+                android:layout_marginTop="7dp"
+                android:overScrollMode="never"
+                >
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <View
+                android:id="@+id/blurx"
+                android:layout_width="match_parent"
+
+                android:visibility="gone"
+                android:layout_below="@id/fifi"
+                android:layout_height="500dp"
+                android:background="#40000000"/>
+
+            <TextView
+                android:id="@+id/toprated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn8"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Romance"
+                android:textAllCaps="false"
+                android:textColor="#F0F0FF"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/uiui"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/btn8"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:background="#00282835"
+                android:drawableLeft="@drawable/ic_stars_black_24dp"
+                android:drawablePadding="7dp"
+                android:paddingLeft="10dp"
+
+                android:text=". . ."
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/yiyi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/yiyiix"
+                android:layout_marginTop="5dp"
+                android:overScrollMode="never"
+
+                android:orientation="vertical">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                android:id="@+id/kiss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/yiyi"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-thin"
+                android:drawableTint="#AEEA00"
+                android:textAllCaps="false"
+                android:textColor="#F0F0FF"
+                android:text="Asian Thriller"
+                android:background="#00282835"
+
+                android:textSize="20sp"/>
+            <Button
+                android:id="@+id/kissbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/yiyi"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp"
+                android:background="#00282835"
+                android:drawableLeft="@drawable/ic_stars_black_24dp"
+                android:drawablePadding="7dp"
+                android:paddingLeft="10dp"
+
+                android:text=". . ."
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+            <View
+
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/kiss"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/videoviewio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+            </View>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fifiy"
+                android:layout_width="match_parent"
+                android:overScrollMode="never"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kiss"
+                android:layout_marginTop="7dp"
+                android:orientation="vertical"></androidx.recyclerview.widget.RecyclerView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/kissrecy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fifiy"
+                android:layout_marginTop="3dp"
+                android:overScrollMode="never"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+            <TextView
+                android:id="@+id/actiontext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trendingRecy"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Action and Adventure"
+                android:textAllCaps="false"
+                android:textColor="#F0F0FF"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/actionbut"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/trendingRecy"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp"
+                android:background="#00282835"
+                android:drawableLeft="@drawable/ic_stars_black_24dp"
+                android:drawablePadding="7dp"
+                android:paddingLeft="10dp"
+
+                android:text=". . ."
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/yiyiixAct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/actiontext"
+                android:layout_marginTop="7dp"
+                android:overScrollMode="never"
+                >
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/actionrecy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/yiyiixAct"
+                android:layout_marginTop="5dp"
+                android:overScrollMode="never"
+
+                android:orientation="vertical">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                android:id="@+id/comedy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/actionrecy"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Comedy"
+                android:textAllCaps="false"
+                android:textColor="#F0F0FF"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/comedybut"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/actionrecy"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp"
+                android:background="#00282835"
+                android:drawableLeft="@drawable/ic_stars_black_24dp"
+                android:drawablePadding="7dp"
+                android:paddingLeft="10dp"
+
+                android:text=". . ."
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/yiyiixcom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/comedy"
+                android:layout_marginTop="7dp"
+                android:overScrollMode="never"
+                >
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/comedyrecy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/yiyiixcom"
+                android:layout_marginTop="5dp"
+                android:overScrollMode="never"
+
+                android:orientation="vertical">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                android:id="@+id/pgtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/comedyrecy"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+
+                android:layout_marginTop="7dp"
+                android:fontFamily="sans-serif-thin"
+
+                android:text="Medieval Times"
+                android:textAllCaps="false"
+                android:textColor="#F0F0FF"
+                android:textSize="20sp"/>
+
+
+            <Button
+                android:id="@+id/pgbbut"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/comedyrecy"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="5dp"
+                android:background="#00282835"
+
+                android:drawableLeft="@drawable/ic_stars_black_24dp"
+                android:drawablePadding="7dp"
+
+                android:paddingLeft="10dp"
+
+                android:text=". . ."
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/pgrecy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pgtext"
+                android:overScrollMode="never"
+
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"></androidx.recyclerview.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/pgbtn"
+                android:layout_width="match_parent"
+
+                android:layout_height="1dp"
+                android:layout_below="@+id/pgrecy"
+                android:background="#121214"/>
+
+
+
+            <TextView
+                android:id="@+id/scifitext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pgbtn"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Sci-Fi and Fantasy"
+                android:textAllCaps="false"
+                android:textColor="#F0F0FF"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/scifibut"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/pgbtn"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp"
+                android:background="#00282835"
+                android:drawableLeft="@drawable/ic_stars_black_24dp"
+                android:drawablePadding="7dp"
+                android:paddingLeft="10dp"
+
+                android:text=". . ."
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/yiyiixscifi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/scifitext"
+                android:layout_marginTop="7dp"
+                android:overScrollMode="never"
+                >
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/scifirecy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/yiyiixscifi"
+                android:layout_marginTop="5dp"
+                android:overScrollMode="never"
+
+                android:orientation="vertical">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <TextView
+                android:id="@+id/backintime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/scifirecy"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Anime"
+                android:textAllCaps="false"
+                android:textColor="#F0F0FF"
+                android:textSize="20sp"/>
+            <Button
+                android:id="@+id/backbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/scifirecy"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp"
+                android:background="#00282835"
+                android:drawableLeft="@drawable/ic_stars_black_24dp"
+                android:drawablePadding="7dp"
+                android:paddingLeft="10dp"
+
+                android:text=". . ."
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/animeee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/backintime"
+                android:layout_marginTop="7dp"
+                android:overScrollMode="never"
+                >
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/backrecy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/animeee"
+                android:layout_marginTop="5dp"
+                android:overScrollMode="never"
+
+                android:orientation="vertical">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <TextView
+                android:id="@+id/local"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/backrecy"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Musical"
+                android:textAllCaps="false"
+                android:textColor="#F0F0FF"
+                android:textSize="20sp"/>
+            <Button
+                android:id="@+id/localbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/backrecy"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp"
+                android:background="#00282835"
+                android:drawableLeft="@drawable/ic_stars_black_24dp"
+                android:drawablePadding="7dp"
+                android:paddingLeft="10dp"
+
+                android:text=". . ."
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/yiyiixmusic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/local"
+                android:layout_marginTop="7dp"
+                android:overScrollMode="never"
+                >
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/localrecy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="7dp"
+                android:layout_below="@+id/yiyiixmusic"
+                android:layout_marginTop="5dp"
+                android:overScrollMode="never"
+
+                android:orientation="vertical">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                android:id="@+id/bollytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/localrecy"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Bollywood "
+                android:textAllCaps="false"
+                android:textColor="#F0F0FF"
+                android:textSize="20sp"/>
+
+
+            <Button
+                android:id="@+id/bollybut"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/localrecy"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="#00282835"
+                android:drawableLeft="@drawable/ic_stars_black_24dp"
+                android:drawablePadding="7dp"
+                android:paddingLeft="10dp"
+
+                android:text=". . ."
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/bigbolly"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bollytext"
+                android:layout_marginTop="7dp"
+                android:overScrollMode="never"
+                >
+            </androidx.recyclerview.widget.RecyclerView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/bollyrecy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="57dp"
+                android:layout_below="@id/bollytext"
+                android:layout_marginTop="5dp"
+                android:overScrollMode="never"
+
+                android:orientation="vertical">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+            <Button
+                android:id="@+id/titi"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/kissrecy"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:background="#00282835"
+
+                android:drawableLeft="@drawable/ic_stars_black_24dp"
+                android:drawablePadding="7dp"
+
+                android:paddingLeft="10dp"
+
+                android:text=". . ."
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/Series"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kissrecy"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Top TV"
+                android:textAllCaps="false"
+                android:textColor="#F0F0FF"
+                android:textSize="20sp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/gigi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+
+                android:layout_below="@+id/Series"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+
+                android:layout_height="1dp"
+                android:layout_below="@+id/gigi"
+                android:layout_marginBottom="4dp"
+
+                android:background="#121214"/>
+
+
+            <TextView
+                android:id="@+id/continual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gigi"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-thin"
+
+                android:text="Horror"
+                android:textAllCaps="false"
+                android:textColor="#F0F0FF"
+                android:textSize="20sp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/yiyiixhor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/continual"
+                android:layout_marginTop="7dp"
+                android:overScrollMode="never"
+                >
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/conRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/yiyiixhor"
+
+                android:layout_marginTop="4dp"
+                android:orientation="vertical"
+                android:overScrollMode="never">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                android:id="@+id/italy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/conRecycler"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-thin"
+
+                android:textAllCaps="false"
+                android:textColor="#F0F0FF"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/italybutton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/conRecycler"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp"
+                android:background="#00282835"
+
+                android:drawableLeft="@drawable/ic_stars_black_24dp"
+                android:drawablePadding="7dp"
+
+                android:paddingLeft="10dp"
+
+                android:text=". . ."
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/yiyiixdra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/italy"
+                android:layout_marginTop="7dp"
+                android:overScrollMode="never"
+                >
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/italyRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+
+                android:layout_below="@+id/yiyiixdra"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <TextView
+                android:id="@+id/spanishText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/italyRecycler"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+
+                android:layout_marginTop="7dp"
+                android:fontFamily="sans-serif-thin"
+
+                android:text="Animation"
+                android:textAllCaps="false"
+                android:textColor="#F0F0FF"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/spanishButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/italyRecycler"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:background="#00282835"
+
+                android:drawableLeft="@drawable/ic_stars_black_24dp"
+                android:drawablePadding="7dp"
+
+                android:paddingLeft="10dp"
+
+                android:text=". . ."
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/yiyiixAni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spanishText"
+                android:layout_marginTop="7dp"
+                android:overScrollMode="never"
+                >
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/spanishRecycler"
+                android:layout_width="match_parent"
+                android:overScrollMode="never"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/yiyiixAni"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"></androidx.recyclerview.widget.RecyclerView>
+
+
+            <TextView
+                android:id="@+id/trending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spanishRecycler"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+
+                android:layout_marginTop="7dp"
+                android:fontFamily="sans-serif-thin"
+
+                android:text="Nollywood "
+                android:textAllCaps="false"
+                android:textColor="#F0F0FF"
+                android:textSize="20sp"/>
+
+
+            <Button
+                android:id="@+id/trendingbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/spanishRecycler"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="5dp"
+                android:background="#00282835"
+
+                android:drawableLeft="@drawable/ic_stars_black_24dp"
+                android:drawablePadding="7dp"
+
+                android:paddingLeft="10dp"
+
+                android:text=". . ."
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/trendingRecy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trending"
+                android:overScrollMode="never"
+
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"></androidx.recyclerview.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="match_parent"
+
+                android:layout_height="1dp"
+                android:layout_below="@+id/trendingRecy"
+                android:layout_marginBottom="4dp"
+
+                android:background="#121214"/>
+
+            <Button
+                android:id="@+id/conButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/gigi"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:background="#00282835"
+
+                android:drawableLeft="@drawable/ic_stars_black_24dp"
+                android:drawablePadding="7dp"
+
+                android:paddingLeft="10dp"
+
+                android:text=". . ."
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="30dp"
+        android:visibility="invisible"
+        android:src="@drawable/ic_apps_black_24dp"
+        app:backgroundTint="#0F0F11" />
+
+    <ProgressBar
+        android:id="@+id/pro"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:progressTint="#FB8C00"
+
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <ProgressBar
+        android:id="@+id/proo"
+        android:layout_width="50dp"
+        android:layout_below="@id/qual"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="17dp"
+
+        android:visibility="invisible"
+        android:progressTint="#FB8C00"
+        android:layout_centerHorizontal="true"
+
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/airplane"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_airplanemode_active_black_24dp"
+        />
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/airplane"
+        android:padding="10dp"
+
+        android:visibility="invisible"
+        android:text="No internet connection"
+        android:textColor="#fff"
+
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/epic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+
+        android:textColor="#fff"
+        android:text=" Prime Contents "
+
+        android:textSize="17dp"
+
+        />
+
+    <TextView
+        android:id="@+id/qual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#C8FFFFFF"
+        android:text="For Everyone"
+        android:layout_below="@id/epic"
+        android:fontFamily="sans-serif-thin"
+
+
+        android:textSize="16dp"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <View
+        android:id="@+id/fko"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="50dp"
+        android:background="#B30A0A0E" />
+
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+
+        android:visibility="gone"
+        android:layout_height="1dp"
+        android:layout_below="@+id/iceplay"
+        android:background="#4BD3D3D3"
+
+        />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:padding="15dp"
+
+        android:tint="#fff"
+        android:src="@drawable/ic_cast_black_24dp" />
+
+    <ImageView
+        android:id="@+id/backln"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+
+        android:visibility="invisible"
+        android:tint="#fff"
+        android:padding="15dp"
+        android:src="@drawable/ic_replay_black_24dp" />
+
+
+    /</RelativeLayout>

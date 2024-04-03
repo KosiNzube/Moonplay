@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/myCoordinatorLayout"
+    android:background="#CC080A17"
+
+    tools:context="iceplay.flame.fleming.com.moonplay.Main6Activity">
+
+
+    <ImageView
+        android:id="@+id/playStopBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+
+        android:tint="#fff"
+
+        android:src="@drawable/ic_album_black_24dp"
+      />
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/btnx"
+        android:layout_alignParentTop="true"
+        android:background="#23FFFFFF"
+
+        />
+
+
+    <TextView
+        android:id="@+id/popular"
+        android:textSize="17dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/ioiox"
+        android:layout_marginLeft="39dp"
+
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+
+        android:text=" Joker "
+        android:textAlignment="textStart"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/ioio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="7dp"
+        android:paddingTop="13dp"
+        android:paddingRight="9dp"
+        android:paddingLeft="18dp"
+
+        android:tint="#fff"
+        android:src="@drawable/ic_blur_on_black_24dp" />
+    <ImageView
+        android:id="@+id/ioiox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="7dp"
+        android:paddingTop="13dp"
+        android:paddingRight="18dp"
+        android:paddingLeft="9dp"
+        android:layout_toLeftOf="@id/ioio"
+
+        android:tint="#fff"
+        android:src="@drawable/ic_equalizer_black_24dp" />
+
+
+
+
+
+</RelativeLayout>

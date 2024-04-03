@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/card"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="25dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="match_parent"
+
+        android:background="#0A0A0C"
+        android:id="@+id/itemImage"
+        android:layout_height="210dp" />
+    <View
+        android:id="@+id/blur"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible"
+
+        android:layout_height="210dp"
+        android:background="#40000000"/>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:id="@+id/type"
+        android:layout_below="@id/tvTitle"
+        android:textAlignment="center"
+        android:paddingLeft="3dp"
+        android:textSize="10dp"
+        android:visibility="gone"
+        android:fontFamily="sans-serif-thin"
+
+        android:textColor="#26FF9800"
+        android:text="Film"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTitle"
+        android:paddingLeft="3dp"
+        android:layout_below="@id/blur"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:layout_marginLeft="5dp"
+
+        android:layout_alignParentLeft="true"
+
+        android:layout_marginTop="7dp"
+        android:textColor="#fff"
+       />
+
+
+    <Button
+        android:id="@+id/hostbuttony"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:background="#00282835"
+        android:drawableLeft="@drawable/ic_stars_black_24dp"
+        android:layout_below="@id/blur"
+        android:layout_marginTop="5dp"
+
+        android:visibility="gone"
+        android:drawablePadding="7dp"
+        android:paddingLeft="10dp"
+        android:text=". . ."
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

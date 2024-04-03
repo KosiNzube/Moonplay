@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardview="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+
+    android:layout_marginTop="5dp"
+
+    android:layout_marginBottom="2dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:clickable="true"
+
+        android:layout_height="wrap_content">
+        <RelativeLayout
+
+
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/card"
+            android:backgroundTint="#40444444">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height=".3dp"
+                android:visibility="gone"
+                android:id="@+id/btn1"
+                android:layout_below="@+id/lin"
+                android:layout_marginTop="5dp"
+                android:background="#80FFFFFF"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/lin"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+
+                    android:id="@+id/hihi"
+
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="95dp"
+                            app:cardCornerRadius="10dp"
+                            android:id="@+id/pausecardy"
+                            android:layout_alignParentRight="true"
+                            android:visibility="gone"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentTop="true"
+                            app:cardBackgroundColor="#FFFFFF"
+                            android:layout_height="23dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:text="Watchlist +"
+                                android:layout_gravity="center"
+                                android:layout_alignParentTop="true"
+                                android:textColor="#DD2C00"
+                                android:id="@+id/list"
+                                android:textSize="12dp"
+                                android:textStyle="bold"
+
+                                />
+                        </androidx.cardview.widget.CardView>
+
+
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_below="@id/typee"
+
+
+                            android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:id="@+id/itemImagoe"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="3dp"
+                            app:cardElevation="@dimen/dp5"
+
+                            app:cardBackgroundColor="#BF050505"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/itemImage"
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp"
+                                android:layout_centerVertical="true"
+                                android:layout_centerInParent="true"
+                                android:background="#D90A0A0F"
+                                android:scaleType="centerCrop" />
+
+                            <ImageView
+                                android:visibility="invisible"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:tint="#22C8C8FF"
+                                android:src="@drawable/ic_stars_black_24dp"
+                                />
+                        </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_below="@id/itemImagoe"
+                                android:id="@+id/tvTitle"
+                                android:textSize="17sp"
+                                android:layout_alignParentLeft="true"
+
+                                android:layout_marginTop="4dp"
+                                android:textColor="#d3d3d3"
+                                android:text="Once upon a time"/>
+
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/type"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginRight="10dp"
+                            android:visibility="gone"
+                            android:layout_marginBottom="5dp"
+
+                            android:textSize="15sp"
+                            android:textColor="#ffbf00"
+                            android:text="Film"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/typee"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@id/type"
+                            android:layout_marginBottom="7dp"
+
+                            android:textSize="15sp"
+
+
+                            android:visibility="gone"
+                            android:textColor="#80FFFFFF"
+                            android:text="Instant play Thaudhcuducudhcdhcdcu hcuhcuuscudbcybdycbdbcydcbdy ydbcc y ycbys Trouble maker"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/watch"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+
+                            android:visibility="gone"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="#673AB7"
+                            android:text="watchlist"/>
+
+
+                        <ImageView
+                            android:id="@+id/button"
+                            android:src="@drawable/ic_visibility_black_24dp"
+                            android:layout_width="wrap_content"
+                            android:visibility="gone"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="15dp"
+                            android:layout_height="wrap_content"
+                            />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

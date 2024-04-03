@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        app:cardElevation="22dp"
+        android:layout_above="@id/qaa"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_height="match_parent"
+        android:textAlignment="textStart"
+
+>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+>
+            <ImageView
+                android:id="@+id/thumb"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_centerInParent="true"
+                android:background="#222222"
+                android:scaleType="centerInside"
+                />
+
+
+            <FrameLayout
+                android:id="@+id/media_container"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="180dp"></FrameLayout>
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/dp25"
+
+                android:visibility="invisible"
+
+                />
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/aw"
+                android:layout_marginTop="@dimen/dp10"
+
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/tease"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:letterSpacing="0.01"
+                    android:layout_alignParentLeft="true"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="@dimen/dp10"
+
+                    android:background="@drawable/textinputborder"
+                    android:drawableLeft="@drawable/ic_play_arrow_black_24dp"
+                    android:gravity="center"
+                    android:paddingLeft="29dp"
+                    android:paddingRight="29dp"
+                    android:text=" PREVIEW "
+
+                    android:textAlignment="center"
+                    android:textColor="#d3d3d3"
+                    android:textSize="16dp"
+
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/play"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+
+                    android:letterSpacing="0.01"
+
+
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerHorizontal="true"
+
+                    android:background="@drawable/textinputborder"
+                    android:drawableLeft="@drawable/ic_add_black_24dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text=" WATCHLIST "
+                    android:textAlignment="center"
+
+                    android:textColor="#d3d3d3"
+                    android:textSize="16dp"
+
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:clickable="true"
+
+                android:layout_marginTop="@dimen/dp10"
+                android:id="@+id/q"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+
+
+                    android:layout_centerInParent="true"
+                    android:layout_width="match_parent"
+
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/card"
+                    android:backgroundTint="#40444444">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentTop="true"
+                        android:id="@+id/lin"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+
+                            android:id="@+id/hihi"
+
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+
+
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true">
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginEnd="@dimen/dp5"
+                                    android:layout_toRightOf="@id/za"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/text_view_account_handle"
+                                        android:layout_width="match_parent"
+
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_marginBottom="3dp"
+                                        android:ellipsize="marquee"
+                                        android:focusable="true"
+                                        android:focusableInTouchMode="true"
+                                        android:marqueeRepeatLimit="marquee_forever"
+                                        android:scrollHorizontally="true"
+                                        android:singleLine="true"
+                                        android:text="Once upon a time"
+                                        android:textColor="#d3d3d3"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/aaa"
+                                        android:layout_width="wrap_content"
+
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_marginBottom="3dp"
+                                        android:text="Once upon a time"
+                                        android:textColor="#FF9800"
+
+                                        android:textSize="16sp" />
+
+
+                                    <TextView
+                                        android:id="@+id/text_view_video_description"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_below="@id/text_view_account_handle"
+                                        android:layout_alignParentLeft="true"
+
+                                        android:text="Instant play Thaudhcuducudhcdhcdcu hcuhcuuscudbcybdycbdbcydcbdy ydbcc y ycbys Trouble maker"
+
+
+                                        android:textColor="#80FFFFFF"
+                                        android:textSize="14.5sp" />
+                                </LinearLayout>
+
+
+                                <RelativeLayout
+                                    android:id="@+id/za"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true">
+
+                                    <RelativeLayout
+                                        android:id="@+id/itemImagoe"
+                                        android:layout_width="80dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        app:cardBackgroundColor="#D9252525"
+
+                                        app:cardCornerRadius="10dp"
+                                        app:cardElevation="@dimen/dp5">
+
+                                        <ImageView
+                                            android:id="@+id/itemImage"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="110dp"
+                                            android:layout_centerInParent="true"
+                                            android:background="#D9252525"
+                                            android:scaleType="centerCrop" />
+
+                                    </RelativeLayout>
+
+
+                                </RelativeLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/qaa"
+        android:layout_width="match_parent"
+
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/similarcard"
+        android:layout_marginBottom="@dimen/dp5"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/like"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp5"
+            android:theme="@style/Base.Theme.MaterialComponents.Light"
+            app:cardBackgroundColor="#000F0F10"
+            app:cardCornerRadius="24.5dp"
+            app:cardElevation="2dp"
+            app:strokeColor="#007080"
+            app:strokeWidth="2dp">
+
+            <RelativeLayout
+                android:id="@+id/genrey"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+
+
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/genrexy"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/ic_sentiment_satisfied_black_24dp"
+                    android:gravity="center"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text=" i like this "
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/dislike"
+
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp5"
+            android:theme="@style/Base.Theme.MaterialComponents.Light"
+            app:cardBackgroundColor="#000F0F10"
+            app:cardCornerRadius="24.5dp"
+            app:cardElevation="2dp"
+            app:strokeColor="#007080"
+            app:strokeWidth="2dp">
+
+            <RelativeLayout
+                android:id="@+id/genrexx"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+
+
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/genrex"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerInParent="true"
+                    android:drawableRight="@drawable/ic_baseline_sentiment_very_dissatisfied_24"
+                    android:gravity="center"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text=" dislike "
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/similarcard"
+
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_gravity="center"
+        android:layout_marginLeft="11dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginRight="11dp"
+
+        android:theme="@style/Base.Theme.MaterialComponents.Light"
+        app:cardBackgroundColor="#000F0F10"
+        app:cardCornerRadius="24.5dp"
+        app:cardElevation="2dp"
+        app:strokeColor="#0171A3"
+        app:strokeWidth="2dp">
+
+        <RelativeLayout
+            android:id="@+id/similar"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+
+
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/genrexi"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:letterSpacing="0.02"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text=" RECOMMEND AKIN TO THIS ANIME "
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/recycler_view_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+
+
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="@dimen/dp50"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/mute"
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:tint="#fff"
+            app:layout_constraintBottom_toTopOf="@+id/rep"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/quantum_ic_volume_off_grey600_36" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/mutex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+
+            android:text="mute"
+            android:textColor="#d3d3d3"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/image_view_option_like"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/repeat"
+            tools:text="mute" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/repeat"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:tint="#fff"
+
+            app:layout_constraintBottom_toTopOf="@+id/rep"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_cached_black_24dp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_view_option_like"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:tint="#fff"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rep"
+            app:srcCompat="@drawable/ic_stars_black_24dp" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/rep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+
+            android:text="re10"
+            android:textColor="#d3d3d3"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/image_view_option_like"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/repeat"
+            tools:text="re10" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_view_option_comment"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:tint="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_view_option_like_title"
+            app:srcCompat="@drawable/ic_offline_pin_black_24dp" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/image_view_option_comment_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="save"
+            android:textColor="#d3d3d3"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/image_view_option_share"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_view_option_comment"
+            tools:text="save" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_view_option_share"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:tint="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_view_option_comment_title"
+            app:srcCompat="@drawable/ic_reply_black_24dp" />
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/image_view_option_like_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="fave"
+            android:textColor="#d3d3d3"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+
+            app:layout_constraintBottom_toTopOf="@+id/image_view_option_comment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_view_option_like"
+            tools:text="fave" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/image_view_option_share_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+
+            android:text="share"
+            android:textColor="#d3d3d3"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_view_option_share" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/image_view_option_like"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_view_follow_option"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_album_black_24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/image_view_profile_pic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_view_profile_pic" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/image_view_profile_pic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="#fff"
+                app:strokeWidth="1dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

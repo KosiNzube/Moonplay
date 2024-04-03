@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:fragment="com.mobile.app.moonplay.ui.AppSettingsActivity$PreferencesGeneralFragment"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="@string/settings_general_title" />
+
+    <Preference
+        android:fragment="com.mobile.app.moonplay.ui.AppSettingsActivity$PreferencesSwipeFragment"
+        android:icon="@drawable/ic_touch_app_black_24dp"
+        android:title="@string/settings_swipe_title" />
+
+    <Preference
+        android:fragment="com.mobile.app.moonplay.ui.AppSettingsActivity$PreferencesPlayerConfigFragment"
+        android:icon="@drawable/ic_play_arrow_black_24dp"
+        android:title="@string/settings_player_title" />
+
+    <Preference
+        android:fragment="com.mobile.app.moonplay.ui.AppSettingsActivity$PreferencesAnime4KConfigFragment"
+        android:icon="@drawable/ic_assistant_black_24dp"
+        android:title="@string/settings_a4k_title" />
+
+    <Preference
+        android:fragment="com.mobile.app.moonplay.ui.AppSettingsActivity$PreferencesAboutFragment"
+        android:icon="@drawable/ic_info_outline_black_24dp"
+        android:title="@string/settings_about_title" />
+</PreferenceScreen>

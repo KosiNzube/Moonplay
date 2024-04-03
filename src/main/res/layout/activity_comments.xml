@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:id="@+id/cardview"
+    android:backgroundTint="#FF444444"
+    android:clickable="true"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+
+
+    app:ignore="NamespaceTypo">
+
+
+  <RelativeLayout
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+
+      android:orientation="vertical">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="fill_parent"
+
+
+        android:layout_height="fill_parent"
+
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+
+    <ImageView
+        android:id="@+id/videoView1"
+        android:layout_width="fill_parent"
+
+        android:layout_height="fill_parent"
+
+
+        android:background="#000"
+        android:clickable="true" />
+
+
+    <TextView
+        android:id="@+id/book_title_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/ricky"
+        android:layout_width="match_parent"
+
+
+        android:layout_height="match_parent"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="#F0000002">
+
+      <ImageView
+          android:id="@+id/nini"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+
+
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="10dp"
+          android:src="@drawable/ic_keyboard_arrow_up_black_24dp"
+
+          android:visibility="invisible" />
+
+      <TextView
+          android:id="@+id/textView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/nini"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="29dp"
+          android:layout_marginRight="8dp"
+          android:text="..."
+          android:textColor="#FFF"
+          android:textSize="15sp"
+          android:visibility="invisible" />
+
+
+      <TextView
+          android:id="@+id/igenre"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/textView"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="10dp"
+          android:layout_marginRight="8dp"
+          android:text="Horror"
+          android:textColor="#FFF"
+
+          android:textSize="15sp"
+          android:textStyle="bold"
+          android:visibility="invisible" />
+
+      <ImageView
+          android:id="@+id/comentid"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/nini"
+          android:layout_alignParentRight="true"
+          android:layout_marginTop="29dp"
+          android:layout_marginRight="18dp"
+          android:src="@drawable/ic_visibility_black_24dp"
+          android:visibility="invisible" />
+
+      <ImageView
+          android:id="@+id/favourite"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/nini"
+          android:layout_alignParentLeft="true"
+          android:layout_marginLeft="18dp"
+          android:layout_marginTop="29dp"
+          android:src="@drawable/ic_shopping_cart_black_24dp"
+          android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#A60A0A0A"
+        android:visibility="gone" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/koko"
+        android:layout_width="125dp"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#5E444444"
+        >
+      <ImageView
+          android:id="@+id/itemImage"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:scaleType="centerCrop"
+          android:visibility="gone" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/resolution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/koko"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingRight="2dp"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/mib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/resolution"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="5dp"
+        android:paddingRight="25dp"
+
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/moviename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textView7"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingRight="190dp"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView7"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="3dp"
+        android:layout_toLeftOf="@id/koko"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_above="@id/moviename"
+
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="7dp"
+
+
+        android:paddingRight="190dp"
+
+        android:textColor="#FFC107"
+        android:textSize="15sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cartcard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/downcat"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="19dp"
+        android:visibility="invisible"
+        cardview:cardCornerRadius="5dp">
+
+      <Button
+          android:id="@+id/highres"
+
+          android:layout_width="160dp"
+          android:layout_height="40dp"
+          android:background="#9C27B0"
+
+          android:drawableLeft="@drawable/ic_shopping_cart_black_24dp"
+          android:drawablePadding="10dp"
+          android:paddingLeft="10dp"
+          android:paddingRight="40dp"
+
+          android:text="Movie cart"
+          android:textColor="#fff"
+          android:textSize="13sp"
+          android:textStyle="bold|italic"
+          android:visibility="gone" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/downcat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/post"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        >
+      <Button
+          android:id="@+id/standard"
+          android:layout_width="160dp"
+          android:layout_height="40dp"
+
+          android:background="#673AB7"
+
+          android:drawableLeft="@drawable/ic_live_tv_black_24dp"
+          android:drawablePadding="10dp"
+          android:gravity="center"
+          android:paddingLeft="10dp"
+          android:paddingRight="40dp"
+          android:text="Download"
+
+          android:textColor="#fff"
+          android:textSize="13sp"
+          android:textStyle="bold"
+          android:visibility="gone" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/cart"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/postl"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_shopping_cart_black_24dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History cart"
+        android:layout_below="@id/postl"
+        android:textColor="#fff"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/cart"
+        android:layout_marginLeft="40dp"
+
+
+
+
+        />
+
+    <ImageView
+        android:id="@+id/downloads"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/cart"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_get_app_black_24dp" />
+
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FREE"
+        android:layout_below="@id/cart"
+        android:textColor="#fff"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="italic"
+        android:layout_toRightOf="@id/downloads"
+        android:layout_marginLeft="40dp"
+
+
+
+
+        />
+    <TextView
+        android:id="@+id/postl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView7"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+
+
+        android:paddingRight="190dp"
+
+        android:text=" "
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="#FFF0F0"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/downloads"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        cardview:cardBackgroundColor="#05FDD835"
+        >
+      <RatingBar
+
+
+          android:id="@+id/rate"
+          style="?android:attr/ratingBarStyleIndicator"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:isIndicator="false"
+          android:rating="3" />
+    </androidx.cardview.widget.CardView>
+
+  </RelativeLayout>
+
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="60dp"
+      android:src="@drawable/ic_keyboard_arrow_up_black_24dp"
+      android:visibility="invisible" />
+
+
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:id="@+id/host"
+      android:layout_alignParentRight="true"
+      android:layout_centerHorizontal="true"
+
+      android:layout_marginTop="60dp"
+      android:layout_marginRight="5dp"
+      android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/hostbutton"
+
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="#0FFDD835"
+
+        android:drawableLeft="@drawable/ic_visibility_black_24dp"
+        android:drawablePadding="7dp"
+
+        android:paddingLeft="10dp"
+        android:paddingRight="25dp"
+
+        android:text="Watch now"
+        android:textColor="#fff"
+        android:textSize="13sp" />
+  </RelativeLayout>
+  <ImageView
+      android:layout_width="35dp"
+      android:layout_height="35dp"
+      android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+      android:layout_alignParentLeft="true"
+      android:layout_marginTop="55dp"
+      android:layout_marginLeft="5dp"
+      android:textStyle="bold"
+      android:textSize="22sp"
+      android:id="@+id/foryou"
+      android:textColor="#1BF0F0FF"
+      />
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:background="#80000000"
+      />
+
+</RelativeLayout>
+

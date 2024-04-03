@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/settings_general_title" />
+
+    <SwitchPreference
+        android:defaultValue="@bool/DEF_ENABLE_APP_UPDATES"
+        android:key="ENABLE_APP_UPDATES"
+        android:summaryOff="@string/settings_general_check_updates_off"
+        android:summaryOn="@string/settings_general_check_updates_on"
+        android:title="@string/settings_general_check_updates_title" />
+
+    <SwitchPreference
+        android:defaultValue="@bool/DEF_BACK_DOUBLE_PRESS_EN"
+        android:key="BACK_DOUBLE_PRESS_EN"
+        android:summaryOff="@string/settings_general_confirm_exit_off"
+        android:summaryOn="@string/settings_general_confirm_exit_on"
+        android:title="@string/settings_general_confirm_exit_title" />
+
+    <EditTextPreference
+        android:defaultValue="@integer/DEF_BACK_DOUBLE_PRESS_TIMEOUT"
+        android:dependency="BACK_DOUBLE_PRESS_EN"
+        android:key="BACK_DOUBLE_PRESS_TIMEOUT"
+        android:numeric="integer"
+        android:summary="@string/settings_general_confirm_exit_timeout_summary"
+        android:title="@string/settings_general_confirm_exit_timeout_title" />
+
+    <SwitchPreference
+        android:defaultValue="@bool/DEF_PERSIST_VOLUME_EN"
+        android:key="PERSIST_VOLUME_EN"
+        android:summaryOff="@string/settings_general_persist_volume_off"
+        android:summaryOn="@string/settings_general_persist_volume_on"
+        android:title="@string/settings_general_persist_volume_title" />
+
+    <SwitchPreference
+        android:defaultValue="@bool/DEF_PERSIST_BRIGHTNESS_EN"
+        android:key="PERSIST_BRIGHTNESS_EN"
+        android:summaryOff="@string/settings_general_persist_brightness_off"
+        android:summaryOn="@string/settings_general_persist_brightness_on"
+        android:title="@string/settings_general_persist_brightness_title" />
+
+    <SwitchPreference
+        android:defaultValue="@bool/DEF_BATTERY_WARN_ENABLE"
+        android:key="BATTERY_WARN_EN"
+        android:summaryOff="@string/settings_general_battery_warn_off"
+        android:summaryOn="@string/settings_general_battery_warn_on"
+        android:title="@string/settings_general_battery_warn_title" />
+
+    <EditTextPreference
+        android:defaultValue="@integer/DEF_BATTERY_WARN_THRESHOLD"
+        android:dependency="BATTERY_WARN_EN"
+        android:key="BATTERY_WARN_THRESHOLD"
+        android:numeric="integer"
+        android:summary="@string/settings_general_battery_warn_thresh_summary"
+        android:title="@string/settings_general_battery_warn_thresh_title" />
+</PreferenceScreen>

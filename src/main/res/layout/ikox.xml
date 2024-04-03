@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#050509"
+    android:id="@+id/cardview"
+
+    android:clickable="true"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    app:ignore="NamespaceTypo">
+
+  <View
+      android:id="@+id/fko"
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:background="#0D06060A"
+
+      />
+
+
+
+    <com.mobile.app.moonplay.mainrecycler.VideoPlayerRecyclerView
+        android:id="@+id/exoPlayerRecyclerView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:background="#050509"
+
+        android:layout_below="@id/rem"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_marginTop="50dp"
+
+      android:visibility="gone"
+      android:layout_height="wrap_content">
+  <androidx.cardview.widget.CardView
+      android:layout_width="95dp"
+      cardview:cardCornerRadius="10dp"
+      android:id="@+id/pausecardy"
+
+      android:visibility="gone"
+      android:layout_centerVertical="true"
+      android:layout_marginLeft="10dp"
+      android:layout_marginBottom="40dp"
+      android:layout_alignParentLeft="true"
+
+      cardview:cardBackgroundColor="#fff"
+      android:padding="7dp"
+      android:layout_height="25dp">
+
+  <Button
+      android:id="@+id/backintime"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="#00282835"
+      android:drawableTint="#FB8C00"
+      android:textStyle="bold"
+      android:fontFamily="sans-serif-light"
+
+
+      android:layout_gravity="center"
+      android:text="Home"
+      android:textAllCaps="false"
+      android:textColor="#00897B"
+      android:textSize="14dp"
+      />
+  </androidx.cardview.widget.CardView>
+
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="wrap_content"
+      android:id="@+id/vxw"
+      cardview:cardCornerRadius="32dp"
+      android:layout_marginLeft="13dp"
+
+
+      android:visibility="gone"
+
+      android:layout_alignParentLeft="true"
+      cardview:cardBackgroundColor="#4DFFFFFF"
+      android:layout_height="wrap_content">
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="#4DFFFFFF"
+        android:padding="20dp"
+        android:layout_centerInParent="true"
+        android:background="#00FFFFFF"
+        android:clickable="true"
+        android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+        cardview:tint="#039BE5" />
+  </androidx.cardview.widget.CardView>
+  </RelativeLayout>
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:id="@+id/fix"
+
+      android:visibility="gone"
+      android:background="#4D525252"
+
+      />
+
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:id="@+id/v"
+      android:visibility="gone"
+      android:padding="10dp"
+      android:layout_alignParentBottom="true"
+
+
+
+      android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/backn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_centerInParent="true"
+        android:text="Euro 2020"
+        android:textAlignment="center"
+
+
+        android:layout_toLeftOf="@id/bbbb"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bbbb"
+        android:layout_marginRight="9dp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:text="8M"
+        android:layout_centerVertical="true"
+        android:textSize="17sp"
+        android:textColor="#D81B60"
+
+        />
+
+
+
+
+  </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+
+
+        android:layout_height="45dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:visibility="gone"
+
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+
+
+
+                android:paddingLeft="18dp"
+                android:text="   Vibes  "
+                android:textColor="#fff"
+                android:id="@+id/popular"
+                android:textSize="21sp"
+                android:textStyle="bold"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+
+                android:visibility="gone"
+
+                android:text="  Beats   "
+                android:textColor="#007080"
+                android:id="@+id/genre"
+                android:textSize="21sp"
+                android:textStyle="bold"
+
+                />
+
+
+
+            <ImageView
+                android:id="@+id/refresh"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_alignParentBottom="true"
+
+                android:gravity="center"
+
+                android:src="@drawable/ic_pause_black_24dp"
+                android:visibility="gone"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:padding="7dp"
+                cardview:tint="#00E5FF" />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:paddingTop="5dp"
+
+                android:id="@+id/chro"
+
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/binge"
+
+
+
+                    android:letterSpacing="0.1"
+                    android:text=" Binge "
+
+                    android:textColor="#FFFFFF"
+                    android:textSize="21sp"
+                    android:textStyle="bold"
+
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:letterSpacing="0.1"
+
+
+                    android:layout_toLeftOf="@id/playlist"
+
+                    android:layout_marginLeft="20dp"
+
+                    android:id="@+id/store"
+
+                    android:text=" Playlist "
+                    android:textColor="#007080"
+                    android:textSize="21sp"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/noo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#d3d3d3"
+        android:textSize="25dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+
+        android:visibility="gone"
+        android:src="@drawable/ic_more_vert_black_24dp"
+        android:layout_alignParentRight="true"
+
+
+        android:layout_marginTop="30dp"
+
+        android:layout_marginRight="18dp"
+
+
+        cardview:tint="#fff" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/zz"
+        android:visibility="gone"
+        android:layout_marginTop="2dp"
+        android:alpha=".8"
+        android:background="#00ACC1" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/zz"
+
+
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#000"
+
+
+        android:padding="4dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+
+            <ImageView
+                android:id="@+id/download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|right"
+
+
+                android:padding="10dp"
+                android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+
+                android:textColor="#00897B"
+                android:textSize="17dp"
+                android:textStyle="bold"
+
+                />
+
+            <LinearLayout
+                android:id="@+id/z"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/image_view_profile_pic"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/albumname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+                    android:text="BINGE "
+                    android:textAlignment="textStart"
+                    android:textColor="#d3d3d3"
+
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:id="@+id/des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_marginTop="3dp"
+                    android:text="  Recommended for you "
+                    android:textAlignment="textStart"
+                    android:textColor="#696969"
+
+                    android:textSize="16sp"
+
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/xcx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="5dp"
+                android:text="8M"
+
+                android:textColor="#00897B"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:visibility="gone"
+
+                />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/pausecardyx"
+                android:layout_width="110dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp10"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                android:theme="@style/Base.Theme.MaterialComponents.Light"
+
+                android:visibility="gone"
+                cardview:cardCornerRadius="11.5dp"
+                cardview:strokeColor="#80FFFFFF"
+                cardview:strokeWidth="0.8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+
+                    android:background="#0F0F0F"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4dp"
+
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text=" Channels "
+                        android:textColor="#fff"
+
+                        android:textSize="13.5dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/image_view_profile_pic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+
+
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0.5dp"
+                android:padding="1dp"
+                android:src="@drawable/star"
+                app:strokeColor="#fff"
+                app:strokeWidth="1" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:id="@+id/progressBar"
+
+        android:layout_height="wrap_content">
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_gravity="center"
+        android:layout_height="40dp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#00282835"
+
+            android:drawablePadding="7dp"
+
+
+            android:text="recommending "
+            android:textAllCaps="false"
+
+            android:textColor="#fff"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/thumbs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".01"
+        android:background="#3306060A"
+
+        />
+
+    <TextView
+        android:id="@+id/rem"
+        android:layout_width="wrap_content"
+
+
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="55dp"
+        android:background="#00282835"
+
+        android:drawablePadding="7dp"
+
+        android:text="Instant "
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+
+        android:textColor="#fff"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+
+
+        android:id="@+id/wwww"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:background="#00282835"
+
+        android:visibility="gone"
+        android:drawablePadding="7dp"
+
+
+
+        android:text="no recommendations available "
+        android:textAllCaps="false"
+
+        android:textColor="#fff"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

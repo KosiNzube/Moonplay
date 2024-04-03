@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/hostbuttony"
+            android:layout_toRightOf="@id/card"
+            android:text="Ask"
+            android:textColor="#fff"
+            android:textSize="17.5dp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/doe"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+
+            android:layout_marginLeft="9dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/card"
+            android:text="> > > "
+            android:textColor="#999999"
+
+
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cancelcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/doe"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/pausecard"
+
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="#016E79"
+            app:cardCornerRadius="5dp">
+
+
+            <TextView
+                android:id="@+id/butn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Cancel"
+                android:textColor="#fff"
+
+                android:visibility="visible" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pausecard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/doe"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/card"
+            android:foreground="?android:attr/selectableItemBackground"
+
+            app:cardBackgroundColor="#016E79"
+            app:cardCornerRadius="5dp">
+
+            <TextView
+                android:id="@+id/butnn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:padding="5dp"
+                android:text="Pause"
+                android:textColor="#fff"
+
+                android:visibility="visible" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/retrycard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/doe"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/cancelcard"
+            android:foreground="?android:attr/selectableItemBackground"
+
+            app:cardBackgroundColor="#016E79"
+            app:cardCornerRadius="5dp">
+
+            <TextView
+                android:id="@+id/retry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_toRightOf="@id/cancelcard"
+                android:padding="5dp"
+                android:text="Retry"
+                android:textColor="#7EFFFFFF"
+
+                android:visibility="visible" />
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="wrap_content"
+
+
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/name"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:orientation="vertical"
+
+            app:cardBackgroundColor="#000000"
+            app:cardCornerRadius="7dp">
+
+
+            <ImageView
+                android:id="@+id/itemImage"
+                android:layout_width="80dp"
+                android:layout_height="110dp"
+
+                android:background="#202020"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/nini"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_headset_black_24dp"
+                android:visibility="gone" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/hostbuttony"
+            android:layout_width="wrap_content"
+
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:background="#00282835"
+            android:drawableLeft="@drawable/ic_stars_black_24dp"
+
+            android:drawablePadding="10dp"
+            android:paddingLeft="30dp"
+            android:text=" - - - "
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+
+
+        android:layout_height=".2dp"
+        android:layout_below="@+id/pro"
+        android:layout_marginTop="5dp"
+
+        android:background="#525252" />
+
+    <ProgressBar
+        android:id="@+id/pro"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/btn9"
+
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/hun"
+        android:layout_toRightOf="@id/zero"
+        android:indeterminate="false"
+
+        android:max="100"
+
+        />
+
+    <ImageView
+        android:id="@+id/hun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn9"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="3dp"
+        android:src="@drawable/ic_done_all_black_24dp"
+
+
+        android:text="Finish"
+        android:textColor="#999999"
+
+
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn9"
+        android:layout_width="match_parent"
+        android:layout_height=".2dp"
+        android:layout_below="@+id/relative"
+        android:layout_marginTop="8dp"
+
+        android:background="#4D525252" />
+
+
+    <ImageView
+        android:id="@+id/zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn9"
+
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/ic_filter_drama_black_24dp"
+
+
+        android:text="Progress"
+        android:textColor="#999999"
+
+
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

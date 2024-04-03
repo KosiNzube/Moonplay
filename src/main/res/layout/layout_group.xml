@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+
+
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="2dp"
+      >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:text="..."
+        android:textStyle="bold"
+        android:textSize="18sp"
+
+        android:textColor="#d3d3d3"
+
+        android:id="@+id/itemTitle"
+        />
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:background="#56363636"
+        android:text="recent !"
+        android:visibility="visible"
+        android:textSize="10dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_marginRight="1dp"
+        android:textColor="#FFF"
+        android:id="@+id/btnMore"
+
+        />
+
+
+  </RelativeLayout>
+  <androidx.recyclerview.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:id="@+id/recycler_view_list"
+
+      android:layout_gravity="center_vertical"
+      android:orientation="horizontal"
+
+      android:layout_height="wrap_content">
+
+
+  </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

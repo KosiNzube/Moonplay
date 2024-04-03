@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050507"
+
+    tools:context="iceplay.flame.fleming.com.moonplay.Main7Activity">
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:descendantFocusability="blocksDescendants"
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+
+        <RelativeLayout
+            android:id="@+id/everything"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.card.MaterialCardView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+
+
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="99dp"
+                android:textAlignment="textStart"
+                android:theme="@style/Base.Theme.MaterialComponents.Light"
+                app:cardBackgroundColor="#000F0F10"
+                app:cardCornerRadius="35dp"
+                app:cardElevation="2dp"
+
+                app:strokeColor="#00444444"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:background="#000F0F10"
+                    android:descendantFocusability="blocksDescendants"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_below="@id/btn3"
+
+                        android:layout_marginTop="23dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+
+
+                            android:layout_marginLeft="8dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+
+                                android:layout_toLeftOf="@id/studio"
+                                android:background="#00282835"
+                                android:drawablePadding="7dp"
+                                android:layout_marginBottom="2dp"
+                                android:text=" Currently available  "
+
+                                android:textAllCaps="false"
+
+                                android:textColor="#fff"
+                                android:textSize="22sp"
+                                 />
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/pausecardy"
+                                android:layout_width="119dp"
+                                android:layout_height="26dp"
+                                android:layout_below="@+id/type"
+                                android:layout_centerHorizontal="true"
+
+                                app:strokeColor="#80FFFFFF"
+                                app:strokeWidth="0.8dp"
+                                android:theme="@style/Base.Theme.MaterialComponents.Light"
+                                android:layout_toLeftOf="@id/more"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="15dp"
+                                android:layout_marginLeft="@dimen/dp3"
+
+                                android:paddingRight="10dp"
+                                android:paddingBottom="15dp"
+                                app:cardCornerRadius="11.5dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:background="#0F0F0F"
+                                    android:layout_gravity="center"
+
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/list"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+
+                                        android:layout_alignParentTop="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="4dp"
+
+                                        android:gravity="center"
+                                        android:paddingLeft="15dp"
+                                        android:paddingRight="15dp"
+                                        android:text=" Watch now "
+                                        android:textColor="#fff"
+
+                                        android:textSize="13.5dp"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+                            </com.google.android.material.card.MaterialCardView>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/camex"
+                            android:layout_width="50dp"
+                            android:visibility="gone"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+
+                            android:background="#00282835"
+
+                            android:fontFamily="monospace"
+
+                            android:padding="@dimen/dp10"
+                            android:src="@drawable/ic_last_page_black_24dp"
+                            android:textAllCaps="false"
+                            android:textColor="#fff" />
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_marginRight="@dimen/dp5"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:background="#00282835"
+                            android:id="@+id/came"
+                            android:layout_alignParentRight="true"
+
+                            android:padding="@dimen/dp10"
+                            android:fontFamily="monospace"
+                            android:src="@drawable/ic_cached_black_24dp"
+                            android:textAllCaps="false"
+                            android:textColor="#fff" />
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:visibility="invisible"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+                        android:background="#2F2F2F" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dp10"
+
+                        android:layout_centerHorizontal="true"
+
+                        android:textAlignment="textStart">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/yiyii"
+                        android:layout_width="match_parent"
+
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="match_parent"
+                        android:overScrollMode="never"
+                        android:layout_alignParentStart="true"
+
+                        android:layout_alignParentTop="true"
+                        android:nestedScrollingEnabled="false"></androidx.recyclerview.widget.RecyclerView>
+                    </RelativeLayout>
+                    <Button
+                        android:id="@+id/namex"
+                        android:layout_width="match_parent"
+
+
+
+
+                        android:background="@drawable/textinputborder"
+                        android:textAlignment="center"
+
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content"
+
+
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="#fff"
+                        android:padding="10dp"
+
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+
+                        android:text="Tv Series"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btn3"
+                        android:id="@+id/con"
+
+                        android:layout_marginTop="11dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+
+
+                            android:layout_marginLeft="8dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@id/studio"
+
+                                android:background="#00282835"
+                                android:drawablePadding="7dp"
+                                android:text=" not Long ago "
+
+                                android:textAlignment="textStart"
+                                android:textAllCaps="false"
+
+                                android:textColor="#fff"
+                                android:textSize="21sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Continue "
+                                android:textColor="#8B8B8B"
+                                android:textSize="18sp"
+                                />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:background="#00282835"
+
+                            android:fontFamily="monospace"
+                            android:src="@drawable/ic_beauty"
+                            android:textAllCaps="false"
+                            android:textColor="#fff" />
+
+                    </RelativeLayout>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:id="@+id/conb"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+                        android:background="#2F2F2F" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/conRecycler"
+                        android:layout_marginBottom="1dp"
+
+                        android:textAlignment="textStart">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recent"
+                            android:layout_width="match_parent"
+
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="match_parent"
+
+                            android:layout_alignParentStart="true"
+
+                            android:layout_alignParentTop="true"
+                            android:nestedScrollingEnabled="false"></androidx.recyclerview.widget.RecyclerView>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btn3"
+
+                        android:layout_marginTop="23dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+
+
+                            android:layout_marginLeft="8dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@id/studio"
+
+                                android:textStyle="bold"
+                                android:background="#00282835"
+                                android:drawablePadding="7dp"
+                                android:text=" Full anime movie "
+
+                                android:textAlignment="textStart"
+                                android:textAllCaps="false"
+
+                                android:textColor="#fff"
+                                android:textSize="21sp"
+                              />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" On demand "
+                                android:textColor="#8B8B8B"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="#00282835"
+                            android:layout_marginRight="@dimen/dp5"
+
+                            android:padding="@dimen/dp10"
+                            android:fontFamily="monospace"
+                            android:src="@drawable/ic_beauty"
+                            android:textAllCaps="false"
+                            android:textColor="#fff" />
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+                        android:background="#2F2F2F" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/firstx"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="30dp"
+
+                        android:paddingLeft="8dp"
+
+                        android:nestedScrollingEnabled="false"
+                        android:overScrollMode="never"></androidx.recyclerview.widget.RecyclerView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btn3"
+                        android:visibility="gone"
+
+                        android:layout_marginTop="13dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+
+
+                            android:layout_marginLeft="8dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@id/studio"
+
+                                android:background="#00282835"
+                                android:drawablePadding="7dp"
+                                android:text=" more channels "
+
+                                android:textAlignment="textStart"
+                                android:textAllCaps="false"
+
+                                android:textColor="#fff"
+                                android:textSize="21sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" For You "
+                                android:textColor="#8B8B8B"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/cam"
+
+                            android:padding="@dimen/dp10"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:background="#00282835"
+
+                            android:fontFamily="monospace"
+                            android:src="@drawable/ic_beauty"
+                            android:textAllCaps="false"
+                            android:textColor="#fff" />
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+                        android:background="#2F2F2F"
+                        android:visibility="invisible" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/first"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:visibility="gone"
+                        android:nestedScrollingEnabled="false"
+                        android:layout_marginBottom="30dp"
+
+                        android:overScrollMode="never"
+                        ></androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="200dp"
+                android:visibility="invisible"
+
+
+                />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="60dp"
+
+        android:id="@+id/vx"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="109dp"
+        android:layout_alignParentRight="true"
+        app:cardCornerRadius="29dp"
+
+        android:layout_alignParentBottom="true"
+
+        app:cardBackgroundColor="#3949AB"
+
+        android:layout_centerVertical="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_play_arrow_black_24dp"
+            android:layout_height="wrap_content"
+
+            android:padding="15dp"
+            android:layout_gravity="center"
+            android:id="@+id/playy"
+
+            />
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="350dp"
+        android:textAlignment="textStart"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/mus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+
+        android:layout_height="wrap_content"
+        android:text="You are highly welcome  "
+        android:textStyle="bold"
+        android:textColor="#68FFFFFF"
+        android:textSize="33dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+
+    android:layout_marginBottom="9dp"
+    android:layout_marginTop="9dp"
+    android:layout_marginLeft="9dp"
+    android:layout_marginRight="9dp"
+    android:id="@+id/card"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingDefaultResource">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/lin"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/hihi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:id="@+id/zzz"
+                    android:scaleType="fitXY"
+
+                    android:background="#FF444444"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="190dp">
+                    <ImageView
+                        android:id="@+id/itemImage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:alpha=".6"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        />
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/genre"
+
+                        android:layout_margin="5dp"
+                        android:textSize="16sp"
+
+                        android:layout_above="@id/des"
+                        android:textAlignment="textStart"
+
+                        android:textColor="#D6D5D5"
+                        android:text="Euro 2020"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/des"
+
+                        android:layout_alignParentBottom="true"
+                        android:textAlignment="center"
+
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="14.5sp"
+
+                        android:textColor="#8B8B8B"
+                        android:text="7 clips"/>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+</RelativeLayout>

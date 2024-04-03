@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card"
+    android:layout_height="70dp"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/image_avatar"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/ic_blur_on_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="22dp"
+            android:scaleType="centerCrop" />
+
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="95dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="8dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/pausecardy"
+        android:layout_marginRight="17dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:cardBackgroundColor="#2E2E2E"
+        android:layout_height="23dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+
+
+            android:text=" add to mix "
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            android:textColor="#FDBEAF"
+            android:id="@+id/list"
+            android:textSize="12.5dp"
+            android:textStyle="bold"
+
+            />
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/button"
+        android:paddingLeft="15dp"
+        android:paddingRight="8dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:tint="#fff"
+        android:visibility="gone"
+        android:src="@drawable/ic_file_download_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        />
+    <ImageView
+        android:id="@+id/buttonx"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:tint="#fff"
+
+        android:visibility="gone"
+        android:paddingLeft="10dp"
+        android:layout_toLeftOf="@id/pausecardy"
+
+        android:src="@drawable/ic_tune_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        />
+    <ImageView
+        android:id="@+id/stop"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:visibility="gone"
+        android:paddingBottom="15dp"
+
+        android:paddingLeft="10dp"
+        android:layout_toLeftOf="@id/pausecardy"
+
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ic_stop_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:text="Edit sound "
+        android:textSize="16dp"
+        android:visibility="gone"
+
+        android:layout_toLeftOf="@id/button"
+        android:layout_centerVertical="true"
+        android:textAlignment="center"
+        android:textColor="#777777" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:id="@+id/f"
+        android:layout_toRightOf="@id/image_avatar"
+        android:layout_toLeftOf="@id/stop"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Joker "
+                android:textAlignment="textStart"
+                android:layout_alignParentTop="true"
+                android:textColor="#d3d3d3"
+                android:id="@+id/textView"
+                android:textSize="15.5dp"
+
+                />
+
+
+        <TextView
+            android:id="@+id/textViewx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+
+
+            android:textStyle="bold"
+
+            android:layout_below="@id/textView"
+            android:textSize="15dp"
+            android:text="1 min 30 sec "
+            android:textColor="#D81B60" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/btnx"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#3DD4D4D4"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="7dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="iceplay.flame.fleming.com.moonplay.iceplayer">
+
+
+    <View
+        android:id="@+id/fko"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:textSize="21dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/backln"
+        android:textColor="#fff"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/btn2"
+        android:layout_marginBottom="3dp"
+        android:layout_below="@+id/fko"
+        android:background="#8CD3D3D3"
+
+        />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/btnn2"
+        android:layout_marginTop="10dp"
+
+        android:id="@+id/free"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Watch for free"
+            android:id="@+id/name"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"
+            android:layout_toLeftOf="@id/butnyn"
+
+
+            android:layout_alignParentLeft="true"
+            android:textSize="20.5dp"
+            android:textStyle="bold"
+
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View an ad and watch for free as a reward!"
+            android:id="@+id/bbb"
+            android:layout_marginTop="10dp"
+            android:textColor="#999999"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/butnyn"
+
+            android:layout_alignParentLeft="true"
+            android:textSize="17.5dp"
+
+
+            />
+        <ImageView
+            android:id="@+id/butnyn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+            android:padding="20dp"
+            android:layout_toLeftOf="@id/butn"
+            android:src="@drawable/ic_file_download_black_24dp"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+
+            />
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="match_parent"
+
+
+
+            android:layout_height="1dp"
+            android:layout_below="@+id/bbb"
+            android:layout_marginTop="19dp"
+
+            android:background="#805A5A5A" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/free"
+        android:layout_marginTop="10dp"
+
+        android:id="@+id/sub"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Time Subscription"
+            android:id="@+id/namee"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#F4511E"
+            android:layout_toLeftOf="@id/butnnyn"
+
+            android:layout_alignParentLeft="true"
+            android:textSize="20.5dp"
+            android:textStyle="bold"
+
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Full experience with all Premium contents. No limits with Ads disabled"
+            android:id="@+id/bbbb"
+            android:layout_marginTop="10dp"
+            android:textColor="#999999"
+            android:layout_below="@id/namee"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/butnnyn"
+
+            android:layout_alignParentLeft="true"
+            android:textSize="17.5dp"
+
+
+            />
+        <ImageView
+            android:id="@+id/butnnyn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+            android:padding="20dp"
+            android:layout_toLeftOf="@id/butn"
+            android:src="@drawable/ic_subscriptions_black_24dp"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+
+            />
+        <Button
+            android:id="@+id/btn33"
+            android:layout_width="match_parent"
+
+
+
+            android:layout_height="1dp"
+            android:layout_below="@+id/bbbb"
+            android:layout_marginTop="19dp"
+
+            android:background="#805A5A5A" />
+
+
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/btn8"
+        android:layout_width="match_parent"
+
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sub"
+
+        android:layout_marginBottom="1dp"
+        android:background="#121214" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/btn9"
+        android:layout_above="@id/down"
+        android:background="#26D3D3D3"
+
+        />
+
+    <View
+        android:id="@+id/down"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="40dp"
+        android:background="#000" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textStyle="bold"
+        android:id="@+id/back"
+        android:padding="10dp"
+
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="1dp"
+        android:textSize="20dp"
+
+        android:textColor="#fff"
+
+
+        />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=". . . "
+        android:textStyle="bold"
+        android:id="@+id/playlist"
+
+        android:padding="10dp"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="1dp"
+        android:textSize="20dp"
+
+        android:textColor="#fff"
+
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/btnn2"
+        android:layout_marginTop="10dp"
+
+
+        android:layout_below="@+id/pro"
+        android:background="#8CD3D3D3"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#000"
+
+        android:visibility="invisible"
+        android:layout_below="@id/btn2"
+        android:layout_marginBottom="3dp"
+
+
+        />
+
+
+    <TextView
+        android:id="@+id/genre"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="95dp"
+        android:padding="10dp"
+        android:text="Rocketman"
+
+        android:textStyle="bold"
+
+        android:textColor="#fff"
+        android:textSize="25.5dp" />
+
+    <ProgressBar
+        android:id="@+id/pro"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:progressTint="#FB8C00"
+        android:layout_below="@id/genre"
+        android:visibility="invisible"
+
+        android:layout_centerHorizontal="true"
+
+        />
+
+
+</RelativeLayout>

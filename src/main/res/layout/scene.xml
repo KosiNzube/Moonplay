@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+		
+		xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:id="@+id/card"
+	android:layout_margin="8dp"
+		android:layout_height="wrap_content">
+	<RelativeLayout
+		android:layout_width="210dp"
+
+		android:layout_height="wrap_content">
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:id="@+id/zzz"
+			android:backgroundTint="#FF444444"
+			android:layout_height="wrap_content">
+
+			<ImageView
+				android:id="@+id/itemImage"
+				android:layout_width="fill_parent"
+				android:layout_height="130dp"
+				android:background="#D9141414"
+				android:scaleType="centerCrop" />
+		</RelativeLayout>
+
+
+		<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/genre"
+			android:layout_marginTop="9dp"
+		android:layout_below="@id/zzz"
+			android:textStyle="bold"
+			android:paddingLeft="3dp"
+			android:textSize="16dp"
+		android:textAlignment="center"
+		android:text="Romance"
+		android:textColor="#D81B60"
+		/>
+
+
+	</RelativeLayout>
+
+</RelativeLayout>

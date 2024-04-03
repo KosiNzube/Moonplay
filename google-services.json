@@ -1,0 +1,271 @@
+{
+  "project_info": {
+    "project_number": "209503508324",
+    "firebase_url": "https://videogenix-aed11.firebaseio.com",
+    "project_id": "videogenix-aed11",
+    "storage_bucket": "videogenix-aed11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209503508324:android:0acca2c4cadcede1674c71",
+        "android_client_info": {
+          "package_name": "iceplay.flame.fleming.com.moonplay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "209503508324-g3mc7rti1qt676rob2c70o7ep9ju5bv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7KAaRijUiSRIHmNp0vgOKQB6mx-u6X9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "209503508324-g3mc7rti1qt676rob2c70o7ep9ju5bv6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209503508324:android:f3734e36bfc3b4d1",
+        "android_client_info": {
+          "package_name": "myapplication.flame.fleming.com.cinematography"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "209503508324-on2r50ohpavlag8puh94sr8jma48vol2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "myapplication.flame.fleming.com.cinematography",
+            "certificate_hash": "bd03b87b75ae34cb9e1d2cca2d14902c73bb45f7"
+          }
+        },
+        {
+          "client_id": "209503508324-g3mc7rti1qt676rob2c70o7ep9ju5bv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7KAaRijUiSRIHmNp0vgOKQB6mx-u6X9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "209503508324-g3mc7rti1qt676rob2c70o7ep9ju5bv6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209503508324:android:53ba479ecda8ae58674c71",
+        "android_client_info": {
+          "package_name": "myapplication.flame.fleming.com.iceplayer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "209503508324-6kfvsb47bh950t9u171ijqdunm9tp2u9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "myapplication.flame.fleming.com.iceplayer",
+            "certificate_hash": "d67fe8c3611e668530c95d58fc4f2054bd68b171"
+          }
+        },
+        {
+          "client_id": "209503508324-e2uuiflkum1811n4bqq2gc8eh7l7ci7u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "myapplication.flame.fleming.com.iceplayer",
+            "certificate_hash": "bd03b87b75ae34cb9e1d2cca2d14902c73bb45f7"
+          }
+        },
+        {
+          "client_id": "209503508324-g3mc7rti1qt676rob2c70o7ep9ju5bv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7KAaRijUiSRIHmNp0vgOKQB6mx-u6X9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "209503508324-g3mc7rti1qt676rob2c70o7ep9ju5bv6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209503508324:android:25e0e2a59f8a0ad4674c71",
+        "android_client_info": {
+          "package_name": "myapplication.flame.fleming.com.isaiah"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "209503508324-g3mc7rti1qt676rob2c70o7ep9ju5bv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7KAaRijUiSRIHmNp0vgOKQB6mx-u6X9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "209503508324-g3mc7rti1qt676rob2c70o7ep9ju5bv6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209503508324:android:e4d61ef06b239946674c71",
+        "android_client_info": {
+          "package_name": "myapplication.flame.fleming.com.moonplay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "209503508324-mp838tnk8rmvamtls1tek6fbqbbsbtua.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "myapplication.flame.fleming.com.moonplay",
+            "certificate_hash": "bd03b87b75ae34cb9e1d2cca2d14902c73bb45f7"
+          }
+        },
+        {
+          "client_id": "209503508324-g3mc7rti1qt676rob2c70o7ep9ju5bv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7KAaRijUiSRIHmNp0vgOKQB6mx-u6X9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "209503508324-g3mc7rti1qt676rob2c70o7ep9ju5bv6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-8117291338414342~3803160512"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209503508324:android:b43527bd14f0064d674c71",
+        "android_client_info": {
+          "package_name": "myapplication.flame.fleming.com.ty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "209503508324-29f7h51mn4vomihp4thvplnll4gmragv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "myapplication.flame.fleming.com.ty",
+            "certificate_hash": "bd03b87b75ae34cb9e1d2cca2d14902c73bb45f7"
+          }
+        },
+        {
+          "client_id": "209503508324-g3mc7rti1qt676rob2c70o7ep9ju5bv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7KAaRijUiSRIHmNp0vgOKQB6mx-u6X9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "209503508324-g3mc7rti1qt676rob2c70o7ep9ju5bv6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209503508324:android:552a9d7f11cf5763674c71",
+        "android_client_info": {
+          "package_name": "myapplication.flame.fleming.zain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "209503508324-0rno6omi42773jv80ge9blf699mbv519.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "myapplication.flame.fleming.zain",
+            "certificate_hash": "bd03b87b75ae34cb9e1d2cca2d14902c73bb45f7"
+          }
+        },
+        {
+          "client_id": "209503508324-qucuokbuktbpofa9u07emic0nafbaach.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "myapplication.flame.fleming.zain",
+            "certificate_hash": "2954b65224cfa11b6f5a9cd3527b283729f13898"
+          }
+        },
+        {
+          "client_id": "209503508324-g3mc7rti1qt676rob2c70o7ep9ju5bv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7KAaRijUiSRIHmNp0vgOKQB6mx-u6X9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "209503508324-g3mc7rti1qt676rob2c70o7ep9ju5bv6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

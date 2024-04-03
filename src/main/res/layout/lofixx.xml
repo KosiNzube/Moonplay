@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/card"
+    android:layout_height="match_parent"
+    tools:context="iceplay.flame.fleming.com.moonplay.Main5Activity">
+
+    <com.bosphere.fadingedgelayout.FadingEdgeLayout
+        android:id="@+id/fade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fel_edge="top|left|bottom|right"
+        app:fel_size_bottom="200dp"
+        app:fel_size_top="50dp"
+       >
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:alpha=".6"
+
+            android:background="#050509"
+            app:fel_size_bottom="80dp"
+            tools:ignore="MissingPrefix" />
+
+    </com.bosphere.fadingedgelayout.FadingEdgeLayout>
+
+
+</RelativeLayout>

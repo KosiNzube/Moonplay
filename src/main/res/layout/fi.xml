@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/audio_item"
+
+    android:layout_marginBottom="7dp"
+
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+
+        android:layout_margin="12dp"
+        app:cardCornerRadius="10dp"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="#18181E"
+
+        android:id="@+id/res"
+        android:textAlignment="textStart"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:padding="7dp"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/time"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cast"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Weekly "
+                android:textStyle="bold"
+                android:textColor="#858585"
+                android:textSize="17.5sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cast"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="&#x20A6;1500 "
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:textColor="#d3d3d3"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/usd"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cast"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="USD- $4.81 "
+                android:textStyle="bold"
+                android:textColor="#FF9800"
+                android:textSize="19sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+
+
+            android:layout_gravity="center|right"
+            android:src="@drawable/ic_stars_black_24dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginRight="5dp"
+
+            app:tint="#00B8D4" />
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

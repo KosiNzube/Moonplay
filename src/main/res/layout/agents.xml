@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+
+
+        android:layout_width="match_parent"
+
+
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/card"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_alignParentTop="true"
+            android:id="@+id/lin"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+
+                android:id="@+id/hihi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+
+                    android:layout_height="wrap_content">
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/itemImage"
+                        android:id="@+id/tvTitle"
+                        android:layout_below="@id/genre"
+                        android:layout_toLeftOf="@id/playlx"
+
+                        android:tint="#37D3D3D3"
+
+                        android:padding="10dp"
+                        android:textSize="15dp"
+                        android:src="@drawable/ic_stars_black_24dp"
+                        android:textColor="#d3d3d3"
+                        android:text="Male"/>
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        app:cardCornerRadius="7dp"
+                        android:id="@+id/itemImage"
+
+                        app:cardBackgroundColor="#63262936"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/ic_adb_black_24dp"
+                            android:layout_width="80dp"
+                            android:layout_height="86dp"
+                            android:padding="30dp"
+                            android:background="#63262936"
+                            android:scaleType="centerCrop" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:id="@+id/type"
+                        android:layout_toRightOf="@id/itemImage"
+                        android:layout_toLeftOf="@id/playlx"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="17dp"
+
+
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:text="Kelly"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/genre"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/itemImage"
+                        android:layout_toLeftOf="@id/playlx"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15dp"
+                        android:layout_below="@id/type"
+
+                        android:textColor="#039BE5"
+                        android:text="Tenor"/>
+
+
+                    <ImageView
+                        android:id="@+id/button"
+                        android:padding="10dp"
+                        android:layout_marginRight="3dp"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:tint="#80FFFFFF"
+                        android:src="@drawable/ic_hearing_black_24dp"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="18dp"
+                        android:layout_height="wrap_content"
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/playlx"
+                        android:padding="10dp"
+                        android:visibility="invisible"
+                        android:layout_marginRight="3dp"
+                        android:tint="#fff"
+                        android:src="@drawable/ic_playlist_play_black_24dp"
+                        android:layout_width="wrap_content"
+                        android:layout_toLeftOf="@id/button"
+                        android:layout_margin="18dp"
+                        android:layout_height="wrap_content"
+                        />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/kiki"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:id="@+id/pro"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:visibility="gone"
+
+                    android:layout_marginTop="5dp"
+
+
+                    android:layout_toRightOf="@id/zero"
+                    android:layout_toLeftOf="@id/hun"
+                    android:max="100"
+                    android:indeterminate="false"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+
+
+                    android:progressTint="@color/colorAccent"
+
+                    />
+                <TextView
+                    android:id="@+id/zero"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn9"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="2dp"
+
+
+                    android:text="License"
+
+                    android:textColor="#d3d3d3"
+
+
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/hun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn9"
+
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"
+
+                    android:visibility="gone"
+
+                    android:layout_marginTop="2dp"
+                    android:text=" Free "
+
+
+                    android:textColor="#FB8C00"
+                    android:textSize="15dp" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    app:cardCornerRadius="5dp"
+                    android:id="@+id/pausecard"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/hun"
+                    android:foreground="?android:attr/selectableItemBackground"
+
+                    android:visibility="gone"
+                    app:cardBackgroundColor="#016E79"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/butnn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textStyle="bold"
+
+
+                        android:textColor="#fff"
+                        android:text="Buy and own it now"
+                        android:padding="7dp"
+
+                        android:visibility="visible" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    app:cardCornerRadius="5dp"
+                    android:id="@+id/ad"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/hun"
+                    android:foreground="?android:attr/selectableItemBackground"
+
+                    android:visibility="gone"
+                    app:cardBackgroundColor="#016E79"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/adbut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textStyle="bold"
+
+
+                        android:textColor="#fff"
+                        android:text="Download with AD"
+                        android:padding="7dp"
+
+                        android:visibility="visible" />
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+
+
+
+
+                android:layout_height="1dp"
+                android:layout_below="@+id/pro"
+                android:layout_marginTop="5dp"
+
+                android:background="#22525252" />
+            <Button
+                android:id="@+id/ioio"
+                android:layout_width="match_parent"
+
+
+
+
+                android:layout_height="1dp"
+                android:layout_below="@+id/btn3"
+                android:layout_marginTop="3dp"
+
+                android:background="#22525252" />
+            <Button
+                android:id="@+id/mimi"
+                android:layout_width="match_parent"
+
+
+
+
+                android:layout_height="1dp"
+                android:layout_below="@+id/ioio"
+                android:layout_marginTop="3dp"
+
+                android:background="#22525252" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

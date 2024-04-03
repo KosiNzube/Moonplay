@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="3dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/card"
+
+
+
+
+    android:layout_height="wrap_content">
+
+
+
+
+  <ImageView
+      android:layout_width="match_parent"
+
+      android:id="@+id/itemImage"
+      android:layout_below="@id/typee"
+      android:layout_height="480dp" />
+  <View
+      android:id="@+id/blur"
+      android:layout_width="match_parent"
+      android:layout_below="@id/typee"
+
+      android:layout_height="480dp"
+      android:background="#40000000"/>
+
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/tvTitle"
+      android:padding="5dp"
+      android:background="#C40A0A0E"
+      android:textSize="17dp"
+
+      android:layout_marginTop="533dp"
+      android:textColor="#fff"
+      android:fontFamily="sans-serif-thin"
+
+      />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/type"
+      android:textAlignment="textEnd"
+      android:textStyle="bold"
+      android:padding="5dp"
+
+      android:textSize="25dp"
+
+      android:layout_marginLeft="3dp"
+
+      android:textColor="#FF9800"
+      android:text="Pixar"/>
+
+
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/typee"
+      android:textAlignment="textEnd"
+      android:textStyle="bold"
+      android:layout_below="@+id/type"
+      android:padding="5dp"
+      android:background="#00282835"
+
+      android:textSize="12dp"
+      android:drawableLeft="@drawable/ic_stars_black_24dp"
+
+      android:drawablePadding="7dp"
+      android:paddingLeft="10dp"
+      android:layout_marginLeft="3dp"
+
+      android:textColor="#fff"
+      android:text="Releasing"/>
+
+
+
+
+
+</RelativeLayout>

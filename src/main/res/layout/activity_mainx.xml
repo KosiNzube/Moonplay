@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity"
+    android:background="#050507">
+
+    <RelativeLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:background="#050507">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="47dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:id="@+id/fko"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    />
+
+                <Button
+                    android:id="@+id/pgbtnz"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#121214"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:nestedScrollingEnabled="false"
+                    android:scrollbars="vertical"
+
+                    android:layout_marginBottom="85dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+    <include layout="@layout/error"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

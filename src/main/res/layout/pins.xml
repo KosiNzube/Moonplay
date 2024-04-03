@@ -1,0 +1,1149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050509"
+    tools:context="iceplay.flame.fleming.com.moonplay.Main7Activity">
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+
+        android:nestedScrollingEnabled="false"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:descendantFocusability="blocksDescendants"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+
+        <RelativeLayout
+            android:id="@+id/everything"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/pgbtnz"
+                android:layout_width="match_parent"
+
+
+                android:visibility="invisible"
+                android:layout_marginTop="47dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/relative"
+                android:background="#121214"/>
+            <Button
+                android:id="@+id/backintimez"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="#00282835"
+                android:drawableLeft="@drawable/ic_pets_black_24dp"
+                android:layout_below="@id/pgbtnz"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="5dp"
+                android:textAlignment="textStart"
+
+                android:layout_marginBottom="3dp"
+                android:drawablePadding="7dp"
+                android:text=" There are new episodes on naruto "
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="16.7dp"
+                android:visibility="invisible"
+                android:textStyle="bold"
+                />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/btnio"
+                android:visibility="invisible"
+                android:layout_below="@+id/backintimez"
+                android:background="#0DD4D4D4"
+
+                />
+
+            <RelativeLayout
+
+
+                android:id="@+id/playbackx"
+                android:layout_below="@+id/btnio"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:id="@+id/ioio"
+                    android:background="#14D4D4D4"
+
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/ioio"
+                    android:layout_marginTop="2.5dp"
+                    android:id="@+id/btnx"
+                    android:background="#29D4D4D4"
+
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/btnx"
+
+                    android:layout_marginTop="2.5dp"
+                    android:id="@+id/btn3"
+                    android:background="#3DD4D4D4"
+
+                    />
+
+                <RelativeLayout
+                    android:layout_below="@id/btn3"
+
+                    android:id="@+id/playback"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/mb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="#00282835"
+                        android:drawableLeft="@drawable/ic_filter_vintage_black_24dp"
+
+                        android:textStyle="bold"
+                        android:layout_toLeftOf="@id/studio"
+                        android:textAlignment="textStart"
+
+                        android:layout_marginLeft="8dp"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="7dp"
+                        android:text=" New Release "
+
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="17sp"
+                        />
+                    <ImageView
+                        android:id="@+id/studio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:background="#00282835"
+                        android:src="@drawable/ic_filter_drama_black_24dp"
+
+
+                        android:layout_centerVertical="true"
+                        android:fontFamily="monospace"
+                        android:layout_marginRight="8dp"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        />
+
+                </RelativeLayout>
+                <Button
+                    android:id="@+id/iii"
+                    android:layout_width="match_parent"
+
+                    android:layout_marginTop="5dp"
+
+
+
+
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/playback"
+
+                    android:background="#26D3D3D3" />
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/yiyii"
+                android:layout_below="@id/playbackx"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+            <RelativeLayout
+
+
+                android:id="@+id/playbackxx"
+                android:layout_below="@+id/yiyii"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/ioiox"
+                    android:background="#14D4D4D4"
+
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/ioiox"
+                    android:layout_marginTop="2.5dp"
+                    android:id="@+id/btnxx"
+                    android:background="#29D4D4D4"
+
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/btnxx"
+
+                    android:layout_marginTop="2.5dp"
+                    android:id="@+id/btn3x"
+                    android:background="#3DD4D4D4"
+
+                    />
+
+                <RelativeLayout
+                    android:layout_below="@id/btn3x"
+
+                    android:id="@+id/playbackxxx"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/mbx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="#00282835"
+                        android:drawableLeft="@drawable/ic_filter_list_black_24dp"
+
+                        android:layout_toLeftOf="@id/studiox"
+                        android:textAlignment="textStart"
+
+                        android:layout_marginLeft="8dp"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="7dp"
+                        android:text=" Instant Filter "
+
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:textColor="#D81B60"
+                        android:textSize="18sp"
+                        />
+                    <ImageView
+                        android:id="@+id/studiox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:background="#00282835"
+                        android:src="@drawable/ic_filter_drama_black_24dp"
+
+
+                        android:layout_centerVertical="true"
+                        android:fontFamily="monospace"
+                        android:layout_marginRight="8dp"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        />
+
+                </RelativeLayout>
+                <Button
+                    android:id="@+id/iiix"
+                    android:layout_width="match_parent"
+
+                    android:layout_marginTop="5dp"
+
+
+
+
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/playbackxxx"
+
+                    android:background="#26D3D3D3" />
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fifi"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/playbackxx"
+                android:nestedScrollingEnabled="false"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:overScrollMode="never">
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                android:id="@+id/tastetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fifi"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Recommended For You "
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textStyle="bold"
+
+                android:textSize="19dp" />
+
+            <Button
+                android:id="@+id/tastebut"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/fifi"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#00282835"
+
+                android:visibility="gone"
+                android:drawableLeft="@drawable/ic_stars_black_24dp"
+                android:drawablePadding="7dp"
+
+                android:paddingLeft="10dp"
+
+
+                android:text="See All"
+                android:textAllCaps="false"
+                android:drawableTint="#fff"
+                android:textColor="#D81B60"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/titii"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/tasterecy"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#00282835"
+
+                android:drawableLeft="@drawable/ic_stars_black_24dp"
+                android:drawablePadding="7dp"
+
+                android:paddingLeft="10dp"
+
+
+                android:text="See All"
+                android:textAllCaps="false"
+                android:drawableTint="#fff"
+                android:textColor="#D81B60"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/tasterecy"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tastetext"
+
+                android:layout_marginBottom="1.5dp"
+                android:nestedScrollingEnabled="false"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:overScrollMode="never">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/thriller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tasterecy"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Tv Shows"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textStyle="bold"
+
+                android:textSize="19dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/gigii"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/thriller"
+
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:overScrollMode="never">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/btnzy"
+                android:layout_width="match_parent"
+
+                android:visibility="gone"
+                android:layout_height="1dp"
+                android:layout_below="@+id/gigii"
+
+                android:background="#121214" />
+
+
+            <RelativeLayout
+
+
+                android:id="@+id/playbackxvq"
+                android:layout_below="@+id/gigii"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:id="@+id/ioiovq"
+                    android:background="#14D4D4D4"
+
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/ioiovq"
+                    android:layout_marginTop="2.5dp"
+                    android:id="@+id/btnxvq"
+                    android:background="#29D4D4D4"
+
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/btnxvq"
+
+                    android:layout_marginTop="2.5dp"
+                    android:id="@+id/btn3vq"
+                    android:background="#3DD4D4D4"
+
+                    />
+
+                <RelativeLayout
+                    android:layout_below="@id/btn3vq"
+
+                    android:id="@+id/playbackvq"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/mbvq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="#00282835"
+                        android:drawableLeft="@drawable/ic_filter_list_black_24dp"
+
+                        android:textAlignment="textStart"
+
+                        android:textStyle="bold"
+                        android:layout_marginLeft="8dp"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="7dp"
+                        android:text=" Anime "
+
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="17sp"
+                        />
+                    <Button
+                        android:id="@+id/backbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:background="#00282835"
+                        android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+
+                        android:textStyle="bold"
+                        android:text="more"
+
+
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        />
+
+                </RelativeLayout>
+                <Button
+                    android:id="@+id/iiivq"
+                    android:layout_width="match_parent"
+
+                    android:layout_marginTop="5dp"
+
+
+
+
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/playbackvq"
+
+                    android:background="#26D3D3D3" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/backintime"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn8"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Anime"
+                android:textStyle="bold"
+
+
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="19dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/btn8"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#00282835"
+                android:drawableLeft="@drawable/ic_stars_black_24dp"
+                android:drawablePadding="7dp"
+                android:paddingLeft="10dp"
+                android:drawableTint="#fff"
+                android:text="See All"
+                android:textAllCaps="false"
+                android:textColor="#D81B60"
+
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/backrecy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/playbackxvq"
+                android:layout_marginTop="5dp"
+                android:overScrollMode="never"
+
+                android:visibility="gone"
+                android:orientation="vertical">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/medtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/backrecy"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+
+                android:text="Medieval Times"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="19dp" />
+
+
+            <Button
+                android:id="@+id/medbut"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/backrecy"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="5dp"
+                android:background="#00282835"
+
+                android:drawableLeft="@drawable/ic_stars_black_24dp"
+                android:drawablePadding="7dp"
+
+                android:paddingLeft="10dp"
+
+                android:text="See All"
+                android:textAllCaps="false"
+                android:drawableTint="#fff"
+                android:textColor="#D81B60"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/medrecy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/medtext"
+                android:overScrollMode="never"
+
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:orientation="vertical"></androidx.recyclerview.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/medbuty"
+                android:layout_width="match_parent"
+
+                android:layout_height="1dp"
+                android:layout_below="@+id/medrecy"
+                android:background="#121214"/>
+
+
+            <TextView
+                android:id="@+id/trending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/medbuty"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+
+                android:text="Recently Added"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="19dp"/>
+            <Button
+                android:id="@+id/trendbut"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/medbuty"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:background="#00282835"
+                android:drawableLeft="@drawable/ic_stars_black_24dp"
+                android:drawablePadding="7dp"
+                android:paddingLeft="10dp"
+
+                android:text="More"
+                android:textAllCaps="false"
+                android:drawableTint="#fff"
+                android:textColor="#D81B60"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/trendrecy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trending"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:overScrollMode="never"
+
+                android:orientation="vertical">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                android:id="@+id/comingtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trendrecy"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Coming Soon"
+                android:textStyle="bold"
+                android:visibility="gone"
+
+
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="19dp"/>
+            <Button
+                android:id="@+id/comingbut"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/trendrecy"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#00282835"
+                android:drawableLeft="@drawable/ic_stars_black_24dp"
+                android:drawablePadding="7dp"
+                android:paddingLeft="10dp"
+                android:visibility="gone"
+
+                android:text="More"
+                android:textAllCaps="false"
+                android:drawableTint="#fff"
+                android:textColor="#D81B60"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+
+
+
+            <RelativeLayout
+
+
+                android:id="@+id/playbackxvxz"
+                android:layout_below="@+id/nollyrecy"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:id="@+id/ioiovxz"
+                    android:background="#14D4D4D4"
+
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/ioiovxz"
+                    android:layout_marginTop="2.5dp"
+                    android:id="@+id/btnxvxz"
+                    android:background="#29D4D4D4"
+
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/btnxvxz"
+
+                    android:layout_marginTop="2.5dp"
+                    android:id="@+id/btn3vxz"
+                    android:background="#3DD4D4D4"
+
+                    />
+
+                <RelativeLayout
+                    android:layout_below="@id/btn3vxz"
+
+                    android:id="@+id/playbackvxz"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/mbvxz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="#00282835"
+                        android:drawableLeft="@drawable/ic_filter_list_black_24dp"
+
+                        android:layout_toLeftOf="@id/nollyxz"
+                        android:textAlignment="textStart"
+
+                        android:textStyle="bold"
+                        android:layout_marginLeft="8dp"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="7dp"
+                        android:text=" Genre "
+
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="17sp"
+                        />
+                    <Button
+                        android:id="@+id/nollyxz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:background="#00282835"
+                        android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+
+                        android:textStyle="bold"
+                        android:text="more"
+
+
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        />
+
+                </RelativeLayout>
+                <Button
+                    android:id="@+id/iiivxz"
+                    android:layout_width="match_parent"
+
+                    android:layout_marginTop="5dp"
+
+
+
+
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/playbackvxz"
+
+                    android:background="#26D3D3D3" />
+            </RelativeLayout>
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/genrecy"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/playbackxvxz"
+                android:overScrollMode="never"
+                android:layout_marginBottom="85dp"
+
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+
+            <RelativeLayout
+
+
+                android:id="@+id/playbackxxxy"
+                android:layout_below="@+id/trendrecy"
+
+                android:layout_marginTop="1.5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:visibility="invisible"
+
+                    android:id="@+id/ioioxx"
+                    android:background="#14D4D4D4"
+
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/ioioxx"
+                    android:layout_marginTop="2.5dp"
+                    android:id="@+id/btnxxx"
+                    android:background="#29D4D4D4"
+                    android:visibility="invisible"
+
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/btnxxx"
+
+                    android:visibility="invisible"
+                    android:layout_marginTop="2.5dp"
+                    android:id="@+id/btn3xx"
+                    android:background="#3DD4D4D4"
+
+                    />
+                <RelativeLayout
+
+
+                    android:visibility="gone"
+                    android:id="@+id/playbackxv"
+                    android:layout_below="@+id/btn3xx"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+
+                        android:id="@+id/ioiov"
+                        android:background="#14D4D4D4"
+
+                        />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/ioiov"
+                        android:layout_marginTop="2.5dp"
+                        android:id="@+id/btnxv"
+                        android:background="#29D4D4D4"
+
+                        />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/btnxv"
+
+                        android:layout_marginTop="2.5dp"
+                        android:id="@+id/btn3v"
+                        android:background="#3DD4D4D4"
+
+                        />
+
+                    <RelativeLayout
+                        android:layout_below="@id/btn3v"
+
+                        android:id="@+id/playbackv"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/mbv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_alignParentLeft="true"
+                            android:background="#00282835"
+                            android:drawableLeft="@drawable/ic_filter_list_black_24dp"
+
+                            android:layout_toLeftOf="@id/koreamore"
+                            android:textAlignment="textStart"
+
+                            android:textStyle="bold"
+                            android:layout_marginLeft="8dp"
+                            android:layout_centerVertical="true"
+                            android:drawablePadding="7dp"
+                            android:text=" Korean drama "
+
+                            android:textAllCaps="false"
+                            android:textColor="#fff"
+                            android:textSize="17sp"
+                            />
+                        <Button
+                            android:id="@+id/koreamore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:background="#00282835"
+                            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+
+                            android:textStyle="bold"
+                            android:text="more"
+
+
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:textAllCaps="false"
+                            android:textColor="#fff"
+                            />
+
+                    </RelativeLayout>
+                    <Button
+                        android:id="@+id/iiiv"
+                        android:layout_width="match_parent"
+
+                        android:layout_marginTop="5dp"
+
+
+
+
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/playbackv"
+
+                        android:background="#26D3D3D3" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/yiyiix"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:layout_below="@id/playbackxxxy"
+                android:layout_marginBottom="5dp"
+                android:overScrollMode="never"></androidx.recyclerview.widget.RecyclerView>
+
+            <RelativeLayout
+
+
+                android:id="@+id/playbackxvx"
+                android:layout_below="@+id/yiyiix"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:id="@+id/ioiovx"
+                    android:background="#14D4D4D4"
+
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/ioiovx"
+                    android:layout_marginTop="2.5dp"
+                    android:id="@+id/btnxvx"
+                    android:background="#29D4D4D4"
+
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/btnxvx"
+
+                    android:layout_marginTop="2.5dp"
+                    android:id="@+id/btn3vx"
+                    android:background="#3DD4D4D4"
+
+                    />
+
+                <RelativeLayout
+                    android:layout_below="@id/btn3vx"
+
+                    android:visibility="gone"
+                    android:id="@+id/playbackvx"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/mbvx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="#00282835"
+                        android:drawableLeft="@drawable/ic_filter_list_black_24dp"
+
+                        android:layout_toLeftOf="@id/nollyx"
+                        android:textAlignment="textStart"
+
+                        android:textStyle="bold"
+                        android:layout_marginLeft="8dp"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="7dp"
+                        android:text=" Black Magic "
+
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="17sp"
+                        />
+                    <Button
+                        android:id="@+id/nollyx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:background="#00282835"
+                        android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+
+                        android:textStyle="bold"
+                        android:text="more"
+
+
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        />
+
+                </RelativeLayout>
+                <Button
+                    android:id="@+id/iiivx"
+                    android:layout_width="match_parent"
+
+                    android:layout_marginTop="5dp"
+
+
+
+
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/playbackvx"
+
+                    android:background="#26D3D3D3" />
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/nollyrecy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"
+                android:layout_below="@id/playbackxvx"
+                android:layout_marginBottom="5dp"
+                android:overScrollMode="never">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_marginTop="125dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="85dp"
+        android:visibility="invisible"
+
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+
+
+        />
+    <TextView
+        android:layout_width="350dp"
+        android:textAlignment="textStart"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/mus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:layout_height="wrap_content"
+        android:text="Moonlight Entertainment Curated For You"
+        android:textStyle="bold"
+        android:textColor="#68FFFFFF"
+        android:textSize="35dp"
+        />
+
+    <TextView
+        android:layout_width="350dp"
+        android:textAlignment="textStart"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/musy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:layout_below="@id/mus"
+        android:layout_height="wrap_content"
+        android:text="Make your day lit"
+        android:textStyle="bold"
+        android:textColor="#D81B60"
+        android:textSize="25dp"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,153 @@
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_below="@id/btn2"
+    android:layout_marginTop="5dp"
+
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:layout_height="wrap_content"
+    android:id="@+id/card"
+    android:backgroundTint="#40444444">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height=".3dp"
+        android:id="@+id/btn1"
+        android:layout_below="@+id/lin"
+        android:layout_marginTop="10dp"
+        android:background="#0DFFFFFF"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_alignParentTop="true"
+        android:id="@+id/lin"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+
+            android:id="@+id/hihi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:paddingLeft="@dimen/dp10"
+                android:layout_height="wrap_content">
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/itemImagoe"
+                    android:id="@+id/tvTitle"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="18dp"
+                    android:layout_alignParentLeft="true"
+
+                    android:textStyle="bold"
+                    android:textColor="#C8C8C8"
+                    android:text="Once upon a time"/>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/itemImagoe"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginRight="8dp"
+                    android:backgroundTint="#BF050505"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/itemImage"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:background="#D90A0A0F"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:tint="#38C8C8FF"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_stars_black_24dp"
+                        />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/type"
+                    android:layout_toLeftOf="@id/itemImagoe"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/tvTitle"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="5dp"
+
+                    android:textSize="14dp"
+                    android:textColor="#ffbf00"
+                    android:text="Continue watching"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/typee"
+                    android:layout_toLeftOf="@id/itemImagoe"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/type"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="5dp"
+
+                    android:textColor="#9C9C9C"
+                    android:text="magicplus"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/continu"
+                    android:layout_toLeftOf="@id/itemImagoe"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/typee"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="5dp"
+
+                    android:textStyle="bold"
+                    android:textColor="#80FFFFFF"
+                    android:text="Continue watching"/>
+
+                <ImageView
+                    android:id="@+id/button"
+                    android:src="@drawable/ic_visibility_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:visibility="invisible"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="15dp"
+                    android:layout_height="wrap_content"
+                    />                </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050507"
+
+>
+    <TextView
+        android:layout_width="350dp"
+        android:textAlignment="textStart"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/mus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+
+        android:layout_height="wrap_content"
+        android:text="Instant videos, trailers and more"
+        android:textStyle="bold"
+        android:textColor="#68FFFFFF"
+        android:textSize="33dp"
+        />
+    <TextView
+        android:id="@+id/genrexx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_centerHorizontal="true"
+        android:padding="12dp"
+
+        android:visibility="invisible"
+        android:text=" no predictions yet "
+
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:textColor="#d3d3d3"
+        android:textSize="23sp"
+        />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:descendantFocusability="blocksDescendants"
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+
+        <RelativeLayout
+            android:id="@+id/everything"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+
+
+            <com.google.android.material.card.MaterialCardView
+
+                android:layout_width="match_parent"
+                app:cardElevation="2dp"
+
+
+                app:strokeColor="#00444444"
+                app:strokeWidth="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:textAlignment="textStart"
+                android:theme="@style/Base.Theme.MaterialComponents.Light"
+
+                app:cardBackgroundColor="#000F0F10"
+                app:cardCornerRadius="35dp">
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:background="#000F0F10"
+                    android:descendantFocusability="blocksDescendants"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginBottom="11dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="25dp"
+                        android:id="@+id/save"
+                        android:layout_centerHorizontal="true"
+
+
+                        app:cardBackgroundColor="#fff"
+                        android:layout_height="50dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center"
+
+                            android:id="@+id/genrex"
+
+
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/genre"
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+
+                                android:layout_centerVertical="true"
+
+                                android:layout_marginTop="3dp"
+                                android:layout_toRightOf="@+id/xg"
+                                android:paddingRight="45dp"
+
+                                android:text=" Short "
+                                android:textColor="#0091EA"
+                                android:textSize="23sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/xg"
+                                android:layout_centerVertical="true"
+
+
+
+                                android:src="@drawable/ic_stars_black_24dp"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="35dp"
+                                android:layout_marginRight="5dp"
+
+                                app:tint="#0091EA" />
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/yiyii"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="99dp"
+
+                        android:nestedScrollingEnabled="false"
+                        android:overScrollMode="never"></androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="200dp"
+                android:visibility="invisible"
+
+
+                />
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

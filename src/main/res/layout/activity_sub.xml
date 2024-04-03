@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A0E"
+    tools:context="iceplay.flame.fleming.com.moonplay.iceplayer">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+
+
+        android:layout_marginBottom="5dp"
+        android:background="#0F0F11" />
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="170dp"
+        android:alpha=".001"
+        android:background="#1A2667" />
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thumbnail"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="5dp"
+
+        android:text="Sign up and get an unfair advantage"
+        android:textColor="#fff"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_above="@+id/button3"
+        android:layout_below="@+id/text1"
+
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="5dp"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@id/back"
+                android:text="Smart Anime recommendations for you"
+                android:textColor="#d3d3d3"
+                android:textSize="20dp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@id/back"
+                android:visibility="gone"
+                android:text="Personalized Feed based on your taste "
+                android:textColor="#d3d3d3"
+                android:textSize="20dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@id/back"
+                android:text="Stream and download available anime trailers and content for free "
+                android:textColor="#d3d3d3"
+                android:textSize="20dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@id/back"
+                android:text="Recommended anime playlists from Ai systems and expert curators "
+                android:textColor="#d3d3d3"
+                android:textSize="20dp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@id/back"
+                android:text="Find similar anime based on your favorites"
+                android:textColor="#d3d3d3"
+                android:textSize="19dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@id/back"
+                android:text="Inbuilt ML video-Res encoder "
+                android:textColor="#d3d3d3"
+                android:textSize="20dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@id/back"
+                android:text="No commitments involved"
+                android:textColor="#d3d3d3"
+                android:textSize="20dp"
+
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/free"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:background="#0A0A0E"
+        android:text=" Terms and conditions"
+
+        android:paddingTop="9dp"
+
+        android:textColor="#575757"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:visibility="invisible"
+        android:layout_above="@id/free"
+        android:id="@+id/btn1"
+        android:background="#4DFFFFFF"
+
+        />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_marginBottom="5dp"
+
+        android:visibility="invisible"
+        android:layout_above="@id/button3"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+
+
+        />
+
+
+    <Button
+        android:id="@+id/button3"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:background="#FB8C00"
+        android:text="Continue"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+</RelativeLayout>

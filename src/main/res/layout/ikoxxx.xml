@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050507"
+
+   >
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:descendantFocusability="blocksDescendants"
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+    <RelativeLayout
+        android:id="@+id/everything"
+        android:layout_width="match_parent"
+
+
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:id="@+id/zq"
+
+            android:visibility="gone"
+
+            android:paddingBottom="@dimen/dp5"
+
+            android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:id="@+id/albumname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Recommended "
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/image_view_profile_pic"
+                    android:textColor="#d3d3d3"
+                    android:textSize="16.5sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:text="For You "
+                    android:layout_below="@id/albumname"
+                    android:textAlignment="textStart"
+
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#696969"
+                    android:textSize="16sp"
+
+                    />
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/image_view_profile_pic"
+                android:layout_width="140dp"
+                android:layout_height="150dp"
+                android:padding="1dp"
+
+
+
+                android:layout_marginTop="25dp"
+                android:src="@drawable/star"
+                android:layout_marginLeft="0.5dp"
+                android:layout_centerHorizontal="true"
+                app:strokeColor="#fff"
+                app:strokeWidth="1dp" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/download"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_chevron_left_black_24dp"
+
+
+
+                android:layout_marginTop="25dp"
+                android:padding="10dp"
+                android:layout_gravity="center|right"
+
+                android:textColor="#00897B"
+                android:textSize="17dp"
+                android:textStyle="bold"
+
+                />
+
+        </RelativeLayout>
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_below="@id/zq"
+            android:id="@+id/za"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="19dp"
+            app:cardElevation="2dp"
+
+            android:layout_marginTop="15dp"
+
+
+            app:strokeColor="#444444"
+            app:strokeWidth="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="textStart"
+            android:theme="@style/Base.Theme.MaterialComponents.Light"
+
+            app:cardBackgroundColor="#0F0F10"
+            app:cardCornerRadius="35dp">
+            <LinearLayout
+                android:id="@+id/q"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+
+                android:background="#000F0F10"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn3"
+
+
+                    android:layout_marginTop="23dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+
+                        android:layout_alignParentLeft="true"
+
+                        android:layout_marginLeft="8dp"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@id/studio"
+
+                            android:background="#00282835"
+                            android:drawablePadding="7dp"
+                            android:text=" Recently added"
+
+                            android:id="@+id/bitcj"
+                            android:textAlignment="textStart"
+                            android:textAllCaps="false"
+
+                            android:textColor="#fff"
+                            android:textSize="21sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Binge X "
+                            android:visibility="gone"
+                            android:textColor="#8B8B8B"
+                            android:id="@+id/clips"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="@dimen/dp3"
+                            android:layout_height="wrap_content"
+                            android:text=" Author: . . . "
+                            android:textColor="#8B8B8B"
+                            android:id="@+id/username"
+                            android:textSize="18sp"
+                            />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/dp3"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/whatsap"
+                                android:layout_width="wrap_content"
+                                android:layout_height="26dp"
+
+                                android:layout_marginRight="@dimen/dp10"
+                                android:layout_centerInParent="true"
+
+                                android:layout_alignParentRight="true"
+                                app:strokeColor="#80FFFFFF"
+                                app:strokeWidth="0.8dp"
+                                android:theme="@style/Base.Theme.MaterialComponents.Light"
+                                android:layout_toLeftOf="@id/button"
+                                android:paddingLeft="13dp"
+                                android:paddingTop="15dp"
+
+                                android:paddingRight="13dp"
+                                android:paddingBottom="15dp"
+                                app:cardCornerRadius="11.5dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:background="#0F0F10"
+                                    android:layout_gravity="center"
+
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+
+                                        android:layout_alignParentTop="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="4dp"
+
+                                        android:gravity="center"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:text=" Whatsapp TV "
+                                        android:textColor="#fff"
+
+                                        android:textSize="13.5dp"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/instagram"
+                                android:layout_width="wrap_content"
+                                android:layout_height="26dp"
+
+                                android:layout_marginRight="@dimen/dp10"
+                                android:layout_centerInParent="true"
+
+                                android:layout_alignParentRight="true"
+                                app:strokeColor="#80FFFFFF"
+                                app:strokeWidth="0.8dp"
+                                android:theme="@style/Base.Theme.MaterialComponents.Light"
+                                android:layout_toLeftOf="@id/button"
+                                android:paddingLeft="13dp"
+                                android:paddingTop="15dp"
+
+                                android:paddingRight="13dp"
+                                android:paddingBottom="15dp"
+                                app:cardCornerRadius="11.5dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:background="#0F0F10"
+                                    android:layout_gravity="center"
+
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+
+                                        android:layout_alignParentTop="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="4dp"
+
+                                        android:gravity="center"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:text=" Instagram "
+                                        android:textColor="#fff"
+
+                                        android:textSize="13.5dp"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+                            </com.google.android.material.card.MaterialCardView>
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/facebook"
+                                android:layout_width="wrap_content"
+                                android:layout_height="26dp"
+
+                                android:layout_marginRight="@dimen/dp10"
+                                android:layout_centerInParent="true"
+
+                                android:layout_alignParentRight="true"
+                                app:strokeColor="#80FFFFFF"
+                                app:strokeWidth="0.8dp"
+                                android:theme="@style/Base.Theme.MaterialComponents.Light"
+                                android:layout_toLeftOf="@id/button"
+                                android:paddingLeft="13dp"
+                                android:paddingTop="15dp"
+
+                                android:paddingRight="13dp"
+                                android:paddingBottom="15dp"
+                                app:cardCornerRadius="11.5dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:background="#0F0F10"
+                                    android:layout_gravity="center"
+
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+
+                                        android:layout_alignParentTop="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="4dp"
+
+                                        android:gravity="center"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:text=" Facebook "
+                                        android:textColor="#fff"
+
+                                        android:textSize="13.5dp"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+                            </com.google.android.material.card.MaterialCardView>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:background="#2F2F2F" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/exoPlayerRecyclerView"
+            android:padding="@dimen/dp10"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/dp10"
+            android:layout_height="match_parent"
+
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never"></androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </RelativeLayout>
+    </ScrollView>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="89dp"
+        android:layout_height="26dp"
+
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_centerInParent="true"
+
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        app:strokeColor="#80FFFFFF"
+        app:strokeWidth="0.8dp"
+        android:theme="@style/Base.Theme.MaterialComponents.Light"
+        android:layout_toLeftOf="@id/button"
+        android:paddingLeft="13dp"
+        android:paddingTop="15dp"
+
+        android:paddingRight="13dp"
+        android:paddingBottom="15dp"
+        app:cardCornerRadius="11.5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#0F0F10"
+            android:layout_gravity="center"
+
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text=" Pin "
+                android:textColor="#fff"
+
+                android:textSize="13.5dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="60dp"
+        android:id="@+id/itemImagey"
+
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="55dp"
+        android:layout_alignParentRight="true"
+        app:cardCornerRadius="29dp"
+
+        android:layout_alignParentBottom="true"
+
+        app:cardBackgroundColor="#3949AB"
+
+        android:layout_centerVertical="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_offline_pin_black_24dp"
+            android:layout_height="wrap_content"
+
+            android:padding="15dp"
+            android:layout_gravity="center"
+            android:id="@+id/playy"
+
+            />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

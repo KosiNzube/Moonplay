@@ -1,0 +1,1011 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050507"
+
+    tools:context="iceplay.flame.fleming.com.moonplay.Main7Activity"
+    tools:ignore="MissingDefaultResource">
+
+  <TextView
+      android:layout_width="350dp"
+      android:textAlignment="textStart"
+      android:layout_alignParentLeft="true"
+      android:layout_marginLeft="15dp"
+      android:id="@+id/mus"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="200dp"
+      android:visibility="gone"
+
+
+      android:layout_height="wrap_content"
+      android:text=""
+      android:textStyle="bold"
+      android:textColor="#68FFFFFF"
+      android:textSize="33dp"
+      />
+
+  <ScrollView
+      android:id="@+id/scroll"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_alignParentStart="true"
+
+      android:layout_alignParentTop="true"
+      android:layout_marginStart="0dp"
+      android:layout_marginTop="0dp"
+      android:descendantFocusability="blocksDescendants"
+      android:nestedScrollingEnabled="false"
+      android:overScrollMode="never"
+      android:scrollbars="none">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        app:cardElevation="2dp"
+
+        android:layout_marginBottom="19dp"
+
+        app:strokeColor="#00444444"
+        app:strokeWidth="1dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="textStart"
+
+>
+    <LinearLayout
+        android:id="@+id/everything"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:background="#4D03A9F4"
+
+          android:visibility="gone"
+
+
+          android:layout_height="wrap_content"
+
+          >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+
+            android:layout_toLeftOf="@id/refa"
+            android:orientation="vertical">
+
+          <TextView
+              android:id="@+id/alltext"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:ellipsize="marquee"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:marqueeRepeatLimit="marquee_forever"
+              android:scrollHorizontally="true"
+              android:singleLine="true"
+              android:text=" curated for you "
+              android:textColor="#d3d3d3"
+              android:textSize="19sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/refa"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            android:layout_marginRight="10dp"
+            android:background="#00282835"
+            android:fontFamily="monospace"
+            android:padding="7dp"
+            android:src="@drawable/ic_beauty"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+
+      </RelativeLayout>
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/yiyiiq"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="3dp"
+          android:visibility="gone"
+
+          android:layout_marginLeft="@dimen/dp5"
+          android:nestedScrollingEnabled="false"
+          android:overScrollMode="never"></androidx.recyclerview.widget.RecyclerView>
+
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+
+          android:layout_height="wrap_content">
+      <LinearLayout
+          android:layout_width="wrap_content"
+
+          android:layout_centerVertical="true"
+          android:layout_alignParentRight="true"
+          android:layout_height="wrap_content"
+          android:layout_gravity="right"
+          android:background="#050509"
+          android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_toLeftOf="@id/refresh"
+            android:background="#00282835"
+            android:padding="13dp"
+
+            android:src="@drawable/ic_add_alert_black_24dp"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+
+
+            android:textSize="20.5dp"
+
+            android:textStyle="bold"
+            app:tint="#fff" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/refresh"
+            android:background="#00282835"
+
+            android:layout_marginRight="@dimen/dp5"
+            android:padding="13dp"
+            android:src="@drawable/ic_search"
+
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+
+
+            android:textSize="20.5dp"
+
+            android:textStyle="bold" />
+
+
+
+        <ImageView
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/refresh"
+            android:background="#00282835"
+
+            android:layout_marginRight="@dimen/dp5"
+            android:padding="13dp"
+            android:src="@drawable/ic_apps_black_24dp"
+
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+
+
+            android:textSize="20.5dp"
+
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/playlist"
+            android:layout_marginRight="@dimen/dp5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+
+            android:background="#00282835"
+
+            android:src="@drawable/ic_settings_black_24dp"
+            android:padding="13dp"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+
+            android:textSize="20.5dp"
+
+
+            android:textStyle="bold" />
+
+
+      </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="#00282835"
+            android:drawablePadding="7dp"
+            android:letterSpacing="0.01"
+
+            android:text=" Library "
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+
+            android:textColor="#fff"
+            android:textSize="31dp"
+            android:textStyle="bold" />
+
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+
+
+          android:id="@+id/vi"
+          android:layout_height="wrap_content"
+
+          >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+
+            android:layout_marginLeft="9dp"
+            android:orientation="vertical">
+
+
+          <RelativeLayout
+              android:id="@+id/con"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/btn3"
+
+              android:layout_marginTop="19dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="#00282835"
+                android:fontFamily="monospace"
+
+                android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+
+
+                android:orientation="vertical">
+
+              <Button
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toLeftOf="@id/studio"
+
+                  android:background="#00282835"
+                  android:drawablePadding="7dp"
+                  android:text=" Continue watching"
+
+                  android:textAlignment="textStart"
+                  android:textAllCaps="false"
+
+                  android:textColor="#d3d3d3"
+                  android:textSize="22sp"
+                  android:textStyle="bold" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text=" Continue "
+                  android:textColor="#8B8B8B"
+                  android:textSize="18sp"
+                  android:visibility="gone" />
+            </LinearLayout>
+
+          </RelativeLayout>
+
+          <RelativeLayout
+              android:id="@+id/conRecycler"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="10dp"
+              android:layout_marginBottom="1dp"
+              android:textAlignment="textStart"
+
+              android:visibility="gone">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recent"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+
+                android:layout_marginRight="5dp"
+
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone"></androidx.recyclerview.widget.RecyclerView>
+
+
+          </RelativeLayout>
+
+          <RelativeLayout
+              android:id="@+id/keepre"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="20dp"
+              android:visibility="gone"
+
+              >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="#00282835"
+
+                android:fontFamily="monospace"
+                android:src="@drawable/quantum_ic_keyboard_arrow_down_white_36"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+
+
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical">
+
+              <Button
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+
+
+                  android:background="#00282835"
+                  android:drawablePadding="7dp"
+                  android:text=" keep watching "
+
+                  android:textAlignment="textStart"
+                  android:textAllCaps="false"
+
+                  android:textColor="#d3d3d3"
+                  android:textSize="22sp"
+                  android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+          </RelativeLayout>
+
+          <RelativeLayout
+              android:id="@+id/keeprecy"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="10dp"
+
+              android:textAlignment="textStart">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/keep"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"></androidx.recyclerview.widget.RecyclerView>
+
+
+          </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_marginTop="10dp"
+
+          android:layout_height="wrap_content"
+
+          >
+
+
+        <ImageView
+            android:id="@+id/ref"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+
+            android:background="#00282835"
+            android:fontFamily="monospace"
+            android:visibility="gone"
+            android:padding="7dp"
+            android:src="@drawable/ic_baseline_cached_24"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+        <ImageView
+            android:id="@+id/refx"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+
+            android:visibility="gone"
+            android:layout_toLeftOf="@id/ref"
+
+            android:background="#00282835"
+            android:fontFamily="monospace"
+            android:padding="7dp"
+            android:src="@drawable/quantum_ic_cast_connected_white_24"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/btn3"
+
+
+          android:visibility="gone"
+          android:layout_marginTop="11dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_toLeftOf="@id/studio"
+
+              android:background="#00282835"
+              android:drawablePadding="7dp"
+              android:text=" Tv Series"
+
+              android:textAlignment="textStart"
+              android:textAllCaps="false"
+
+              android:textColor="#fff"
+              android:textSize="23sp"
+              android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            android:id="@+id/linnn"
+            android:layout_centerVertical="true"
+
+            android:layout_alignParentRight="true"
+
+            android:layout_height="wrap_content">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginRight="5dp"
+              android:gravity="center"
+              android:paddingTop="@dimen/dp3"
+              android:paddingBottom="@dimen/dp3"
+
+              android:text=" SEE ALL "
+              android:textColor="#2196F3"
+              android:textSize="18sp" />
+
+          <ImageView
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              android:layout_gravity="center"
+
+              android:background="#00282835"
+              android:fontFamily="monospace"
+              android:src="@drawable/ic_add_black_24dp"
+              android:textAllCaps="false"
+              android:textColor="#fff" />
+        </LinearLayout>
+
+      </RelativeLayout>
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+
+          android:visibility="gone"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="8dp"
+
+          android:textAlignment="textStart">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/foryou"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:nestedScrollingEnabled="false"></androidx.recyclerview.widget.RecyclerView>
+
+
+      </RelativeLayout>
+
+
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+
+          >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+
+              android:background="#00282835"
+              android:drawablePadding="7dp"
+              android:text=" recently added "
+
+              android:textAlignment="textStart"
+              android:textAllCaps="false"
+
+              android:textColor="#d3d3d3"
+              android:textSize="22sp"
+              android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="#00282835"
+
+            android:visibility="gone"
+            android:fontFamily="monospace"
+            android:src="@drawable/quantum_ic_keyboard_arrow_down_white_36"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+
+      </RelativeLayout>
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:visibility="gone"
+          android:layout_marginTop="5dp"
+          android:background="#2F2F2F" />
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="10dp"
+
+          android:textAlignment="textStart">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/choices"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never"></androidx.recyclerview.widget.RecyclerView>
+
+
+      </RelativeLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+          android:id="@+id/asasa"
+          android:orientation="vertical"
+          android:layout_marginTop="9dp"
+          >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+
+            android:id="@+id/qqqq"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:id="@+id/zaz"
+              android:background="#00282835"
+              android:drawablePadding="7dp"
+              android:text=" Currently available "
+
+              android:textAlignment="textStart"
+              android:textAllCaps="false"
+
+              android:textColor="#d3d3d3"
+              android:textSize="22sp"
+              android:textStyle="bold" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text=" Watch now "
+              android:layout_below="@id/zaz"
+              android:textStyle="bold"
+              android:textColor="#8B8B8B"
+              android:textSize="18sp" />
+
+          <Button
+              android:id="@+id/backbutton"
+              android:layout_width="wrap_content"
+              android:layout_height="30dp"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:layout_marginRight="8dp"
+
+              android:background="#00282835"
+              android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+
+              android:text="See All"
+
+              android:textAllCaps="false"
+              android:textColor="#00BCD4"
+              android:textSize="18sp"
+              />
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recommended"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+
+            android:layout_below="@+id/qqqq"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+      </LinearLayout>
+
+      <RelativeLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:background="#000F0F10"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/first2"
+            android:layout_below="@id/first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        </RelativeLayout>
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+
+          android:layout_marginTop="15dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="#00282835"
+
+            android:fontFamily="monospace"
+            android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_toLeftOf="@id/studio"
+
+              android:background="#00282835"
+              android:drawablePadding="7dp"
+              android:text=" Recommended Series"
+
+              android:textAlignment="textStart"
+              android:textAllCaps="false"
+
+              android:textColor="#d3d3d3"
+              android:textSize="22sp"
+              android:textStyle="bold" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text=" Tv Shows "
+              android:textColor="#8B8B8B"
+              android:textSize="18sp" />
+        </LinearLayout>
+
+      </RelativeLayout>
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+
+          android:layout_marginTop="5dp"
+          android:background="#2F2F2F" />
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="15dp"
+
+          android:textAlignment="textStart">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ser"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+            android:layout_marginLeft="5dp"
+
+            android:layout_marginRight="5dp"
+            android:nestedScrollingEnabled="false"></androidx.recyclerview.widget.RecyclerView>
+
+
+      </RelativeLayout>
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+
+          android:visibility="gone"
+          android:layout_marginLeft="8dp"
+          android:layout_marginTop="14dp"
+          android:background="#00282835"
+          android:drawablePadding="7dp"
+
+          android:text=" make your choice "
+          android:textAlignment="textStart"
+
+          android:textAllCaps="false"
+          android:textColor="#d3d3d3"
+          android:textSize="22sp"
+          android:textStyle="bold" />
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/yiyii"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="7dp"
+          android:visibility="gone"
+          android:layout_marginBottom="20dp"
+
+
+          android:nestedScrollingEnabled="false"
+          android:overScrollMode="never"></androidx.recyclerview.widget.RecyclerView>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+
+          android:visibility="gone"
+          >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_toLeftOf="@id/studio"
+
+              android:background="#00282835"
+              android:drawablePadding="7dp"
+              android:text=" editor's picks "
+
+              android:textAlignment="textStart"
+              android:textAllCaps="false"
+
+              android:textColor="#d3d3d3"
+              android:textSize="22sp"
+              android:textStyle="bold" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text=" made for you "
+              android:visibility="gone"
+              android:textColor="#8B8B8B"
+              android:textSize="18sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="#00282835"
+
+            android:padding="7dp"
+            android:id="@+id/refe"
+            android:fontFamily="monospace"
+            android:src="@drawable/ic_done_all_black_24dp"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginBottom="59dp"
+          android:visibility="gone"
+
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="10dp"
+
+          android:textAlignment="textStart">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/choicex"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never"></androidx.recyclerview.widget.RecyclerView>
+
+
+      </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+    </RelativeLayout>
+
+  </ScrollView>
+  <ir.alirezabdn.wp7progress.WP7ProgressBar
+      android:id="@+id/wp7progressBar"
+      android:layout_width="match_parent"
+      android:layout_height="120dp"
+      android:layout_marginTop="@dimen/dp10"
+      android:layout_centerVertical="true"
+      app:animationDuration="2300"
+      app:indicatorColor="#007080"
+      app:indicatorHeight="7"
+      app:indicatorRadius="5"
+      app:interval="100" />
+
+</RelativeLayout>

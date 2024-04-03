@@ -1,0 +1,79 @@
+package com.mobile.app.moonplay;
+
+import android.content.Context;
+import android.content.Intent;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
+
+import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+public class singleplay extends RecyclerView.Adapter<singleplay.MyViewHolder>{
+    private Context context;
+    private List<single> itemDataList;
+
+    public singleplay(Context context, List<single> itemDataList) {
+        this.context = context;
+        this.itemDataList = itemDataList;
+    }
+
+    @NonNull
+    @Override
+    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view= LayoutInflater.from(context).inflate(R.layout.shortitem,parent,false);
+        return new MyViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull MyViewHolder holder, final int i) {
+        holder.txt_item_title.setText(itemDataList.get(i).getName());
+       Picasso.get().load(itemDataList.get(i).getImage()).into(holder.img_item);
+
+        holder.genre.setText(itemDataList.get(i).getGenre());
+
+        holder.card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(context,singleplayer.class);
+                intent.putExtra("image", itemDataList.get(i).getImage());
+                intent.putExtra("name",itemDataList.get(i).getName());
+                intent.putExtra("video",itemDataList.get(i).getVideo());
+                intent.putExtra("genre",itemDataList.get(i).getGenre());
+                context.startActivity(intent);
+            }
+        });
+
+
+    }
+
+    @Override
+    public int getItemCount() {
+
+        return itemDataList.size();
+    }
+
+    public class MyViewHolder extends RecyclerView.ViewHolder {
+        TextView txt_item_title,genre;
+        ImageView img_item,image;
+        RelativeLayout card;
+
+
+        public MyViewHolder(@NonNull View itemView) {
+            super(itemView);
+            txt_item_title=itemView.findViewById(R.id.tvTitle);
+            img_item=itemView.findViewById(R.id.itemImage);
+
+            card=itemView.findViewById(R.id.card);
+            genre=itemView.findViewById(R.id.type);
+
+        }
+    }
+}

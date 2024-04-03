@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+
+    android:layout_marginLeft="18dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    android:id="@+id/card"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+
+
+        android:layout_width="match_parent"
+
+        android:id="@+id/a"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#FF444444">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/lin"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/hihi"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/zzz"
+                    android:layout_gravity="center"
+
+                    android:elevation="5dp"
+                    android:background="#00444444"
+                    android:layout_height="100dp">
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:background="#D9141414"
+                        android:scaleType="centerCrop" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/vx"
+                        android:layout_marginLeft="5dp"
+                        app:cardCornerRadius="29dp"
+
+                        app:cardBackgroundColor="#33505050"
+                        android:layout_centerVertical="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:id="@+id/itemImage"
+
+                            />
+                    </androidx.cardview.widget.CardView>
+
+
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_below="@id/lin"
+            android:layout_marginTop="@dimen/dp3"
+            android:background="#1AD3D3D3"
+            android:layout_height="1dp"
+
+
+            />
+
+        <ImageView
+            android:id="@+id/button"
+            android:padding="13dp"
+
+            android:layout_marginLeft="5dp"
+            android:tint="#fff"
+            android:src="@drawable/ic_delete_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="4dp"
+            android:layout_toLeftOf="@id/button"
+            android:layout_toRightOf="@id/lin"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/genre"
+
+
+
+            android:textSize="18sp"
+
+            android:textColor="#B9B9B9"
+            android:text="Euro Moments"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/genre"
+            android:id="@+id/des"
+
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="17sp"
+
+            android:textColor="#6F6F6F"
+            android:text="Fashion"/>
+        </LinearLayout>
+        <TextView
+            android:paddingLeft="5dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/len"
+
+            android:visibility="gone"
+
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/lin"
+            android:layout_toLeftOf="@id/button"
+            android:layout_marginBottom="17dp"
+            android:textSize="17sp"
+
+            android:textColor="#6F6F6F"
+            android:text="28 mins"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
